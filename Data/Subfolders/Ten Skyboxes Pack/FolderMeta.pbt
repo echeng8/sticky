@@ -1,0 +1,75 @@
+MetaVersion: 1
+MarketplaceDetails {
+  Id: "56a18a8acda84d8786d5a250b087ff63"
+  OwnerAccountId: "a27a1cb5d35e4bcfbe191e37708c2405"
+  OwnerName: "Sino"
+  Version: "1.4.0"
+}
+AssetIdsOriginalToNew {
+  key: 729639966170612998
+  value: 5308568243072493494
+}
+AssetIdsOriginalToNew {
+  key: 1259766914565558621
+  value: 11836781019159695214
+}
+AssetIdsOriginalToNew {
+  key: 1491411308173220294
+  value: 14705680218363394107
+}
+AssetIdsOriginalToNew {
+  key: 2260483282156834456
+  value: 9317969731496406064
+}
+AssetIdsOriginalToNew {
+  key: 2751132894017479484
+  value: 12844419741007703008
+}
+AssetIdsOriginalToNew {
+  key: 2951858492642735194
+  value: 3326523192605560023
+}
+AssetIdsOriginalToNew {
+  key: 2995932458704633758
+  value: 7485991722874787682
+}
+AssetIdsOriginalToNew {
+  key: 3839597609200523444
+  value: 9599163991771769806
+}
+AssetIdsOriginalToNew {
+  key: 4266998725782187775
+  value: 7039904675512121886
+}
+AssetIdsOriginalToNew {
+  key: 4269244348126145562
+  value: 3181633194928244673
+}
+AssetIdsOriginalToNew {
+  key: 5334168370029752181
+  value: 15223747395764311445
+}
+AssetIdsOriginalToNew {
+  key: 6360627886176636033
+  value: 14648221404893604844
+}
+AssetIdsOriginalToNew {
+  key: 9826737662890693035
+  value: 13719838204158602413
+}
+AssetIdsOriginalToNew {
+  key: 11557685830555299851
+  value: 1395021294172419104
+}
+AssetIdsOriginalToNew {
+  key: 14000514479089414482
+  value: 17075451208217053763
+}
+AssetIdsOriginalToNew {
+  key: 16085126281611445671
+  value: 11732297353868653886
+}
+AssetIdsOriginalToNew {
+  key: 16290274576020655639
+  value: 10648590676511901413
+}

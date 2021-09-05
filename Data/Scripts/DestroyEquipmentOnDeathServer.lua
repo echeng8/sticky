@@ -7,3 +7,5 @@ Game.playerJoinedEvent:Connect(function (player)
         end
     )
 end)
+
+--todo disconnect ?
