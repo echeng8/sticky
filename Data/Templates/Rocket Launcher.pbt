@@ -460,6 +460,7 @@ Assets {
           }
         }
         ParentId: 347649876411679261
+        ChildIds: 8413301402928129223
         ChildIds: 1483220562747733604
         ChildIds: 7273402850484401915
         ChildIds: 16522789617054085619
@@ -478,6 +479,83 @@ Assets {
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 8413301402928129223
+        Name: "Tracer VFX"
+        Transform {
+          Location {
+            X: 84
+            Y: -3.00407282e-05
+            Z: 25
+          }
+          Rotation {
+            Yaw: 180
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3647634438971825424
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Shape Index"
+            Int: 1
+          }
+          Overrides {
+            Name: "bp:Secondary Index"
+            Int: 1
+          }
+          Overrides {
+            Name: "bp:Width"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Length"
+            Float: 9.00267696
+          }
+          Overrides {
+            Name: "bp:Camera Depth Fade Length"
+            Float: 500
+          }
+          Overrides {
+            Name: "bp:Camera Depth Fade Offset"
+            Float: 500
+          }
+          Overrides {
+            Name: "bp:Use Intensity"
+            Float: 0.538137674
+          }
+          Overrides {
+            Name: "bp:Height"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 45.2417297
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 11395569413817159476
+          }
+          TeamSettings {
+          }
         }
       }
       Objects {
@@ -4512,6 +4590,15 @@ Assets {
           }
           Animation: "2hand_rifle_shoot"
         }
+      }
+    }
+    Assets {
+      Id: 11395569413817159476
+      Name: "Tracer VFX"
+      PlatformAssetType: 6
+      PrimaryAsset {
+        AssetType: "BlueprintAssetRef"
+        AssetId: "fxbp_tracer"
       }
     }
     Assets {
