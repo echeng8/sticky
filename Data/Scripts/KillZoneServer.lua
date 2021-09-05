@@ -21,8 +21,12 @@ local KILL_TRIGGER = script:GetCustomProperty("KillTrigger"):WaitForObject()
 -- nil OnBeginOverlap(Trigger, Object)
 -- Kills a player when they enter the trigger
 function OnBeginOverlap(trigger, other)
-    if other:IsA("Player") then
-        other:Die()
+    if not Object.IsValid(other) then return end
+    local marbleController = other:GetCustomProperty("Controller")
+
+    if marbleController then
+        marbleController = marbleController:GetObject()
+        marbleController.context.Die()
     end
 end
 

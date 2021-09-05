@@ -107,6 +107,40 @@ Objects {
   }
 }
 Objects {
+  Id: 3969979088730722011
+  Name: "Room_Heaven"
+  Transform {
+    Location {
+      Y: 1343
+      Z: 1464
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8201309591474542957
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Room_Heaven"
+  }
+}
+Objects {
   Id: 7016968366313103341
   Name: "Kill Zone"
   Transform {
@@ -136,13 +170,20 @@ Objects {
           Name: "Scale"
           Vector {
             X: 150
-            Y: 100
-            Z: 1
+            Y: 248.400009
+            Z: 31.7000065
           }
         }
         Overrides {
           Name: "Position"
           Vector {
+            Y: 2801
+          }
+        }
+        Overrides {
+          Name: "CoreProxy.IndicatorVisibility"
+          Enum {
+            Value: "mc:eindicatorvisibility:alwaysvisible"
           }
         }
       }
@@ -165,7 +206,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            Z: -150
+            Z: -1407
           }
         }
       }

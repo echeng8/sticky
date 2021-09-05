@@ -60,14 +60,14 @@ Objects {
     Location {
       X: 141
       Y: -366
-      Z: 514
+      Z: 999
     }
     Rotation {
     }
     Scale {
       X: 5.5
       Y: 5.5
-      Z: 30.6
+      Z: 21.3
     }
   }
   ParentId: 15492209651823750895

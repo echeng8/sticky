@@ -1,22 +1,23 @@
-Name: "Shell_1"
-RootId: 5765972839607407675
+Name: "Shell_2"
+RootId: 6691512208055835665
 Objects {
-  Id: 8313196568535966333
+  Id: 12448865225410942848
   Name: "Ground"
   Transform {
     Location {
       X: 113
-      Y: -240
+      Y: 585
+      Z: 774
     }
     Rotation {
     }
     Scale {
-      X: 35.5
-      Y: 16.5
+      X: 20.4
+      Y: 33
       Z: 1
     }
   }
-  ParentId: 5765972839607407675
+  ParentId: 6691512208055835665
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -44,5 +45,11 @@ Objects {
       }
       BoundsScale: 1
     }
+  }
+  InstanceHistory {
+    SelfId: 7701244767020490115
+    SubobjectId: 8064178632740767204
+    InstanceId: 10617403689759532781
+    TemplateId: 16265097473117988398
   }
 }

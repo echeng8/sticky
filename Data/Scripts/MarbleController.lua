@@ -89,9 +89,6 @@ function Tick(dt)
         -- local lookDirZ = Rotation.New(0, 0, owner:GetViewWorldRotation().z)
         -- local playerOffset = lookDirZ * offset
 
-        if ball:GetWorldPosition().z < killBelowZ then --die
-            Die()
-        end
 
         -- --have player follow
         -- owner:SetWorldPosition(ball:GetWorldPosition() + playerOffset)
