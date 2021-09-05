@@ -1,0 +1,75 @@
+MetaVersion: 1
+MarketplaceDetails {
+  Id: "68a1a174208c4daaae5dcd85c75649d1"
+  OwnerAccountId: "f261f4bb05b44bb2bf465b8a8346491f"
+  OwnerName: "WaveParadigm"
+  Version: "1.6.0"
+}
+AssetIdsOriginalToNew {
+  key: 4561787682688961402
+  value: 2777154708664954197
+}
+AssetIdsOriginalToNew {
+  key: 5049470299132475441
+  value: 12582488849390639605
+}
+AssetIdsOriginalToNew {
+  key: 6535497112970376693
+  value: 15032149174973930889
+}
+AssetIdsOriginalToNew {
+  key: 8090960988452404763
+  value: 7364482776609253451
+}
+AssetIdsOriginalToNew {
+  key: 8192465472912110595
+  value: 17787449820680505560
+}
+AssetIdsOriginalToNew {
+  key: 8708903901335625034
+  value: 7548533008703492360
+}
+AssetIdsOriginalToNew {
+  key: 9919992606170998012
+  value: 9358138063219649111
+}
+AssetIdsOriginalToNew {
+  key: 11340501395829278603
+  value: 7331712653661433554
+}
+AssetIdsOriginalToNew {
+  key: 13522640042779539601
+  value: 5898525248439179011
+}
+AssetIdsOriginalToNew {
+  key: 13873934870475528145
+  value: 7169406693634898107
+}
+AssetIdsOriginalToNew {
+  key: 14278482860986951316
+  value: 6808545228281818278
+}
+AssetIdsOriginalToNew {
+  key: 14633632985083390763
+  value: 14358338448767570456
+}
+AssetIdsOriginalToNew {
+  key: 15209143384941656082
+  value: 13558857596945946783
+}
+AssetIdsOriginalToNew {
+  key: 15806779188062150910
+  value: 8303898268369631779
+}
+AssetIdsOriginalToNew {
+  key: 16057156346641626278
+  value: 2993673529669274630
+}
+AssetIdsOriginalToNew {
+  key: 16175809166531077262
+  value: 9183575606743123277
+}
+AssetIdsOriginalToNew {
+  key: 16309324314036785232
+  value: 1760323300142601185
+}
