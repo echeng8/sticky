@@ -86,27 +86,6 @@ function Tick(dt)
         checkGrounded()
 
         HandleMovement(dt)
-        --todo make player face look direction 
-        -- local lookDirZ = Rotation.New(0, 0, owner:GetViewWorldRotation().z)
-        -- local playerOffset = lookDirZ * offset
-
-        -- if ball:GetWorldPosition().z < killBelowZ then --die
-        --     Die(playerOffset)
-        -- end
-
-        -- --have player follow
-        -- owner:SetWorldPosition(ball:GetWorldPosition() + playerOffset)
-
-        -- if (jumpLockout > 0) then
-        --     jumpLockout = jumpLockout - dt
-        --     timeSinceGrounded = 999
-        -- elseif (jumpTimer > 0) then
-        --     Spacebar()
-        -- end
-
-        -- if (jumpTimer > 0) then
-        --     jumpTimer = jumpTimer - dt
-        -- end
 
         --apply added velocities
         
@@ -163,32 +142,28 @@ function HandleMovement(dt)
     if setVel and newVel.size ~= 0 and newAVel.size ~= 0 then
         newVel = newVel:GetNormalized()
         newAVel = newAVel:GetNormalized()
+        
 
         newVel = newVel * movementSpeed
         newAVel = newAVel * angularSpeed
-
+        
         -- less push force if airborne
         local currentMovementRampUp = movementRampUp
         if not isGrounded() then
             currentMovementRampUp = currentMovementRampUp * airborneMovementScale
         end 
      
-        local missingVelocity = newVel - Vector3.New(vel.x, vel.y, 0)
-        local finalVel = vel + (missingVelocity * dt * currentMovementRampUp)
-
-        -- apply additive velocities
-        -- for _,addVel in ipairs(velVectors) do
-        --     print(addVel.currentVector)
-        --     finalVel = finalVel + addVel.currentVector
-        -- end
+        --local missingVelocity = newVel - Vector3.New(vel.x, vel.y, 0)
+        local finalVel =newVel -- vel + (missingVelocity * dt * currentMovementRampUp)
 
 
-        ball:SetVelocity(finalVel)
-
-        local finalAVel = aVel + (newAVel * dt)
+        --ball:SetVelocity(finalVel)
+        local finalAVel = newAVel
+        --local finalAVel = aVel + (newAVel * dt)
         if (finalAVel.size > maxAngularSpeed) then
             finalAVel = finalAVel:GetNormalized() * maxAngularSpeed
         end
+        print(newAVel.size)
         ball:SetAngularVelocity(finalAVel)
     end
 
@@ -198,7 +173,7 @@ function HandleMovement(dt)
     -- end
 
     if newAVel.size == 0 then
-        ball:SetAngularVelocity(aVel * (1 - dt))
+        ball:SetAngularVelocity(Vector3.ZERO) --aVel * (1 - dt))
     end
 
     vel = ball:GetVelocity()
