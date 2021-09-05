@@ -108,7 +108,7 @@ Assets {
           Overrides {
             Name: "cs:ProjectileImpact"
             AssetReference {
-              Id: 14960866114397804444
+              Id: 841534158063459245
             }
           }
           Overrides {

@@ -91,7 +91,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ExplosionRadius"
-            Float: 400
+            Float: 800
           }
           Overrides {
             Name: "cs:ExplosionKnockbackSpeed"

@@ -25,11 +25,10 @@ local maxAngularSpeed = script:GetCustomProperty('MaxAngularSpeed') or 1500
 
 local gravityForce = script:GetCustomProperty('ExtraGravityForce') or 1250
 local terminalVelocity = script:GetCustomProperty('TerminalVelocity') or -800
-local offset = script:GetCustomProperty('PlayerOffset') or Vector3.New(0, 0, -10000)
 local coyoteTime = script:GetCustomProperty('CoyoteTime') or .2
 local distanceToGround = script:GetCustomProperty('DistanceToGround') * -1
 local airborneMovementScale = script:GetCustomProperty('AirborneMovementScale') or .66
-local killBelowZ = script:GetCustomProperty('KillBelowZ') or -1500
+local killBelowZ = 12
 
 local jumpBuffer = 0.135
 local jumpTimer = 0
@@ -60,23 +59,23 @@ function isGrounded()
     return timeSinceGrounded < coyoteTime
 end
 
-function Die(playerOffset)
+function Die()
     World.SpawnAsset(DEATH_SFX[1], {position = ball:GetWorldPosition()})
     script:SetNetworkedCustomProperty('IsDead', true)
     Task.Wait(0.6)
     World.SpawnAsset(DEATH_SFX[2], {position = ball:GetWorldPosition()})
     Task.Wait(0.6)
     script:SetNetworkedCustomProperty('IsDead', false)
-    Respawn(playerOffset)
+    Respawn()
 end
 
-function Respawn(playerOffset)
+function Respawn()
     if (Object.IsValid(ball) and Object.IsValid(owner)) then
         ball:SetWorldPosition(spawnPoint)
         ball:SetWorldRotation(Rotation.New())
         ball:SetVelocity(Vector3.New())
         ball:SetAngularVelocity(Vector3.New())
-        owner:SetWorldPosition(ball:GetWorldPosition() + playerOffset)
+        owner:SetWorldPosition(ball:GetWorldPosition())
     end
 end
 
@@ -90,9 +89,9 @@ function Tick(dt)
         -- local lookDirZ = Rotation.New(0, 0, owner:GetViewWorldRotation().z)
         -- local playerOffset = lookDirZ * offset
 
-        -- if ball:GetWorldPosition().z < killBelowZ then --die
-        --     Die(playerOffset)
-        -- end
+        if ball:GetWorldPosition().z < killBelowZ then --die
+            Die()
+        end
 
         -- --have player follow
         -- owner:SetWorldPosition(ball:GetWorldPosition() + playerOffset)
@@ -176,12 +175,6 @@ function HandleMovement(dt)
         local missingVelocity = newVel - Vector3.New(vel.x, vel.y, 0)
         local finalVel = vel + (missingVelocity * dt * currentMovementRampUp)
 
-        -- apply additive velocities
-        -- for _,addVel in ipairs(velVectors) do
-        --     print(addVel.currentVector)
-        --     finalVel = finalVel + addVel.currentVector
-        -- end
-
 
         ball:SetVelocity(finalVel)
 
@@ -224,10 +217,11 @@ function AttachPlayer(player)
             player:SetWorldPosition(ball:GetWorldPosition())
         end
     )
+
     player.diedEvent:Connect(
         function(player)
+            Die()
         end
-    
     )
 end
 

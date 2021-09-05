@@ -271,6 +271,9 @@ Objects {
         Value: "mc:erespawnmode:roundrobin"
       }
       StartSpawned: true
+      SpawnMode {
+        Value: "mc:espawnmode:roundrobin"
+      }
     }
   }
 }
