@@ -91,11 +91,11 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxAngularSpeed"
-            Float: 4000
+            Float: 800
           }
           Overrides {
             Name: "cs:MinAngularSpeed"
-            Float: 200
+            Float: 300
           }
           Overrides {
             Name: "cs:AngularAcceleration"

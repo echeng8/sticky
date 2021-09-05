@@ -34,6 +34,7 @@ local rand = RandomStream.New()
 
 local prevInputAVel = Vector3.ZERO
 local prevAngularVelocity = Vector3.ZERO
+local baseVelocityMultiplier = 1
 function checkGrounded()
     local groundedDistanceCheck = distanceToGround -- how far down from the center of the marble to check for grounded
     local offsets = {Vector3.New(51, 0, 0), Vector3.New(0, -51, 0), Vector3.New(-51, 0, 0), Vector3.New(0, 51, 0), Vector3.New(36, 36, 0), Vector3.New(36, -36, 0), Vector3.New(-36, 36, 0), Vector3.New(-36, -36, 0)}
@@ -136,25 +137,18 @@ function HandleMovement(dt)
     --check if rolling in the same 'general' direction
     local isSameishDirection = (inputAVel .. prevInputAVel) > 0
 
-    local finalVelocity = Vector3.ZERO
     -- if you stopped holding the same general direction, we reset angular velocity
-    if true then -- not isSameishDirection then 
-        --reset angular velocity 
-        --print("resetting velocity " .. time())
-        print(normalizedAVel)
-        finalVelocity = (normalizedAVel * MIN_ANGULAR_SPEED)
+    if not isSameishDirection then 
+        baseVelocityMultiplier = 1 
     else 
         -- we accelerate in that rotation -- 
-        local additiveAVel = prevAngularVelocity + normalizedAVel * ANGULAR_ACCELERATION * dt
-        if additiveAVel.size > MAX_ANGULAR_SPEED then
-            additiveAVel = additiveAVel:GetNormalized() * MAX_ANGULAR_SPEED
+        local newBaseVelMult = baseVelocityMultiplier + 1 * dt
+        if newBaseVelMult * MIN_ANGULAR_SPEED < MAX_ANGULAR_SPEED then
+            baseVelocityMultiplier = newBaseVelMult
         end
-       
-        finalVelocity = (additiveAVel)
     end
-    --print(finalVelocity)
-    ball:SetVelocity(finalVelocity)
-    prevAngularVelocity = finalVelocity
+    print(normalizedAVel)
+    ball:SetAngularVelocity(normalizedAVel * MIN_ANGULAR_SPEED * baseVelocityMultiplier)
     prevInputAVel = inputAVel
 end
 
