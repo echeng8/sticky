@@ -4,7 +4,6 @@ getInput = Input.context.GetInput
 mesh = script:GetCustomProperty('Mesh')
 ball = script.parent
 
-local JUMP_SFX = script:GetCustomProperty('JumpSFX')
 local DEATH_SFX = {script:GetCustomProperty('DeathSFX'), script:GetCustomProperty('DeathSFX2')}
 local rollingSFX = script:GetCustomProperty('RollingSFX'):WaitForObject()
 
@@ -17,28 +16,24 @@ local spawnPoint = Vector3.New()
 -- Movement Params
 --local jumpVelocity = script:GetCustomProperty('JumpVelocity') or 900
 
-local movementRampUp = script:GetCustomProperty('MovementRampUp') or .5
-local movementSpeed = script:GetCustomProperty('MovementSpeed') or 3200
+local MIN_ANGULAR_SPEED = script:GetCustomProperty('MinAngularSpeed') or 3200
+local MAX_ANGULAR_SPEED = script:GetCustomProperty('MaxAngularSpeed') or 1500
+local ANGULAR_ACCELERATION = script:GetCustomProperty("AngularAcceleration")
 
-local angularSpeed = script:GetCustomProperty('AngularAcceleration') or 3200
-local maxAngularSpeed = script:GetCustomProperty('MaxAngularSpeed') or 1500
 
-local gravityForce = script:GetCustomProperty('ExtraGravityForce') or 1250
-local terminalVelocity = script:GetCustomProperty('TerminalVelocity') or -800
 local offset = script:GetCustomProperty('PlayerOffset') or Vector3.New(0, 0, -10000)
 local coyoteTime = script:GetCustomProperty('CoyoteTime') or .2
 local distanceToGround = script:GetCustomProperty('DistanceToGround') * -1
-local airborneMovementScale = script:GetCustomProperty('AirborneMovementScale') or .66
+
+--TODO re implement 
 local killBelowZ = script:GetCustomProperty('KillBelowZ') or -1500
 
-local jumpBuffer = 0.135
-local jumpTimer = 0
-
 timeSinceGrounded = 0
-jumpLockout = 0
 
 local rand = RandomStream.New()
 
+local prevInputAVel = Vector3.ZERO
+local prevAngularVelocity = Vector3.ZERO
 function checkGrounded()
     local groundedDistanceCheck = distanceToGround -- how far down from the center of the marble to check for grounded
     local offsets = {Vector3.New(51, 0, 0), Vector3.New(0, -51, 0), Vector3.New(-51, 0, 0), Vector3.New(0, 51, 0), Vector3.New(36, 36, 0), Vector3.New(36, -36, 0), Vector3.New(-36, 36, 0), Vector3.New(-36, -36, 0)}
@@ -92,7 +87,7 @@ function Tick(dt)
         -- manage rollingSFX volume
         if (isGrounded()) then
             -- modulate rolling sfx volume based on angular velocity
-            local percentage = ball:GetAngularVelocity().size / maxAngularSpeed
+            local percentage = ball:GetAngularVelocity().size / MAX_ANGULAR_SPEED
             rollingSFX.volume = percentage
         else
             rollingSFX.volume = 0
@@ -102,8 +97,7 @@ end
 
 -- Handle interpreting WASD input to impart lateral and angular velocity onto the ball
 function HandleMovement(dt)
-    local vel = ball:GetVelocity()
-    local aVel = ball:GetAngularVelocity()
+    -- get direction with respect to camera 
     local lookDir = owner:GetViewWorldRotation()
     local lookDirZ = Rotation.New(0, 0, lookDir.z)
 
@@ -111,75 +105,57 @@ function HandleMovement(dt)
     local forwardVector = lookQuaternion:GetForwardVector()
     local rightVector = lookQuaternion:GetRightVector()
 
-    local newVel = Vector3.New()
-    local newAVel = Vector3.New()
-    local setVel = false
+    local inputAVel = Vector3.New()
 
+    -- get normalized aVel from input  
     if (getInput(owner, 'W')) then
-        newVel = newVel + forwardVector
-        newAVel = newAVel + rightVector
-        setVel = true
+        inputAVel = inputAVel + rightVector
     end
 
     if (getInput(owner, 'A')) then
-        newVel = newVel + -rightVector
-        newAVel = newAVel + forwardVector
-        setVel = true
+        inputAVel = inputAVel + forwardVector
     end
 
     if (getInput(owner, 'S')) then
-        newVel = newVel + (-forwardVector)
-        newAVel = newAVel + -rightVector
-        setVel = true
+        inputAVel = inputAVel + -rightVector
     end
 
     if (getInput(owner, 'D')) then
-        newVel = newVel + (rightVector)
-        newAVel = newAVel + -forwardVector
-        setVel = true
+        inputAVel = inputAVel + -forwardVector
     end
 
-    if setVel and newVel.size ~= 0 and newAVel.size ~= 0 then
-        newVel = newVel:GetNormalized()
-        newAVel = newAVel:GetNormalized()
-        
 
-        newVel = newVel * movementSpeed
-        newAVel = newAVel * angularSpeed
-        
-        -- less push force if airborne
-        local currentMovementRampUp = movementRampUp
-        if not isGrounded() then
-            currentMovementRampUp = currentMovementRampUp * airborneMovementScale
-        end 
-     
-        --local missingVelocity = newVel - Vector3.New(vel.x, vel.y, 0)
-        local finalVel =newVel -- vel + (missingVelocity * dt * currentMovementRampUp)
+    -- get normalized input angular velocity 
+    local normalizedAVel = nil
+    if inputAVel == Vector3.ZERO then 
+        normalizedAVel = inputAVel --technically not normalized but whatever 
+    else 
+        normalizedAVel = inputAVel:GetNormalized()
+    end
 
+    --check if rolling in the same 'general' direction
+    local isSameishDirection = (inputAVel .. prevInputAVel) > 0
 
-        --ball:SetVelocity(finalVel)
-        local finalAVel = newAVel
-        --local finalAVel = aVel + (newAVel * dt)
-        if (finalAVel.size > maxAngularSpeed) then
-            finalAVel = finalAVel:GetNormalized() * maxAngularSpeed
+    local finalVelocity = Vector3.ZERO
+    -- if you stopped holding the same general direction, we reset angular velocity
+    if true then -- not isSameishDirection then 
+        --reset angular velocity 
+        --print("resetting velocity " .. time())
+        print(normalizedAVel)
+        finalVelocity = (normalizedAVel * MIN_ANGULAR_SPEED)
+    else 
+        -- we accelerate in that rotation -- 
+        local additiveAVel = prevAngularVelocity + normalizedAVel * ANGULAR_ACCELERATION * dt
+        if additiveAVel.size > MAX_ANGULAR_SPEED then
+            additiveAVel = additiveAVel:GetNormalized() * MAX_ANGULAR_SPEED
         end
-        print(newAVel.size)
-        ball:SetAngularVelocity(finalAVel)
+       
+        finalVelocity = (additiveAVel)
     end
-
-    -- if not setVel and newVel.size == 0 then -- friction if no direction is held
-    --     local slowedVel = vel * (1 - dt)
-    --     ball:SetVelocity(Vector3.New(slowedVel.x, slowedVel.y, vel.z))
-    -- end
-
-    if newAVel.size == 0 then
-        ball:SetAngularVelocity(Vector3.ZERO) --aVel * (1 - dt))
-    end
-
-    vel = ball:GetVelocity()
-    -- if vel.z > terminalVelocity then -- add additional gravity force if before terminal velocity
-    --     ball:SetVelocity(Vector3.New(vel.x, vel.y, vel.z - (gravityForce * dt)))
-    -- end
+    --print(finalVelocity)
+    ball:SetVelocity(finalVelocity)
+    prevAngularVelocity = finalVelocity
+    prevInputAVel = inputAVel
 end
 
 -- Upon spawning and linking up to our player

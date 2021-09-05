@@ -90,40 +90,20 @@ Assets {
             Float: -1500
           }
           Overrides {
-            Name: "cs:MovementSpeed"
-            Float: 0
-          }
-          Overrides {
-            Name: "cs:MovementRampUp"
-            Float: 1
-          }
-          Overrides {
             Name: "cs:MaxAngularSpeed"
             Float: 4000
           }
           Overrides {
-            Name: "cs:AngularAcceleration"
+            Name: "cs:MinAngularSpeed"
             Float: 200
           }
           Overrides {
-            Name: "cs:ExtraGravityForce"
-            Float: 1250
-          }
-          Overrides {
-            Name: "cs:TerminalVelocity"
-            Float: -800
-          }
-          Overrides {
-            Name: "cs:CoyoteTime"
-            Float: 0.2
+            Name: "cs:AngularAcceleration"
+            Float: 100
           }
           Overrides {
             Name: "cs:DistanceToGround"
             Float: 80
-          }
-          Overrides {
-            Name: "cs:AirborneMovementScale"
-            Float: 0.66
           }
           Overrides {
             Name: "cs:PlayerOffset"
@@ -178,36 +158,16 @@ Assets {
             Bool: true
           }
           Overrides {
-            Name: "cs:MovementSpeed:tooltip"
-            String: "The lateral speed the marble ramps up to over MovementRampUp seconds."
-          }
-          Overrides {
-            Name: "cs:MovementRampUp:tooltip"
-            String: "The length of time in seconds it takes the ball to reach maximum lateral speed."
-          }
-          Overrides {
             Name: "cs:MaxAngularSpeed:tooltip"
             String: "The maximum rotation rate the ball will reach."
           }
           Overrides {
-            Name: "cs:AngularAcceleration:tooltip"
+            Name: "cs:MinAngularSpeed:tooltip"
             String: "How much angular velocity is applied to the ball."
-          }
-          Overrides {
-            Name: "cs:ExtraGravityForce:tooltip"
-            String: "If the ball is too floaty feeling, this will add extra force downward on the ball to simulate more gravity. More positive is more downward push."
-          }
-          Overrides {
-            Name: "cs:TerminalVelocity:tooltip"
-            String: "The terminal Z velocity for the marble."
           }
           Overrides {
             Name: "cs:PlayerOffset:tooltip"
             String: "The player is made tiny and invisible, but still technically has a hitbox. By offsetting them from the marble (I choose 10000 units below the marble, personally) we can ensure LOD info updates for terrains, and player collisions can be caught with specially positioned triggers, while avoiding strange collisions."
-          }
-          Overrides {
-            Name: "cs:CoyoteTime:tooltip"
-            String: "The amount of time after leaving the ground where the ball still can jump."
           }
           Overrides {
             Name: "cs:DistanceToGround:tooltip"
