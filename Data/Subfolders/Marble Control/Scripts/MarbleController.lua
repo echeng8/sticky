@@ -39,44 +39,6 @@ jumpLockout = 0
 
 local rand = RandomStream.New()
 
--- extra velocity vectors --
-local velVectors = {} -- {currentVector, originalMagnitude}
-local velVectorDecayTime = 1 -- time it takes for an added velocity vector to decay 
-
-function ApplyAdditiveVelocity(v)
-    table.insert(velVectors, {currentVector = v, startTime = time(), originalVector = v})
-end
-
-function DecayVelVectors(deltaTime)
-    local deleteCache = {}
-
-    --lerp vectors to 0
-    for i,vectorData in ipairs(velVectors) do
-        local vectorLifeTime = time() - vectorData.startTime
-        vectorData.currentVector = Vector3.Lerp(vectorData.originalVector, Vector3.ZERO, vectorLifeTime / velVectorDecayTime)
-        
-        if vectorLifeTime / velVectorDecayTime >= 1 then
-            table.insert(deleteCache, i)
-        end
-        
-    end
-
-    --delete vectors if any
-    for _,index in ipairs(deleteCache) do
-        --print("deleted")
-        velVectors[index] = nil
-    end
-end
-
-local addVelocityListener = Events.Connect("ApplyAdditiveVelocityMessage",
-    function(player, addedVelocity) 
-        if player == owner then
-            ApplyAdditiveVelocity(addedVelocity)
-        end
-    end
-)
-
-
 function checkGrounded()
     local groundedDistanceCheck = distanceToGround -- how far down from the center of the marble to check for grounded
     local offsets = {Vector3.New(51, 0, 0), Vector3.New(0, -51, 0), Vector3.New(-51, 0, 0), Vector3.New(0, 51, 0), Vector3.New(36, 36, 0), Vector3.New(36, -36, 0), Vector3.New(-36, 36, 0), Vector3.New(-36, -36, 0)}
@@ -147,7 +109,6 @@ function Tick(dt)
         -- end
 
         --apply added velocities
-        DecayVelVectors(dt)
         
         -- manage rollingSFX volume
         if (isGrounded()) then
@@ -211,7 +172,7 @@ function HandleMovement(dt)
         if not isGrounded() then
             currentMovementRampUp = currentMovementRampUp * airborneMovementScale
         end 
-        print(newVel)
+     
         local missingVelocity = newVel - Vector3.New(vel.x, vel.y, 0)
         local finalVel = vel + (missingVelocity * dt * currentMovementRampUp)
 
@@ -369,10 +330,3 @@ function GetPlayerColor(name)
     local rand = RandomStream.New(charSeed)
     return Color.New(rand:GetNumber(), rand:GetNumber(), rand:GetNumber(), 1)
 end
-
-
-script.destroyEvent:Connect(
-    function(obj)
-        addVelocityListener:Disconnect()
-    end
-)
