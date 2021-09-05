@@ -21,8 +21,7 @@ Events.Connect("OnBallSpawned",
                 local equipment = other:FindAncestorByType("Equipment")
                 if not equipment then return end 
                 
-                --get out if chu alweady hash gun!!-- 
-                print(#player:GetEquipment())
+                --get out if chu alweady hash gun!!--
                 if #player:GetEquipment() > 0 then return end 
 
 
@@ -44,7 +43,6 @@ Events.Connect("OnBallSpawned",
 
                     -- destroy their equipment   
                     equipment:Destroy()
-
                 end
             end
         )

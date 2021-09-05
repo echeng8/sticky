@@ -330,7 +330,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 18006915317848175630
+              Id: 5053086791095825808
             }
           }
           Overrides {
@@ -504,12 +504,12 @@ Assets {
       }
     }
     Assets {
-      Id: 18006915317848175630
-      Name: "Frosted Glass"
+      Id: 5053086791095825808
+      Name: "Marble Basic 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "fxma_frosted_glass"
+        AssetId: "mi_gen_marble_tiles_001_uv"
       }
     }
     PrimaryAssetId {
