@@ -154,7 +154,7 @@ Objects {
         Overrides {
           Name: "cs:BallTemplate"
           AssetReference {
-            Id: 1145430252987946155
+            Id: 8095823279706776318
           }
         }
       }

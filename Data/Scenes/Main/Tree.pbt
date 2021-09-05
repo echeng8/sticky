@@ -18,7 +18,6 @@ Objects {
   ChildIds: 10412379021265105746
   ChildIds: 14037771509087251097
   ChildIds: 8201309591474542957
-  ChildIds: 16554005746875108128
   ChildIds: 14533926045176927083
   UnregisteredParameters {
   }
@@ -72,49 +71,6 @@ Objects {
     }
     TriggerShape_v2 {
       Value: "mc:etriggershape:box"
-    }
-  }
-}
-Objects {
-  Id: 16554005746875108128
-  Name: "Marble"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8568336417442047963
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 18385818582554859723
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Marble"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 1145430252987946155
     }
   }
 }
