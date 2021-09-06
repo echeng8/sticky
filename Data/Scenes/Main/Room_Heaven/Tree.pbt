@@ -219,7 +219,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Shell_2"
+    FilePartitionName: "Shell_5"
   }
   InstanceHistory {
     SelfId: 3613684392071050445

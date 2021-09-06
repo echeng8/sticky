@@ -17,7 +17,9 @@ Objects {
   ChildIds: 12400254426487455387
   ChildIds: 10412379021265105746
   ChildIds: 14037771509087251097
-  ChildIds: 8201309591474542957
+  ChildIds: 5215511558776338755
+  ChildIds: 17880592535704496713
+  ChildIds: 4820110062441269004
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -33,8 +35,8 @@ Objects {
   }
 }
 Objects {
-  Id: 8201309591474542957
-  Name: "Map"
+  Id: 4820110062441269004
+  Name: "Avi"
   Transform {
     Location {
     }
@@ -47,8 +49,6 @@ Objects {
     }
   }
   ParentId: 8568336417442047963
-  UnregisteredParameters {
-  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -58,9 +58,76 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Map"
+    FilePartitionName: "Avi"
+  }
+}
+Objects {
+  Id: 17880592535704496713
+  Name: "Ammie"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8568336417442047963
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Ammie"
+  }
+}
+Objects {
+  Id: 5215511558776338755
+  Name: "Sebastian"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8568336417442047963
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Sebastian"
   }
 }
 Objects {

@@ -1,7 +1,7 @@
-Name: "Room_Bridge"
-RootId: 16550476084206398727
+Name: "Room_Bridge_1"
+RootId: 356118189090012053
 Objects {
-  Id: 695978490099768709
+  Id: 17206516477587415610
   Name: "WeaponSpawn"
   Transform {
     Scale {
@@ -10,7 +10,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16550476084206398727
+  ParentId: 356118189090012053
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -61,7 +61,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11617593847618560706
+  Id: 520409273823779378
   Name: "Spawn Point"
   Transform {
     Location {
@@ -77,7 +77,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16550476084206398727
+  ParentId: 356118189090012053
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -99,7 +99,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12474321866234828139
+  Id: 15176863533697360862
   Name: "Cube"
   Transform {
     Location {
@@ -115,7 +115,7 @@ Objects {
       Z: 0.3
     }
   }
-  ParentId: 16550476084206398727
+  ParentId: 356118189090012053
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -146,7 +146,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5904396646842736358
+  Id: 17304407022302229799
   Name: "Wedge"
   Transform {
     Location {
@@ -163,7 +163,7 @@ Objects {
       Z: 4.3
     }
   }
-  ParentId: 16550476084206398727
+  ParentId: 356118189090012053
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -194,7 +194,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10779027599192315442
+  Id: 11126224221422217094
   Name: "Wedge"
   Transform {
     Location {
@@ -211,7 +211,7 @@ Objects {
       Z: 4.3
     }
   }
-  ParentId: 16550476084206398727
+  ParentId: 356118189090012053
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -242,7 +242,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18377776569468736602
+  Id: 5179604387909453343
   Name: "Wedge"
   Transform {
     Location {
@@ -259,7 +259,7 @@ Objects {
       Z: 4.3
     }
   }
-  ParentId: 16550476084206398727
+  ParentId: 356118189090012053
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -290,7 +290,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11127188892213931453
+  Id: 2142024631145048688
   Name: "Wedge"
   Transform {
     Location {
@@ -307,7 +307,7 @@ Objects {
       Z: 4.3
     }
   }
-  ParentId: 16550476084206398727
+  ParentId: 356118189090012053
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -338,7 +338,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6474234988489816668
+  Id: 5765972839607407675
   Name: "Shell"
   Transform {
     Location {
@@ -351,7 +351,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16550476084206398727
+  ParentId: 356118189090012053
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -366,6 +366,6 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Shell_1"
+    FilePartitionName: "Shell_4"
   }
 }

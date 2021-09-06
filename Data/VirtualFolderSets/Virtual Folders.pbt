@@ -4,5 +4,9 @@ Assets {
   PlatformAssetType: 30
   SerializationVersion: 97
   VirtualFolderSetAsset {
+    Folders {
+      VirtualFolderPath: "Palette"
+      PlatformAssetType: 13
+    }
   }
 }

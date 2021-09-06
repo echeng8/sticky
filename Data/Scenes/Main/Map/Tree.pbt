@@ -1,6 +1,40 @@
 Name: "Map"
 RootId: 8201309591474542957
 Objects {
+  Id: 16550476084206398727
+  Name: "Room_Bridge"
+  Transform {
+    Location {
+      Y: 8646
+      Z: 721
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8201309591474542957
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Room_Bridge"
+  }
+}
+Objects {
   Id: 327457714374823052
   Name: "Connectors"
   Transform {
@@ -63,7 +97,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Room_Pillars"
+    FilePartitionName: "Room_Pillars_2"
   }
   InstanceHistory {
     SelfId: 15492209651823750895
@@ -103,7 +137,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Room_Bridge"
+    FilePartitionName: "Room_Bridge_1"
   }
 }
 Objects {

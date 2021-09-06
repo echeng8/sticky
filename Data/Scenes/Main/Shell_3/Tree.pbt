@@ -1,7 +1,7 @@
-Name: "Shell_2"
-RootId: 6691512208055835665
+Name: "Shell_3"
+RootId: 3613684392071050445
 Objects {
-  Id: 12448865225410942848
+  Id: 7701244767020490115
   Name: "Ground"
   Transform {
     Location {
@@ -13,11 +13,11 @@ Objects {
     }
     Scale {
       X: 20.4
-      Y: 33
+      Y: 34.6999969
       Z: 1
     }
   }
-  ParentId: 6691512208055835665
+  ParentId: 3613684392071050445
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

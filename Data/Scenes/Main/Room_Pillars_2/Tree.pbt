@@ -1,4 +1,4 @@
-Name: "Room_Pillars"
+Name: "Room_Pillars_2"
 RootId: 15492209651823750895
 Objects {
   Id: 15195447217876630761
@@ -179,7 +179,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Shell"
+    FilePartitionName: "Shell_3"
   }
   InstanceHistory {
     SelfId: 3613684392071050445
