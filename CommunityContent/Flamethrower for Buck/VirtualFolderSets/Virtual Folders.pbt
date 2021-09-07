@@ -1,12 +1,8 @@
 Assets {
-  Id: 11237267171393895703
+  Id: 14364993347348730969
   Name: "Virtual Folders"
   PlatformAssetType: 30
   SerializationVersion: 97
   VirtualFolderSetAsset {
-    Folders {
-      VirtualFolderPath: "Palette"
-      PlatformAssetType: 13
-    }
   }
 }

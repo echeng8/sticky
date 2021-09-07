@@ -1,7 +1,7 @@
 -- equips items that the ball touches and childrens it to the ball --
 local propAnchor = script:GetCustomProperty("Anchor")
 local propRocketLauncher = script:GetCustomProperty("RocketLauncher")
-
+local propAPIMarble = require(script:GetCustomProperty("APIMarble"))
 
 local lastStoleTimes = {} -- key: player , value : time (float)
 local STEAL_COOLDOWN = 1
@@ -28,21 +28,10 @@ Events.Connect("OnBallSpawned",
                 -- if its a fresh gun
                 if equipment.owner == nil then 
                     EquipOnBall(equipment, ball, player)
-
-                elseif equipment.owner ~= player and CanSteal(equipment.owner, player) then--if its someone elses gun 
-                    --update last stole times 
-                    lastStoleTimes[player] = time()
-                    lastStoleTimes[equipment.owner] = time()
-
-                    --spawn a gun for ourselves to make it look like we stole their gun 
-                    local newGun = World.SpawnAsset(propRocketLauncher)
-                    EquipOnBall(newGun, ball, player)
-
-                    --todo make this better lmao 
-                    Events.BroadcastToAllPlayers("BannerMessage", player.name .. " STOLE " .. equipment.owner.name .. "'S GUN", 3)
-
-                    -- destroy their equipment   
-                    equipment:Destroy()
+                
+                --if its someone elses gun 
+                elseif equipment.owner ~= player and CanSteal(equipment.owner, player) then
+                    StealWeapon(equipment,player)
                 end
             end
         )
@@ -73,6 +62,22 @@ function EquipOnBall(equipment, ball, player)
         end
     )
 
+end
+
+function StealWeapon(equipment, player) 
+    --update last stole times 
+    lastStoleTimes[player] = time()
+    lastStoleTimes[equipment.owner] = time()
+
+    --spawn a gun for ourselves to make it look like we stole their gun 
+    local newWeapon = World.SpawnAsset(equipment.sourceTemplateId)
+    EquipOnBall(newWeapon, propAPIMarble.GetMarbleFromPlayer(player), player)
+
+    --todo make this better lmao 
+    Events.BroadcastToAllPlayers("BannerMessage", player.name .. " STOLE " .. equipment.owner.name .. "'S WEAPON", 3)
+
+    -- destroy their equipment   
+    equipment:Destroy()
 end
 
 function CanSteal(p1, p2)
