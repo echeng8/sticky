@@ -154,6 +154,48 @@ Objects {
   }
 }
 Objects {
+  Id: 5683528738486891209
+  Name: "StickAbilityManagerServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17773784851906546504
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:StickAbility"
+      AssetReference {
+        Id: 2245123768123770960
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 2403530837344838611
+    }
+  }
+}
+Objects {
   Id: 8782813290513258998
   Name: "Marble Control"
   Transform {

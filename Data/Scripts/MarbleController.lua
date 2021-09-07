@@ -38,6 +38,30 @@ jumpLockout = 0
 
 local rand = RandomStream.New()
 
+local sticked = false 
+local stickedTransform = nil
+
+--PUBLIC FUNCTIONS-- 
+
+function SetSticked(p_sticked) 
+    if p_sticked then
+        sticked = true 
+        ResetVelocities()
+        stickedTransform = ball:GetWorldTransform()
+    else 
+        sticked = false 
+        stickedTransform = nil
+    end
+end
+
+function GetSticked()
+    return sticked 
+end
+-- private functions --
+function ResetVelocities()
+    ball:SetVelocity(Vector3.ZERO)
+    ball:SetAngularVelocity(Vector3.ZERO)
+end
 function checkGrounded()
     local groundedDistanceCheck = distanceToGround -- how far down from the center of the marble to check for grounded
     local offsets = {Vector3.New(51, 0, 0), Vector3.New(0, -51, 0), Vector3.New(-51, 0, 0), Vector3.New(0, 51, 0), Vector3.New(36, 36, 0), Vector3.New(36, -36, 0), Vector3.New(-36, 36, 0), Vector3.New(-36, -36, 0)}
@@ -79,30 +103,16 @@ end
 
 function Tick(dt)
     if (owner ~= nil) then
-        --timeSinceGrounded = timeSinceGrounded + dt
+
+        --sus, it hink this is broken--
         checkGrounded()
-
-        HandleMovement(dt)
-        --todo make player face look direction 
-        -- local lookDirZ = Rotation.New(0, 0, owner:GetViewWorldRotation().z)
-        -- local playerOffset = lookDirZ * offset
-
-
-        -- --have player follow
-        -- owner:SetWorldPosition(ball:GetWorldPosition() + playerOffset)
-
-        -- if (jumpLockout > 0) then
-        --     jumpLockout = jumpLockout - dt
-        --     timeSinceGrounded = 999
-        -- elseif (jumpTimer > 0) then
-        --     Spacebar()
-        -- end
-
-        -- if (jumpTimer > 0) then
-        --     jumpTimer = jumpTimer - dt
-        -- end
-
-        --apply added velocities
+        
+        if not sticked then 
+            HandleMovement(dt)
+        else 
+            ball:SetWorldTransform(stickedTransform)
+            ResetVelocities()
+        end 
         
         -- manage rollingSFX volume
         if (isGrounded()) then

@@ -11,9 +11,11 @@ Game.playerJoinedEvent:Connect(function (player)
 	
 	newBall:SetVelocity(Vector3.New())
 	newBall:SetAngularVelocity(Vector3.New())
-	APIMarble.RegisterPlayerMarble(player, newBall)
 
-	player.serverUserData.ball = newBall
+	--bro both of these do the  same thing i cant believe ive done this 
+	APIMarble.RegisterPlayerMarble(player, newBall)
+	
+
 	Events.Broadcast("OnBallSpawned", newBall, player)
 end)
 

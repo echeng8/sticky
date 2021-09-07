@@ -7,7 +7,7 @@ Assets {
       RootId: 1197405803885299036
       Objects {
         Id: 1197405803885299036
-        Name: "Ability Binding Display"
+        Name: "Shoot Binding Display"
         Transform {
           Scale {
             X: 1
@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 8209215257691499669
+        ParentId: 3116908287141983009
         ChildIds: 16806953419607315691
         UnregisteredParameters {
           Overrides {
@@ -28,7 +28,7 @@ Assets {
           }
           Overrides {
             Name: "cs:BindingHint"
-            String: "MB1"
+            String: "LMB"
           }
           Overrides {
             Name: "cs:BindingHint:tooltip"
@@ -36,7 +36,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ShowAbilityName"
-            Bool: false
+            Bool: true
           }
           Overrides {
             Name: "cs:ShowAbilityName:tooltip"
@@ -272,8 +272,8 @@ Assets {
         Control {
           Width: 100
           Height: 200
-          UIX: 100
-          UIY: -50
+          UIX: -120
+          UIY: -10
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -285,12 +285,12 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:bottomleft"
+                Value: "mc:euianchor:bottomright"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:bottomleft"
+                Value: "mc:euianchor:bottomright"
               }
             }
           }
@@ -518,9 +518,12 @@ Assets {
           }
           Image {
             Brush {
-              Id: 16327934883181731081
+              Id: 54086842354936051
             }
             Color {
+              R: 1
+              G: 1
+              B: 1
               A: 0.402
             }
           }
@@ -889,12 +892,12 @@ Assets {
       }
     }
     Assets {
-      Id: 16327934883181731081
-      Name: "Icon Food"
+      Id: 54086842354936051
+      Name: "Icon Target"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "Icon_Food"
+        AssetId: "Icon_Target"
       }
     }
     PrimaryAssetId {

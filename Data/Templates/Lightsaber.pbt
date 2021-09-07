@@ -290,7 +290,6 @@ Assets {
           IsEnabled: true
           KeyBinding: "ability_primary"
           CastPhaseSettings {
-            Duration: 0.1
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -308,7 +307,7 @@ Assets {
             PreventOtherAbilities: true
             IsTargetDataUpdated: true
             Facing_V2 {
-              Value: "mc:eabilitysetfacing:aim"
+              Value: "mc:eabilitysetfacing:none"
             }
           }
           RecoveryPhaseSettings {

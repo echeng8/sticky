@@ -10,9 +10,9 @@ Assets {
         Name: "Default Marble"
         Transform {
           Scale {
-            X: 0.76978
-            Y: 0.76978
-            Z: 0.76978
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 8568336417442047963
@@ -69,7 +69,7 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          Radius: 172.904938
+          Radius: 132.460617
           Length: 200
           DamageSettings {
             StartImmortal: true
@@ -321,9 +321,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 3.40000033
-            Y: 3.40000033
-            Z: 3.40000033
+            X: 2.59805512
+            Y: 2.59805512
+            Z: 2.59805512
           }
         }
         ParentId: 3629094995299783858
@@ -462,9 +462,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 3.60000014
-            Y: 3.60000014
-            Z: 3.60000014
+            X: 2.71810269
+            Y: 2.71810269
+            Z: 2.71810269
           }
         }
         ParentId: 18385818582554859723

@@ -22,11 +22,17 @@ function API.GetMarbleFromPlayer(player)
 end
 
 function API.RegisterPlayerMarble(player,marble) 
-    _G.APIMarble.marbles[player] = marble
+    --bro both of these do the same thing i cant believe ive doen this 
+    player.serverUserData.ball = marble -- i think i use this soemwhere but dont remember 
+    _G.APIMarble.marbles[player] = marble -- this is probably superior cuz of reasons 
 end
 
 function API.DeregisterPlayer(player) 
     _G.APIMarble.marbles[player] = nil
+end
+
+function API.GetController(marble) 
+    return marble:GetCustomProperty("Controller"):WaitForObject()
 end
 
 return API
