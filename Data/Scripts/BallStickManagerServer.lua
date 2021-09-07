@@ -21,11 +21,11 @@ Events.Connect("OnBallSpawned",
                 local equipment = other:FindAncestorByType("Equipment")
                 if not equipment then return end 
                 
-                --get out if chu alweady hash gun!!--
-                if #player:GetEquipment() > 0 then return end 
-
-
-                -- if its a fresh gun
+                --delete your gun with the new one--
+                if #player:GetEquipment() > 0 then
+                    DestroyAllEquipment(player) 
+                end
+                -- equip a fresh gun for the first time
                 if equipment.owner == nil then 
                     EquipOnBall(equipment, ball, player)
                 
@@ -62,6 +62,12 @@ function EquipOnBall(equipment, ball, player)
         end
     )
 
+end
+
+function DestroyAllEquipment(player)
+    for _,v in ipairs(player:GetEquipment()) do
+        v:Destroy()
+    end
 end
 
 function StealWeapon(equipment, player) 

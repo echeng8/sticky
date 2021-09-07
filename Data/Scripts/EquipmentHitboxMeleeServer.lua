@@ -33,9 +33,7 @@ local abilityList = {}
 -- nil Tick()
 -- Checks the players within hitbox, and makes sure swipe effects stay at the player's location
 function Tick(deltaTime)
-    if a then
-        CoreDebug.DrawLine(a:GetWorldPosition(), EQUIPMENT:GetWorldPosition())
-    end
+
     -- Check for the existence of the equipment or owner before running Tick
     if not Object.IsValid(EQUIPMENT) then return end
     if not Object.IsValid(EQUIPMENT.owner) then return end
@@ -146,8 +144,6 @@ for _, ability in ipairs(abilityDescendants) do
             canAttack = false,
             ignoreList = {}
         })
-
-        a = hitBox
     end
 end
 
