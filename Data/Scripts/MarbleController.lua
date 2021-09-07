@@ -63,16 +63,13 @@ end
 function Die()
     World.SpawnAsset(DEATH_SFX[1], {position = ball:GetWorldPosition()})
     script:SetNetworkedCustomProperty('IsDead', true)
-    Task.Wait(0.6)
     World.SpawnAsset(DEATH_SFX[2], {position = ball:GetWorldPosition()})
-    Task.Wait(0.6)
     script:SetNetworkedCustomProperty('IsDead', false)
-    Respawn()
 end
 
 function Respawn()
     if (Object.IsValid(ball) and Object.IsValid(owner)) then
-        ball:SetWorldPosition(spawnPoint)
+        ball:SetWorldPosition(owner:GetWorldPosition())
         ball:SetWorldRotation(Rotation.New())
         ball:SetVelocity(Vector3.New())
         ball:SetAngularVelocity(Vector3.New())
@@ -212,7 +209,7 @@ function AttachPlayer(player)
     --temp respawn player inside ball
     player.serverUserData.spawnPositionListener = player.spawnedEvent:Connect(
         function(player)
-            player:SetWorldPosition(ball:GetWorldPosition())
+            Respawn()
         end
     )
 
