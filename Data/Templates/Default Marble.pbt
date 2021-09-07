@@ -20,6 +20,7 @@ Assets {
         ChildIds: 1317278866790388292
         ChildIds: 3629094995299783858
         ChildIds: 574655646148182062
+        ChildIds: 18297215252482428771
         UnregisteredParameters {
           Overrides {
             Name: "cs:Controller"
@@ -30,6 +31,12 @@ Assets {
           Overrides {
             Name: "cs:MarbleColor"
             Color {
+            }
+          }
+          Overrides {
+            Name: "cs:BallStickTrigger"
+            ObjectReference {
+              SubObjectId: 574655646148182062
             }
           }
           Overrides {
@@ -455,9 +462,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 3.5
-            Y: 3.5
-            Z: 3.5
+            X: 3.60000014
+            Y: 3.60000014
+            Z: 3.60000014
           }
         }
         ParentId: 18385818582554859723
@@ -481,6 +488,80 @@ Assets {
           }
           TriggerShape_v2 {
             Value: "mc:etriggershape:sphere"
+          }
+        }
+      }
+      Objects {
+        Id: 18297215252482428771
+        Name: "ServerContext"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18385818582554859723
+        ChildIds: 15536438151142614496
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        NetworkContext {
+          Type: Server
+        }
+      }
+      Objects {
+        Id: 15536438151142614496
+        Name: "MarbleTouchDetectServer"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18297215252482428771
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:APIMarble"
+            AssetReference {
+              Id: 14137586896240072563
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6494392052552326347
           }
         }
       }

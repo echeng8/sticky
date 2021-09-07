@@ -21,6 +21,7 @@ local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 -- User exposed properties
 local SHOW_EQUIPMENT_NAME = COMPONENT_ROOT:GetCustomProperty("ShowEquipmentName")
 
+local listeners = {}
 -- nil OnPlayerDied(Player, Damage)
 -- Fires an event for the client to add a line to the kill feed
 function OnPlayerDied(player, damage)
@@ -38,7 +39,13 @@ function OnPlayerDied(player, damage)
 end
 
 function OnPlayerJoined(player)
-	player.diedEvent:Connect(OnPlayerDied)
+	listeners[player] = player.diedEvent:Connect(OnPlayerDied)
 end
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
+
+Game.playerLeftEvent:Connect(
+	function(player)
+		listeners[player]:Disconnect()
+	end
+)

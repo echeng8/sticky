@@ -59,6 +59,7 @@ function isGrounded()
     return timeSinceGrounded < coyoteTime
 end
 
+---do not call this function to kill the player, just kill the player directly instead-- 
 function Die()
     World.SpawnAsset(DEATH_SFX[1], {position = ball:GetWorldPosition()})
     script:SetNetworkedCustomProperty('IsDead', true)

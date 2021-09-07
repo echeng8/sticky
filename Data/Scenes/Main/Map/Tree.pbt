@@ -175,16 +175,21 @@ Objects {
   }
 }
 Objects {
-  Id: 7016968366313103341
+  Id: 9751561583773043427
   Name: "Kill Zone"
   Transform {
+    Location {
+      Z: -1407
+    }
     Scale {
-      X: 1
+      X: 1.00000012
       Y: 1
       Z: 1
     }
   }
   ParentId: 8201309591474542957
+  ChildIds: 9700969339000987177
+  ChildIds: 15721671057049720635
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -196,58 +201,112 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 13591331349196528036
-      value {
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 150
-            Y: 248.400009
-            Z: 31.7000065
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            Y: 2801
-          }
-        }
-        Overrides {
-          Name: "CoreProxy.IndicatorVisibility"
-          Enum {
-            Value: "mc:eindicatorvisibility:alwaysvisible"
-          }
-        }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 9751561583773043427
+    SubobjectId: 13648825478633622894
+    InstanceId: 7016968366313103341
+    TemplateId: 2857347357152813362
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 15721671057049720635
+  Name: "KillZoneServer"
+  Transform {
+    Location {
+      Z: -6.10351562e-05
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9751561583773043427
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:KillTrigger"
+      ObjectReference {
+        SelfId: 9700969339000987177
       }
     }
-    ParameterOverrideMap {
-      key: 13648825478633622894
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Kill Zone"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.00000012
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            Z: -1407
-          }
-        }
+    Overrides {
+      Name: "cs:APIMarble"
+      AssetReference {
+        Id: 14137586896240072563
       }
     }
-    TemplateAsset {
-      Id: 2857347357152813362
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 3908110495107565482
     }
+  }
+  InstanceHistory {
+    SelfId: 15721671057049720635
+    SubobjectId: 16145483188601114806
+    InstanceId: 7016968366313103341
+    TemplateId: 2857347357152813362
+  }
+}
+Objects {
+  Id: 9700969339000987177
+  Name: "KillTrigger"
+  Transform {
+    Location {
+      Y: 2801
+    }
+    Rotation {
+    }
+    Scale {
+      X: 150
+      Y: 248.400009
+      Z: 31.7000065
+    }
+  }
+  ParentId: 9751561583773043427
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:alwaysvisible"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 9700969339000987177
+    SubobjectId: 13591331349196528036
+    InstanceId: 7016968366313103341
+    TemplateId: 2857347357152813362
   }
 }
 Objects {
