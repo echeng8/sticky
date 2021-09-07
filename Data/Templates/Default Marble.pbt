@@ -10,9 +10,9 @@ Assets {
         Name: "Default Marble"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.76978
+            Y: 0.76978
+            Z: 0.76978
           }
         }
         ParentId: 8568336417442047963

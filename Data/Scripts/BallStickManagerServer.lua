@@ -44,7 +44,7 @@ function EquipOnBall(equipment, ball, player)
     if not Object.IsValid(equipment) then return end
 
     equipment:Equip(player) 
-    local anchor = World.SpawnAsset(propAnchor, {parent = ball, position = Vector3.UP * 220})
+    local anchor = World.SpawnAsset(propAnchor, {parent = ball, position = Vector3.UP * 150})
     equipment:Detach()
     equipment.parent = anchor
     equipment:SetPosition(Vector3.ZERO)
