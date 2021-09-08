@@ -8,5 +8,13 @@ Assets {
       VirtualFolderPath: "Palette"
       PlatformAssetType: 13
     }
+    Folders {
+      VirtualFolderPath: "Plant zone"
+      PlatformAssetType: 13
+    }
+    Folders {
+      VirtualFolderPath: "EnvironmentProps"
+      PlatformAssetType: 5
+    }
   }
 }
