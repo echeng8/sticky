@@ -11,10 +11,15 @@ local trigger = MARBLE:GetCustomProperty("BallStickTrigger"):WaitForObject()
 
 local listener = trigger.beginOverlapEvent:Connect(
     function(trigger, other)
+        --don't collide with yourself
+        if other == MARBLE then return end
+        
         local otherPlayer = propAPIMarble.GetPlayerFromMarble(other)
         if otherPlayer then
-            otherPlayer.serverUserData.lastTouchedData = {who = otherPlayer, when = time()}
+            local myPlayer = propAPIMarble.GetPlayerFromMarble(MARBLE)
+            myPlayer.serverUserData.lastTouchedData = {who = otherPlayer, when = time()}
         end
+
     end
 )
 
