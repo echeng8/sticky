@@ -268,7 +268,7 @@ Assets {
         }
         AudioInstance {
           AudioAsset {
-            Id: 445897056372676821
+            Id: 3149118423218129387
           }
           AutoPlay: true
           Repeat: true
@@ -337,12 +337,15 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 5053086791095825808
+              Id: 2350714935623826938
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
+              R: 0.351532698
+              G: 0.184475
+              B: 0.165132225
               A: 1
             }
           }
@@ -567,12 +570,12 @@ Assets {
       }
     }
     Assets {
-      Id: 445897056372676821
-      Name: "Sports Bowling Ball Rolling on Floor Loop 02 SFX"
+      Id: 3149118423218129387
+      Name: "Material Rolling Movement Rock Heavy Rumble 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_sports_bowling_ball_rolling_floor_loop_02_Cue_ref"
+        AssetId: "sfx_material_rolling_movement__rock_heavy_rumble_01_Cue_ref"
       }
     }
     Assets {
@@ -585,12 +588,12 @@ Assets {
       }
     }
     Assets {
-      Id: 5053086791095825808
-      Name: "Marble Basic 01"
+      Id: 2350714935623826938
+      Name: "Food Citrus 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_gen_marble_tiles_001_uv"
+        AssetId: "mi_food_generic_citrus_001_uv"
       }
     }
     PrimaryAssetId {
