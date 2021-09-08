@@ -80,7 +80,7 @@ function StealWeapon(equipment, player)
     EquipOnBall(newWeapon, propAPIMarble.GetMarbleFromPlayer(player), player)
 
     --todo make this better lmao 
-    Events.BroadcastToAllPlayers("BannerMessage", player.name .. " STOLE " .. equipment.owner.name .. "'S WEAPON", 3)
+    Events.BroadcastToAllPlayers("OnWeaponSteal", player, equipment.owner)
 
     -- destroy their equipment   
     equipment:Destroy()
