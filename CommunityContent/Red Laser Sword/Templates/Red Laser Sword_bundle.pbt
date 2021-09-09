@@ -51,5 +51,5 @@ Assets {
     Version: "1.0.0"
     Description: "Version 0.1"
   }
-  SerializationVersion: 97
+  SerializationVersion: 98
 }

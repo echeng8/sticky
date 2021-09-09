@@ -70,5 +70,5 @@ Assets {
       AssetId: "Victory_Announcer"
     }
   }
-  SerializationVersion: 97
+  SerializationVersion: 98
 }
