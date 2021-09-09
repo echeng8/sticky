@@ -342,5 +342,5 @@ Assets {
       AssetId: "Compass"
     }
   }
-  SerializationVersion: 97
+  SerializationVersion: 98
 }

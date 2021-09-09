@@ -2,7 +2,7 @@ Assets {
   Id: 7095303320879615204
   Name: "Plant sprite Bush Leafy Low 01"
   PlatformAssetType: 13
-  SerializationVersion: 97
+  SerializationVersion: 98
   CustomMaterialAsset {
     BaseMaterialId: 4753773528537828684
     ParameterOverrides {

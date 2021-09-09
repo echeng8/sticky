@@ -73,6 +73,10 @@ Assets {
           Length: 200
           DamageSettings {
             StartImmortal: true
+            DestroyOnDeathClientTemplateId {
+            }
+            DestroyOnDeathNetworkedTemplateId {
+            }
           }
         }
       }
@@ -604,6 +608,6 @@ Assets {
   Marketplace {
     Description: "the real one "
   }
-  SerializationVersion: 97
+  SerializationVersion: 98
   DirectlyPublished: true
 }

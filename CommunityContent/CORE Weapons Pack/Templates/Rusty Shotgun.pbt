@@ -2083,6 +2083,6 @@ Assets {
   Marketplace {
     Description: "Updated 12/27 - fixing grenade launcher offset, retuning shotguns to feel more effective V4\r\n\r\nCollection of 28  projectile based weapons with 5 differnt tiers of rarity. All weapons work out of the box with VFX, SFX, and gameplay tuning included. Comes with:\r\n-28 total weapons\r\n- 5 pistols, 5 shotguns, 4 SMG\'s, 5 Assault Rifles, 4 Sniper Rifles, 3 Grenade Launchers, and 2 Rocket Launchers\r\n- Simple pickup behavior on each weapon"
   }
-  SerializationVersion: 97
+  SerializationVersion: 98
   DirectlyPublished: true
 }

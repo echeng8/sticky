@@ -39,6 +39,7 @@ Objects {
   Name: "Avi"
   Transform {
     Location {
+      Y: 8772.27
     }
     Rotation {
     }
