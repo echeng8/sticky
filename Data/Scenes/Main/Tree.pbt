@@ -17,13 +17,11 @@ Objects {
   ChildIds: 12400254426487455387
   ChildIds: 10412379021265105746
   ChildIds: 14037771509087251097
-  ChildIds: 5215511558776338755
+  ChildIds: 9765546989027334052
   ChildIds: 17880592535704496713
   ChildIds: 4820110062441269004
   ChildIds: 8125752998756458609
   ChildIds: 7671508122509407629
-  ChildIds: 15650076167655671047
-  ChildIds: 4683043790429617955
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -36,102 +34,6 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 4683043790429617955
-  Name: "Ball"
-  Transform {
-    Location {
-      X: 24100
-      Y: -9000
-      Z: 16000
-    }
-    Rotation {
-    }
-    Scale {
-      X: 50
-      Y: 50
-      Z: 50
-    }
-  }
-  ParentId: 8568336417442047963
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 7859497988346151987
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 10546897328500124884
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 15650076167655671047
-  Name: "Trigger"
-  Transform {
-    Location {
-      X: -5255.91357
-      Y: 19852.0918
-      Z: 873.203125
-    }
-    Rotation {
-      Yaw: 148.044647
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8568336417442047963
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
   }
 }
 Objects {
@@ -264,13 +166,9 @@ Objects {
   }
 }
 Objects {
-  Id: 5215511558776338755
-  Name: "Sebastian"
+  Id: 9765546989027334052
+  Name: "Seb_Backup_21"
   Transform {
-    Location {
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -284,15 +182,19 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Sebastian"
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2890999233949209687
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Seb_Backup_21"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5400622917525262170
+    }
   }
 }
 Objects {
