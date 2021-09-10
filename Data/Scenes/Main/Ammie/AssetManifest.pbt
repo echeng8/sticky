@@ -143,6 +143,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15308956759191500058
+  Name: "Cylinder - Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_hq_test_001"
+  }
+}
+Assets {
   Id: 15212031193873195241
   Name: "Rock Flat 01"
   PlatformAssetType: 1
@@ -779,6 +788,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fern_generic_004"
+  }
+}
+Assets {
+  Id: 1177258410356677620
+  Name: "Cylinder Waisted"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prim_cylinder_waisted_001_ref"
   }
 }
 Assets {

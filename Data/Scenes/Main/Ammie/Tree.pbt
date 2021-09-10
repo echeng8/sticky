@@ -1,6 +1,145 @@
 Name: "Ammie"
 RootId: 17880592535704496713
 Objects {
+  Id: 14655994238374783239
+  Name: "Cylinder Waisted"
+  Transform {
+    Location {
+      X: -8539.94629
+      Y: -3391.43701
+      Z: 2557.62793
+    }
+    Rotation {
+      Pitch: 0.453531355
+      Yaw: -3.13275218
+      Roll: -84.8278809
+    }
+    Scale {
+      X: 1.00000811
+      Y: 0.999998927
+      Z: 9.999506
+    }
+  }
+  ParentId: 17880592535704496713
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10760218338533718810
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.165871933
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 4.83767223
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1177258410356677620
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 6253854582154708950
+  Name: "Cylinder - Polished"
+  Transform {
+    Location {
+      X: -11026.9961
+      Y: 1501.86841
+      Z: 2228.64551
+    }
+    Rotation {
+      Pitch: -88.5760422
+      Yaw: -18.4498272
+    }
+    Scale {
+      X: 1.00000322
+      Y: 1.00000417
+      Z: 8.05175114
+    }
+  }
+  ParentId: 17880592535704496713
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10760218338533718810
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.200478867
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 3.71041346
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15308956759191500058
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
   Id: 16016066416196986409
   Name: "EarthLayer"
   Transform {
