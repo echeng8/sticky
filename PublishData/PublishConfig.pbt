@@ -1,7 +1,7 @@
 GameId: "6fb0013b38374b6f92e48452d1e4dde2"
 ClientVersion: "1.0.210-prod-s"
 Name: "STICKY"
-Description: "u can stick urself"
+Description: "map pieces teleportation"
 MaxPlayers: 8
 Tags: "Action"
 ScreenshotPaths: "C:/Users/Evan/Documents/My Games/Core/Saved/Maps/sticky/Screenshots/Screenshot0002.png"
