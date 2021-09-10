@@ -1,7 +1,7 @@
 Name: "Room_Bridge_1"
-RootId: 356118189090012053
+RootId: 7765835412384812862
 Objects {
-  Id: 17206516477587415610
+  Id: 708760063050602916
   Name: "WeaponSpawn"
   Transform {
     Scale {
@@ -10,7 +10,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 356118189090012053
+  ParentId: 7765835412384812862
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -61,7 +61,7 @@ Objects {
   }
 }
 Objects {
-  Id: 520409273823779378
+  Id: 6217621488052988835
   Name: "Spawn Point"
   Transform {
     Location {
@@ -77,7 +77,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 356118189090012053
+  ParentId: 7765835412384812862
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -99,7 +99,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15176863533697360862
+  Id: 3354064760220394402
   Name: "Cube"
   Transform {
     Location {
@@ -115,7 +115,15 @@ Objects {
       Z: 0.3
     }
   }
-  ParentId: 356118189090012053
+  ParentId: 7765835412384812862
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18291088736374996709
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -146,13 +154,13 @@ Objects {
   }
 }
 Objects {
-  Id: 17304407022302229799
+  Id: 11552944080750528623
   Name: "Wedge"
   Transform {
     Location {
-      X: -585
-      Y: 370
-      Z: 50
+      X: -584.998901
+      Y: 369.999451
+      Z: 43
     }
     Rotation {
       Yaw: -90
@@ -163,7 +171,15 @@ Objects {
       Z: 4.3
     }
   }
-  ParentId: 356118189090012053
+  ParentId: 7765835412384812862
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3903030277461280644
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -194,13 +210,13 @@ Objects {
   }
 }
 Objects {
-  Id: 11126224221422217094
+  Id: 17737091465184110519
   Name: "Wedge"
   Transform {
     Location {
-      X: 904
-      Y: 370
-      Z: 50
+      X: 884.999878
+      Y: 369.998962
+      Z: 43
     }
     Rotation {
       Yaw: 89.9999771
@@ -211,7 +227,15 @@ Objects {
       Z: 4.3
     }
   }
-  ParentId: 356118189090012053
+  ParentId: 7765835412384812862
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3903030277461280644
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -242,13 +266,13 @@ Objects {
   }
 }
 Objects {
-  Id: 5179604387909453343
+  Id: 7070167939938740206
   Name: "Wedge"
   Transform {
     Location {
-      X: -585
-      Y: -848
-      Z: 50
+      X: -584.998901
+      Y: -847.998596
+      Z: 42
     }
     Rotation {
       Yaw: -90
@@ -259,7 +283,15 @@ Objects {
       Z: 4.3
     }
   }
-  ParentId: 356118189090012053
+  ParentId: 7765835412384812862
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3903030277461280644
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -290,13 +322,13 @@ Objects {
   }
 }
 Objects {
-  Id: 2142024631145048688
+  Id: 3392193316623451592
   Name: "Wedge"
   Transform {
     Location {
-      X: 904
-      Y: -848
-      Z: 50
+      X: 897
+      Y: -849.992676
+      Z: 42
     }
     Rotation {
       Yaw: 89.9999924
@@ -307,7 +339,15 @@ Objects {
       Z: 4.3
     }
   }
-  ParentId: 356118189090012053
+  ParentId: 7765835412384812862
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3903030277461280644
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -338,7 +378,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5765972839607407675
+  Id: 11978227139341631878
   Name: "Shell"
   Transform {
     Location {
@@ -351,7 +391,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 356118189090012053
+  ParentId: 7765835412384812862
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

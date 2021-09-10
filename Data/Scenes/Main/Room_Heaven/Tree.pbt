@@ -1,7 +1,7 @@
 Name: "Room_Heaven"
-RootId: 3969979088730722011
+RootId: 11729946093819048008
 Objects {
-  Id: 7636260003768458656
+  Id: 2220818016434654091
   Name: "Diamond - 8-Sided"
   Transform {
     Location {
@@ -17,7 +17,15 @@ Objects {
       Z: 6.20000029
     }
   }
-  ParentId: 3969979088730722011
+  ParentId: 11729946093819048008
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7388759775801501121
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -48,7 +56,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15731941795886906053
+  Id: 6225954854212446028
   Name: "WeaponSpawn"
   Transform {
     Location {
@@ -64,7 +72,7 @@ Objects {
       Z: 0.25
     }
   }
-  ParentId: 3969979088730722011
+  ParentId: 11729946093819048008
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -83,9 +91,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 144
-            Y: 548
-            Z: 955
+            X: 150
+            Y: 590
+            Z: 948
           }
         }
         Overrides {
@@ -115,7 +123,7 @@ Objects {
   }
 }
 Objects {
-  Id: 455511704740692382
+  Id: 18423662025556211113
   Name: "Spawn Point"
   Transform {
     Location {
@@ -131,7 +139,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3969979088730722011
+  ParentId: 11729946093819048008
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -153,7 +161,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12580164745974361398
+  Id: 6183333253885083842
   Name: "Spawn Point"
   Transform {
     Location {
@@ -169,7 +177,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3969979088730722011
+  ParentId: 11729946093819048008
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -191,7 +199,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6691512208055835665
+  Id: 3404883503540639209
   Name: "Shell"
   Transform {
     Location {
@@ -204,7 +212,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3969979088730722011
+  ParentId: 11729946093819048008
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

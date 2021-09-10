@@ -1,13 +1,13 @@
 Name: "Shell_3"
-RootId: 3613684392071050445
+RootId: 13022242896643702423
 Objects {
-  Id: 7701244767020490115
+  Id: 9755291246374650133
   Name: "Ground"
   Transform {
     Location {
       X: 113
-      Y: 585
-      Z: 774
+      Y: 584.998962
+      Z: 740
     }
     Rotation {
     }
@@ -17,7 +17,15 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3613684392071050445
+  ParentId: 13022242896643702423
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18291088736374996709
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

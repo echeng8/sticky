@@ -23,6 +23,7 @@ Objects {
   ChildIds: 8125752998756458609
   ChildIds: 7671508122509407629
   ChildIds: 15650076167655671047
+  ChildIds: 4683043790429617955
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -35,6 +36,61 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 4683043790429617955
+  Name: "Ball"
+  Transform {
+    Location {
+      X: 24100
+      Y: -9000
+      Z: 16000
+    }
+    Rotation {
+    }
+    Scale {
+      X: 50
+      Y: 50
+      Z: 50
+    }
+  }
+  ParentId: 8568336417442047963
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7859497988346151987
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10546897328500124884
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {

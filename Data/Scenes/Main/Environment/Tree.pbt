@@ -1,7 +1,7 @@
 Name: "Environment"
-RootId: 14379341894126075716
+RootId: 2795147578611366680
 Objects {
-  Id: 6259326030255082394
+  Id: 2617965202466000158
   Name: "Halloween Sky"
   Transform {
     Scale {
@@ -10,7 +10,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14379341894126075716
+  ParentId: 2795147578611366680
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

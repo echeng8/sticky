@@ -1,7 +1,7 @@
 Name: "Connectors"
-RootId: 327457714374823052
+RootId: 11791319698835954523
 Objects {
-  Id: 15597412942389397521
+  Id: 11421859974850876233
   Name: "Wedge - Concave"
   Transform {
     Location {
@@ -19,7 +19,15 @@ Objects {
       Z: 3.7
     }
   }
-  ParentId: 327457714374823052
+  ParentId: 11791319698835954523
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3903030277461280644
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -50,7 +58,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14749184796565386666
+  Id: 11326815947249410695
   Name: "Wedge - Concave"
   Transform {
     Location {
@@ -67,7 +75,15 @@ Objects {
       Z: 11.2999973
     }
   }
-  ParentId: 327457714374823052
+  ParentId: 11791319698835954523
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3903030277461280644
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -98,13 +114,13 @@ Objects {
   }
 }
 Objects {
-  Id: 2894992607815082054
+  Id: 17525506674958775515
   Name: "Pipe - Half"
   Transform {
     Location {
-      X: 463
-      Y: -963
-      Z: 1779
+      X: 462.999969
+      Y: -962.998535
+      Z: 1820
     }
     Rotation {
       Pitch: 90
@@ -115,7 +131,15 @@ Objects {
       Z: 6
     }
   }
-  ParentId: 327457714374823052
+  ParentId: 11791319698835954523
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3903030277461280644
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -146,13 +170,13 @@ Objects {
   }
 }
 Objects {
-  Id: 13564304986524367180
+  Id: 518824568392580975
   Name: "Wedge"
   Transform {
     Location {
       X: 152
-      Y: 2355
-      Z: 785
+      Y: 2360
+      Z: 770
     }
     Rotation {
     }
@@ -162,7 +186,15 @@ Objects {
       Z: 4.3
     }
   }
-  ParentId: 327457714374823052
+  ParentId: 11791319698835954523
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18291088736374996709
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

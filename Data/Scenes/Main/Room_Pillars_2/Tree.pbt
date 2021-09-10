@@ -1,13 +1,13 @@
 Name: "Room_Pillars_2"
-RootId: 15492209651823750895
+RootId: 16409419369962768086
 Objects {
-  Id: 15195447217876630761
+  Id: 6710653031968139826
   Name: "Wedge - Concave"
   Transform {
     Location {
-      X: 124
-      Y: -83
-      Z: 824
+      X: 123.999977
+      Y: -83.0000076
+      Z: 790
     }
     Rotation {
     }
@@ -17,7 +17,15 @@ Objects {
       Z: 3.5
     }
   }
-  ParentId: 15492209651823750895
+  ParentId: 16409419369962768086
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3903030277461280644
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -54,7 +62,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6276516976866827814
+  Id: 58955000657427860
   Name: "Cube"
   Transform {
     Location {
@@ -70,7 +78,15 @@ Objects {
       Z: 21.3
     }
   }
-  ParentId: 15492209651823750895
+  ParentId: 16409419369962768086
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13150022852241428261
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -107,7 +123,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9745528405459085437
+  Id: 9715755287490781217
   Name: "Spawn Point"
   Transform {
     Location {
@@ -123,7 +139,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15492209651823750895
+  ParentId: 16409419369962768086
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -151,7 +167,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3613684392071050445
+  Id: 13022242896643702423
   Name: "Shell"
   Transform {
     Location {
@@ -164,7 +180,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15492209651823750895
+  ParentId: 16409419369962768086
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -189,7 +205,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2197029916646045761
+  Id: 7537274060390019167
   Name: "Cube"
   Transform {
     Location {
@@ -205,7 +221,15 @@ Objects {
       Z: 25.8000031
     }
   }
-  ParentId: 15492209651823750895
+  ParentId: 16409419369962768086
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 15007313884363338972
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -242,7 +266,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2186017868001338390
+  Id: 6936624349041083130
   Name: "Cube"
   Transform {
     Location {
@@ -258,7 +282,15 @@ Objects {
       Z: 25.8000031
     }
   }
-  ParentId: 15492209651823750895
+  ParentId: 16409419369962768086
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 15485913920760875226
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -295,7 +327,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12779349233670923690
+  Id: 4523220885688658095
   Name: "WeaponSpawn"
   Transform {
     Location {
@@ -311,7 +343,7 @@ Objects {
       Z: 0.25
     }
   }
-  ParentId: 15492209651823750895
+  ParentId: 16409419369962768086
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

@@ -1,7 +1,7 @@
-Name: "Map"
-RootId: 8201309591474542957
+Name: "Map4"
+RootId: 8117577493186591687
 Objects {
-  Id: 16550476084206398727
+  Id: 7267843627978180409
   Name: "Room_Bridge"
   Transform {
     Location {
@@ -16,7 +16,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8201309591474542957
+  ParentId: 8117577493186591687
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -35,7 +35,7 @@ Objects {
   }
 }
 Objects {
-  Id: 327457714374823052
+  Id: 11791319698835954523
   Name: "Connectors"
   Transform {
     Location {
@@ -48,7 +48,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8201309591474542957
+  ParentId: 8117577493186591687
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -67,7 +67,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15492209651823750895
+  Id: 16409419369962768086
   Name: "Room_Pillars"
   Transform {
     Location {
@@ -82,7 +82,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8201309591474542957
+  ParentId: 8117577493186591687
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -108,7 +108,7 @@ Objects {
   }
 }
 Objects {
-  Id: 356118189090012053
+  Id: 7765835412384812862
   Name: "Room_Bridge"
   Transform {
     Location {
@@ -122,7 +122,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8201309591474542957
+  ParentId: 8117577493186591687
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -141,7 +141,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3969979088730722011
+  Id: 11729946093819048008
   Name: "Room_Heaven"
   Transform {
     Location {
@@ -156,7 +156,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8201309591474542957
+  ParentId: 8117577493186591687
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -175,7 +175,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9751561583773043427
+  Id: 6355236364404510651
   Name: "Kill Zone"
   Transform {
     Location {
@@ -187,9 +187,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8201309591474542957
-  ChildIds: 9700969339000987177
-  ChildIds: 15721671057049720635
+  ParentId: 8117577493186591687
+  ChildIds: 9965606852198090584
+  ChildIds: 647245158436582435
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -213,7 +213,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15721671057049720635
+  Id: 647245158436582435
   Name: "KillZoneServer"
   Transform {
     Location {
@@ -227,12 +227,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9751561583773043427
+  ParentId: 6355236364404510651
   UnregisteredParameters {
     Overrides {
       Name: "cs:KillTrigger"
       ObjectReference {
-        SelfId: 9700969339000987177
+        SelfId: 9965606852198090584
       }
     }
     Overrides {
@@ -264,7 +264,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9700969339000987177
+  Id: 9965606852198090584
   Name: "KillTrigger"
   Transform {
     Location {
@@ -278,7 +278,7 @@ Objects {
       Z: 31.7000065
     }
   }
-  ParentId: 9751561583773043427
+  ParentId: 6355236364404510651
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -310,7 +310,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12596608562334528020
+  Id: 6935614691104277971
   Name: "Ground"
   Transform {
     Location {
@@ -323,7 +323,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8201309591474542957
+  ParentId: 8117577493186591687
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -341,7 +341,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14379341894126075716
+  Id: 2795147578611366680
   Name: "Environment"
   Transform {
     Location {
@@ -354,7 +354,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8201309591474542957
+  ParentId: 8117577493186591687
   UnregisteredParameters {
   }
   Collidable_v2 {

@@ -1,7 +1,7 @@
 Name: "Room_Bridge"
-RootId: 16550476084206398727
+RootId: 7267843627978180409
 Objects {
-  Id: 695978490099768709
+  Id: 3678764309994443765
   Name: "WeaponSpawn"
   Transform {
     Scale {
@@ -10,7 +10,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16550476084206398727
+  ParentId: 7267843627978180409
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -61,7 +61,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11617593847618560706
+  Id: 14563987835105364114
   Name: "Spawn Point"
   Transform {
     Location {
@@ -77,7 +77,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16550476084206398727
+  ParentId: 7267843627978180409
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -99,7 +99,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12474321866234828139
+  Id: 6233527948410894272
   Name: "Cube"
   Transform {
     Location {
@@ -115,7 +115,15 @@ Objects {
       Z: 0.3
     }
   }
-  ParentId: 16550476084206398727
+  ParentId: 7267843627978180409
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18291088736374996709
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -146,13 +154,13 @@ Objects {
   }
 }
 Objects {
-  Id: 5904396646842736358
+  Id: 8690940844863545152
   Name: "Wedge"
   Transform {
     Location {
       X: -585
-      Y: 370
-      Z: 50
+      Y: 154.00293
+      Z: 40
     }
     Rotation {
       Yaw: -90
@@ -163,7 +171,15 @@ Objects {
       Z: 4.3
     }
   }
-  ParentId: 16550476084206398727
+  ParentId: 7267843627978180409
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3903030277461280644
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -194,13 +210,13 @@ Objects {
   }
 }
 Objects {
-  Id: 10779027599192315442
+  Id: 11708507091430566663
   Name: "Wedge"
   Transform {
     Location {
-      X: 904
-      Y: 370
-      Z: 50
+      X: 890
+      Y: 150
+      Z: 40
     }
     Rotation {
       Yaw: 89.9999771
@@ -211,7 +227,15 @@ Objects {
       Z: 4.3
     }
   }
-  ParentId: 16550476084206398727
+  ParentId: 7267843627978180409
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3903030277461280644
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -242,12 +266,12 @@ Objects {
   }
 }
 Objects {
-  Id: 18377776569468736602
+  Id: 3871891821074443586
   Name: "Wedge"
   Transform {
     Location {
       X: -585
-      Y: -848
+      Y: -795.997
       Z: 50
     }
     Rotation {
@@ -259,7 +283,15 @@ Objects {
       Z: 4.3
     }
   }
-  ParentId: 16550476084206398727
+  ParentId: 7267843627978180409
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3903030277461280644
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -290,12 +322,12 @@ Objects {
   }
 }
 Objects {
-  Id: 11127188892213931453
+  Id: 1788072155253243499
   Name: "Wedge"
   Transform {
     Location {
-      X: 904
-      Y: -848
+      X: 904.000854
+      Y: -795.99707
       Z: 50
     }
     Rotation {
@@ -307,7 +339,15 @@ Objects {
       Z: 4.3
     }
   }
-  ParentId: 16550476084206398727
+  ParentId: 7267843627978180409
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 3903030277461280644
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -338,7 +378,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6474234988489816668
+  Id: 2615604650900860052
   Name: "Shell"
   Transform {
     Location {
@@ -351,7 +391,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16550476084206398727
+  ParentId: 7267843627978180409
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
