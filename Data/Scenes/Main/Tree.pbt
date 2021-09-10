@@ -180,6 +180,9 @@ Objects {
   Name: "Ammie"
   Transform {
     Location {
+      X: 9000
+      Y: -9000
+      Z: -9000
     }
     Rotation {
     }

@@ -31,7 +31,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Room_Bridge"
+    FilePartitionName: "Room_Bridge_1"
   }
 }
 Objects {
@@ -137,7 +137,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Room_Bridge_1"
+    FilePartitionName: "Room_Bridge_2"
   }
 }
 Objects {
