@@ -4,6 +4,8 @@ Objects {
   Id: 16545798978986136200
   Name: "AviDonut"
   Transform {
+    Location {
+    }
     Scale {
       X: 0.528847814
       Y: 0.528847814
