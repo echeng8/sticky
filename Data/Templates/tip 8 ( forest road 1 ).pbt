@@ -496,7 +496,7 @@ Assets {
         Transform {
           Location {
             X: -86.9300537
-            Y: 237.507812
+            Y: 237.507813
             Z: -14.2978363
           }
           Rotation {
@@ -1823,7 +1823,7 @@ Assets {
         Name: "Fern 03"
         Transform {
           Location {
-            X: -92.5039062
+            X: -92.5039063
             Y: -453.417
             Z: 6.12817383
           }
@@ -1962,7 +1962,7 @@ Assets {
         Name: "Rock Pile 002"
         Transform {
           Location {
-            X: -359.570312
+            X: -359.570313
             Y: 346.598145
             Z: -62.4080505
           }

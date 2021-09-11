@@ -179,7 +179,7 @@ Assets {
         Transform {
           Location {
             X: 78.2148438
-            Y: -25.6132812
+            Y: -25.6132813
           }
           Rotation {
           }
@@ -470,7 +470,7 @@ Assets {
         Name: "Prism - 8-Sided Polished"
         Transform {
           Location {
-            X: 616.695312
+            X: 616.695313
             Y: -897.421875
             Z: 1214.97241
           }
@@ -1455,9 +1455,9 @@ Assets {
         Name: "Prism - 8-Sided Polished"
         Transform {
           Location {
-            X: -557.164062
+            X: -557.164063
             Y: 880.097656
-            Z: 1433.76562
+            Z: 1433.76563
           }
           Rotation {
             Pitch: 0.142682642
@@ -1514,7 +1514,7 @@ Assets {
         Transform {
           Location {
             X: -1097.85156
-            Y: -93.8007812
+            Y: -93.8007813
             Z: 1183.63599
           }
           Rotation {
@@ -2777,7 +2777,7 @@ Assets {
         Transform {
           Location {
             X: -211.792969
-            Y: 116.539062
+            Y: 116.539063
             Z: 212.864624
           }
           Rotation {
@@ -3170,7 +3170,7 @@ Assets {
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: -881.007812
+            X: -881.007813
             Y: 441.259766
             Z: 212.864624
           }
@@ -3695,7 +3695,7 @@ Assets {
         Name: "Decal Moss Patch"
         Transform {
           Location {
-            X: -799.757812
+            X: -799.757813
             Y: 588.541
             Z: 68.2334
           }
@@ -3776,7 +3776,7 @@ Assets {
         Name: "Decal Ivy Big"
         Transform {
           Location {
-            X: 655.382812
+            X: 655.382813
             Y: -561.390625
             Z: 68.2334
           }
@@ -3914,7 +3914,7 @@ Assets {
         Transform {
           Location {
             X: 789.365234
-            Y: -479.757812
+            Y: -479.757813
             Z: 68.2334
           }
           Rotation {
