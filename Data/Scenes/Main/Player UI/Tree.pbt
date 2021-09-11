@@ -1,38 +1,6 @@
 Name: "Player UI"
 RootId: 11619709627192476111
 Objects {
-  Id: 10392726302135543123
-  Name: "WeaponStealUI"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11619709627192476111
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "WeaponStealUI"
-  }
-}
-Objects {
   Id: 13999048815068776815
   Name: "Damage Feedback"
   Transform {

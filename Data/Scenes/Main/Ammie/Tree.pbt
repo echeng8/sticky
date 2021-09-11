@@ -1,6 +1,41 @@
 Name: "Ammie"
 RootId: 17880592535704496713
 Objects {
+  Id: 13479730723971665991
+  Name: "OriginalMap"
+  Transform {
+    Location {
+      X: -9000
+      Y: 9000
+      Z: 9000
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17880592535704496713
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "OriginalMap"
+  }
+}
+Objects {
   Id: 4381834064803590051
   Name: "OuterShell"
   Transform {
@@ -1239,7 +1274,7 @@ Objects {
   }
   ParentId: 16922709743745007293
   ChildIds: 13478462859932210928
-  ChildIds: 6839418182409057600
+  ChildIds: 5868827243257599785
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1257,11 +1292,13 @@ Objects {
   }
 }
 Objects {
-  Id: 6839418182409057600
+  Id: 5868827243257599785
   Name: "AviDonut"
   Transform {
     Location {
-      Y: 8772.27
+      X: -104.075195
+      Y: -6260.41406
+      Z: -0.763671875
     }
     Rotation {
     }
@@ -1278,40 +1315,22 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 17412242208360982960
-      value {
-        Overrides {
-          Name: "Name"
-          String: "AviDonut"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -104.075195
-            Y: -6260.41406
-            Z: -0.763671875
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.528847814
-            Y: 0.528847814
-            Z: 0.528847814
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 13482184342853606809
-    }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "AviDonut_1"
+  }
+  InstanceHistory {
+    SelfId: 5868827243257599785
+    SubobjectId: 17412242208360982960
+    InstanceId: 6839418182409057600
+    TemplateId: 13482184342853606809
+    WasRoot: true
   }
 }
 Objects {
@@ -38538,6 +38557,6 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Room_Bridge"
+    FilePartitionName: "Room_Bridge_8"
   }
 }
