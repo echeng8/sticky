@@ -16,5 +16,9 @@ Assets {
       VirtualFolderPath: "EnvironmentProps"
       PlatformAssetType: 5
     }
+    Folders {
+      VirtualFolderPath: "Weapons"
+      PlatformAssetType: 5
+    }
   }
 }

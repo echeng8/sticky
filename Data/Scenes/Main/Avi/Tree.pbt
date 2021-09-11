@@ -26,11 +26,13 @@ Objects {
           String: "AviDonut"
         }
         Overrides {
-          Name: "Scale"
+          Name: "Position"
           Vector {
-            X: 0.528847814
-            Y: 0.528847814
-            Z: 0.528847814
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
           }
         }
       }

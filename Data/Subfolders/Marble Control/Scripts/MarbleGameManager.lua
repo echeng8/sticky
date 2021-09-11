@@ -3,6 +3,7 @@ local APIMarble = require(script:GetCustomProperty("APIMarble"))
 Game.playerJoinedEvent:Connect(function (player)
 	player.canMount = false
 	player.isCollidable = false
+	player.isVisible = false
 
 	local newBall = World.SpawnAsset(ballTemplate, {position = player:GetWorldPosition() + Vector3.New(0, 0, -0)})
 	local newBallController = newBall:GetCustomProperty("Controller"):WaitForObject()
@@ -14,8 +15,8 @@ Game.playerJoinedEvent:Connect(function (player)
 
 	--bro both of these do the  same thing i cant believe ive done this 
 	APIMarble.RegisterPlayerMarble(player, newBall)
-	
 
+	--first time spawn, never to be called again for the duration of this player's existence
 	Events.Broadcast("OnBallSpawned", newBall, player)
 end)
 

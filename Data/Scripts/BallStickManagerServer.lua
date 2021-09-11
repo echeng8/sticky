@@ -12,7 +12,8 @@ Events.Connect("OnBallSpawned",
 
         trigger.beginOverlapEvent:Connect(
             function(trigger, other)
-
+                if player.isDead then return end
+                
                 --return if no have spekshal triggew--
                 local isStickable = other.name == "Equipment Stick Trigger"
                 if not isStickable then return end

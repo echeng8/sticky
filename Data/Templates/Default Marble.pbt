@@ -97,10 +97,6 @@ Assets {
         ParentId: 18385818582554859723
         UnregisteredParameters {
           Overrides {
-            Name: "cs:KillBelowZ"
-            Float: -1500
-          }
-          Overrides {
             Name: "cs:MovementSpeed"
             Float: 3000
           }
@@ -163,12 +159,6 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:JumpSFX"
-            AssetReference {
-              Id: 3230682156449885674
-            }
-          }
-          Overrides {
             Name: "cs:DeathSFX"
             AssetReference {
               Id: 16183332576561766228
@@ -223,10 +213,6 @@ Assets {
           Overrides {
             Name: "cs:DistanceToGround:tooltip"
             String: "How far below the center of the marble to cast downwards, to see if it should be considered grounded. You shouldn\'t really need to tweak this."
-          }
-          Overrides {
-            Name: "cs:KillBelowZ:tooltip"
-            String: "If the marble\'s position.z is ever below this number, the marble will die and respawn."
           }
         }
         WantsNetworking: true
@@ -333,6 +319,7 @@ Assets {
         ParentId: 3629094995299783858
         ChildIds: 18181733768954374999
         ChildIds: 6145216064874379803
+        ChildIds: 10012961541302257719
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -457,6 +444,53 @@ Assets {
         Script {
           ScriptAsset {
             Id: 4862624104016691517
+          }
+        }
+      }
+      Objects {
+        Id: 10012961541302257719
+        Name: "MarbleDeathClient"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.384903312
+            Y: 0.384903312
+            Z: 0.384903312
+          }
+        }
+        ParentId: 15461395443497417166
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:DefaultMarble"
+            ObjectReference {
+              SubObjectId: 18385818582554859723
+            }
+          }
+          Overrides {
+            Name: "cs:Controller"
+            ObjectReference {
+              SubObjectId: 14678292503115374133
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Script {
+          ScriptAsset {
+            Id: 5631290930146565126
           }
         }
       }
