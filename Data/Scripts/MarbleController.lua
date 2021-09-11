@@ -27,12 +27,12 @@ local airborneMovementScale = script:GetCustomProperty('AirborneMovementScale') 
 
 timeSinceGrounded = 0
 
-
+local DECELERATION_RATE = 400 -- units per second u will decelerate when you press space to break
 
 local sticked = false 
 local stickedTransform = nil
 
-local drifting = true 
+local drifting = false 
 --PUBLIC FUNCTIONS-- 
 
 function SetSticked(p_sticked) 
@@ -158,7 +158,8 @@ function HandleMovement(dt)
         setVel = true
     end
 
-    if setVel and newVel.size ~= 0 and newAVel.size ~= 0 then
+    if not drifting then
+        if not setVel then return end
         newVel = newVel:GetNormalized()
         newAVel = newAVel:GetNormalized()
 
@@ -181,24 +182,25 @@ function HandleMovement(dt)
         if (finalAVel.size > maxAngularSpeed) then
             finalAVel = finalAVel:GetNormalized() * maxAngularSpeed
         end
-        
-        if drifting then
-            ball:SetAngularVelocity(finalAVel)
-        else 
-            ball:SetAngularVelocity(Vector3.ZERO)
+        ball:SetAngularVelocity(finalAVel)
+    else --drifting
+        ball:SetAngularVelocity(Vector3.ZERO)
+
+        --decelerate velocity 
+        local velocity = ball:GetVelocity()
+        if velocity.size > 0 then
+            print(velocity.size)
+            if velocity.size > DECELERATION_RATE then
+                velocity = velocity - (velocity:GetNormalized() * DECELERATION_RATE * dt)
+                ball:SetVelocity(Vector3.New(velocity.x, velocity.y, vel.z))
+            else 
+                ball:SetVelocity(Vector3.ZERO)
+            end
+
         end
     end
 
-    if not setVel and newVel.size == 0 then -- friction if no direction is held
-        local slowedVel = vel * (1 - dt)
-        ball:SetVelocity(Vector3.New(slowedVel.x, slowedVel.y, vel.z))
-    end
 
-    if newAVel.size == 0 then
-        ball:SetAngularVelocity(aVel * (1 - dt))
-    end
-
-    vel = ball:GetVelocity()
 end
 
 -- Upon spawning and linking up to our player
@@ -222,7 +224,7 @@ function AttachPlayer(player)
     player.serverUserData.bindingPressedListener = player.bindingPressedEvent:Connect(
         function(player, binding)
             if binding == "ability_extra_17" then
-                drifting = false 
+                drifting = true 
             end
         end
 
@@ -231,7 +233,7 @@ function AttachPlayer(player)
     player.serverUserData.bindingReleasedListener = player.bindingReleasedEvent:Connect(
         function(player, binding)
             if binding == "ability_extra_17" then
-                drifting = true 
+                drifting = false 
             end
         end
     )
