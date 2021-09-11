@@ -759,7 +759,7 @@ Assets {
           Location {
             X: 363.506836
             Y: 325.061157
-            Z: 989.695312
+            Z: 989.695313
           }
           Rotation {
             Yaw: -67.9910583
@@ -827,9 +827,9 @@ Assets {
         Name: "Craftsman Wall 02 Window"
         Transform {
           Location {
-            X: 681.632812
+            X: 681.632813
             Y: -409.683838
-            Z: 989.695312
+            Z: 989.695313
           }
           Rotation {
             Yaw: -158.421249
@@ -899,7 +899,7 @@ Assets {
           Location {
             X: -52.3994141
             Y: -727.836914
-            Z: 989.695312
+            Z: 989.695313
           }
           Rotation {
             Yaw: 111.894463

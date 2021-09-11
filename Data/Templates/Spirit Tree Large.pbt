@@ -968,7 +968,7 @@ Assets {
         Name: "Bush 02"
         Transform {
           Location {
-            X: 271.226562
+            X: 271.226563
             Y: -36.9052734
             Z: 1862.25684
           }
@@ -1710,7 +1710,7 @@ Assets {
         Transform {
           Location {
             X: 19.8603516
-            Y: 0.168945312
+            Y: 0.168945313
             Z: 46.3868103
           }
           Rotation {
@@ -1943,7 +1943,7 @@ Assets {
         Name: "Flower Bellflower 02"
         Transform {
           Location {
-            X: 3.32226562
+            X: 3.32226563
             Y: -5.06665039
             Z: 27.029541
           }
@@ -2099,7 +2099,7 @@ Assets {
         Transform {
           Location {
             X: 19.8603516
-            Y: 0.168945312
+            Y: 0.168945313
             Z: 46.3868103
           }
           Rotation {
@@ -2332,7 +2332,7 @@ Assets {
         Name: "Flower Bellflower 02"
         Transform {
           Location {
-            X: 3.32226562
+            X: 3.32226563
             Y: -5.06665039
             Z: 27.029541
           }
@@ -2574,7 +2574,7 @@ Assets {
         Transform {
           Location {
             X: 19.8603516
-            Y: 0.168945312
+            Y: 0.168945313
             Z: 46.3868103
           }
           Rotation {
@@ -2807,7 +2807,7 @@ Assets {
         Name: "Flower Bellflower 02"
         Transform {
           Location {
-            X: 3.32226562
+            X: 3.32226563
             Y: -5.06665039
             Z: 27.029541
           }
@@ -2964,7 +2964,7 @@ Assets {
         Transform {
           Location {
             X: 19.8603516
-            Y: 0.168945312
+            Y: 0.168945313
             Z: 46.3868103
           }
           Rotation {
@@ -3197,7 +3197,7 @@ Assets {
         Name: "Flower Bellflower 02"
         Transform {
           Location {
-            X: 3.32226562
+            X: 3.32226563
             Y: -5.06665039
             Z: 27.029541
           }
@@ -3437,7 +3437,7 @@ Assets {
         Transform {
           Location {
             X: 19.8603516
-            Y: 0.168945312
+            Y: 0.168945313
             Z: 46.3868103
           }
           Rotation {
@@ -3670,7 +3670,7 @@ Assets {
         Name: "Flower Bellflower 02"
         Transform {
           Location {
-            X: 3.32226562
+            X: 3.32226563
             Y: -5.06665039
             Z: 27.029541
           }
@@ -3827,7 +3827,7 @@ Assets {
         Transform {
           Location {
             X: 19.8603516
-            Y: 0.168945312
+            Y: 0.168945313
             Z: 46.3868103
           }
           Rotation {
@@ -4060,7 +4060,7 @@ Assets {
         Name: "Flower Bellflower 02"
         Transform {
           Location {
-            X: 3.32226562
+            X: 3.32226563
             Y: -5.06665039
             Z: 27.029541
           }
@@ -4252,7 +4252,7 @@ Assets {
         Transform {
           Location {
             X: 19.8603516
-            Y: 0.168945312
+            Y: 0.168945313
             Z: 46.3868103
           }
           Rotation {
@@ -4485,7 +4485,7 @@ Assets {
         Name: "Flower Bellflower 02"
         Transform {
           Location {
-            X: 3.32226562
+            X: 3.32226563
             Y: -5.06665039
             Z: 27.029541
           }
@@ -4692,7 +4692,7 @@ Assets {
         Transform {
           Location {
             X: 19.8603516
-            Y: 0.168945312
+            Y: 0.168945313
             Z: 46.3868103
           }
           Rotation {
@@ -4925,7 +4925,7 @@ Assets {
         Name: "Flower Bellflower 02"
         Transform {
           Location {
-            X: 3.32226562
+            X: 3.32226563
             Y: -5.06665039
             Z: 27.029541
           }
@@ -5166,7 +5166,7 @@ Assets {
         Transform {
           Location {
             X: 19.8603516
-            Y: 0.168945312
+            Y: 0.168945313
             Z: 46.3868103
           }
           Rotation {
@@ -5399,7 +5399,7 @@ Assets {
         Name: "Flower Bellflower 02"
         Transform {
           Location {
-            X: 3.32226562
+            X: 3.32226563
             Y: -5.06665039
             Z: 27.029541
           }
@@ -5599,7 +5599,7 @@ Assets {
         Name: "Plant hang totem"
         Transform {
           Location {
-            X: 51.0351562
+            X: 51.0351563
             Y: -110.690186
             Z: -3.49072266
           }
@@ -5641,7 +5641,7 @@ Assets {
         Transform {
           Location {
             X: 19.8603516
-            Y: 0.168945312
+            Y: 0.168945313
             Z: 46.3868103
           }
           Rotation {
@@ -5874,7 +5874,7 @@ Assets {
         Name: "Flower Bellflower 02"
         Transform {
           Location {
-            X: 3.32226562
+            X: 3.32226563
             Y: -5.06665039
             Z: 27.029541
           }
@@ -6035,7 +6035,7 @@ Assets {
         Transform {
           Location {
             X: 19.8603516
-            Y: 0.168945312
+            Y: 0.168945313
             Z: 46.3868103
           }
           Rotation {
@@ -6268,7 +6268,7 @@ Assets {
         Name: "Flower Bellflower 02"
         Transform {
           Location {
-            X: 3.32226562
+            X: 3.32226563
             Y: -5.06665039
             Z: 27.029541
           }
@@ -6385,7 +6385,7 @@ Assets {
           Location {
             X: -397.151337
             Y: 1160.44043
-            Z: 2364.20312
+            Z: 2364.20313
           }
           Rotation {
           }

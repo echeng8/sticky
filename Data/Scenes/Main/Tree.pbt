@@ -22,6 +22,7 @@ Objects {
   ChildIds: 4820110062441269004
   ChildIds: 6253854582154708950
   ChildIds: 14655994238374783239
+  ChildIds: 16743845059286000841
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -34,6 +35,41 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 16743845059286000841
+  Name: "Aki"
+  Transform {
+    Location {
+      X: -8850
+      Y: 3600
+      Z: 9900
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8568336417442047963
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Aki"
   }
 }
 Objects {
