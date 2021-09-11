@@ -4,7 +4,6 @@ getInput = Input.context.GetInput
 mesh = script:GetCustomProperty('Mesh')
 ball = script.parent
 
-local JUMP_SFX = script:GetCustomProperty('JumpSFX')
 local DEATH_SFX = {script:GetCustomProperty('DeathSFX'), script:GetCustomProperty('DeathSFX2')}
 local rollingSFX = script:GetCustomProperty('RollingSFX'):WaitForObject()
 
@@ -15,7 +14,6 @@ marbleID = 0
 local spawnPoint = Vector3.New()
 
 -- Movement Params
---local jumpVelocity = script:GetCustomProperty('JumpVelocity') or 900
 
 local movementRampUp = script:GetCustomProperty('MovementRampUp') or .5
 local movementSpeed = script:GetCustomProperty('MovementSpeed') or 3200
@@ -23,24 +21,18 @@ local movementSpeed = script:GetCustomProperty('MovementSpeed') or 3200
 local angularSpeed = script:GetCustomProperty('AngularAcceleration') or 3200
 local maxAngularSpeed = script:GetCustomProperty('MaxAngularSpeed') or 1500
 
-local gravityForce = script:GetCustomProperty('ExtraGravityForce') or 1250
-local terminalVelocity = script:GetCustomProperty('TerminalVelocity') or -800
 local coyoteTime = script:GetCustomProperty('CoyoteTime') or .2
 local distanceToGround = script:GetCustomProperty('DistanceToGround') * -1
 local airborneMovementScale = script:GetCustomProperty('AirborneMovementScale') or .66
-local killBelowZ = 12
-
-local jumpBuffer = 0.135
-local jumpTimer = 0
 
 timeSinceGrounded = 0
-jumpLockout = 0
 
-local rand = RandomStream.New()
+
 
 local sticked = false 
 local stickedTransform = nil
 
+local drifting = true 
 --PUBLIC FUNCTIONS-- 
 
 function SetSticked(p_sticked) 
@@ -62,6 +54,8 @@ function ResetVelocities()
     ball:SetVelocity(Vector3.ZERO)
     ball:SetAngularVelocity(Vector3.ZERO)
 end
+
+
 function checkGrounded()
     local groundedDistanceCheck = distanceToGround -- how far down from the center of the marble to check for grounded
     local offsets = {Vector3.New(51, 0, 0), Vector3.New(0, -51, 0), Vector3.New(-51, 0, 0), Vector3.New(0, 51, 0), Vector3.New(36, 36, 0), Vector3.New(36, -36, 0), Vector3.New(-36, 36, 0), Vector3.New(-36, -36, 0)}
@@ -85,24 +79,24 @@ end
 
 ---do not call this function to kill the player, just kill the player directly instead-- 
 function Die()
-    World.SpawnAsset(DEATH_SFX[1], {position = ball:GetWorldPosition()})
     script:SetNetworkedCustomProperty('IsDead', true)
+    World.SpawnAsset(DEATH_SFX[1], {position = ball:GetWorldPosition()})
     World.SpawnAsset(DEATH_SFX[2], {position = ball:GetWorldPosition()})
-    script:SetNetworkedCustomProperty('IsDead', false)
 end
 
 function Respawn()
     if (Object.IsValid(ball) and Object.IsValid(owner)) then
+        script:SetNetworkedCustomProperty('IsDead', false)
+
         ball:SetWorldPosition(owner:GetWorldPosition())
         ball:SetWorldRotation(Rotation.New())
         ball:SetVelocity(Vector3.New())
         ball:SetAngularVelocity(Vector3.New())
-        owner:SetWorldPosition(ball:GetWorldPosition())
     end
 end
 
 function Tick(dt)
-    if (owner ~= nil) then
+    if (owner ~= nil and not owner.isDead) then
 
         --sus, it hink this is broken--
         checkGrounded()
@@ -187,22 +181,24 @@ function HandleMovement(dt)
         if (finalAVel.size > maxAngularSpeed) then
             finalAVel = finalAVel:GetNormalized() * maxAngularSpeed
         end
-        ball:SetAngularVelocity(finalAVel)
+        
+        if drifting then
+            ball:SetAngularVelocity(finalAVel)
+        else 
+            ball:SetAngularVelocity(Vector3.ZERO)
+        end
     end
 
-    -- if not setVel and newVel.size == 0 then -- friction if no direction is held
-    --     local slowedVel = vel * (1 - dt)
-    --     ball:SetVelocity(Vector3.New(slowedVel.x, slowedVel.y, vel.z))
-    -- end
+    if not setVel and newVel.size == 0 then -- friction if no direction is held
+        local slowedVel = vel * (1 - dt)
+        ball:SetVelocity(Vector3.New(slowedVel.x, slowedVel.y, vel.z))
+    end
 
     if newAVel.size == 0 then
         ball:SetAngularVelocity(aVel * (1 - dt))
     end
 
     vel = ball:GetVelocity()
-    -- if vel.z > terminalVelocity then -- add additional gravity force if before terminal velocity
-    --     ball:SetVelocity(Vector3.New(vel.x, vel.y, vel.z - (gravityForce * dt)))
-    -- end
 end
 
 -- Upon spawning and linking up to our player
@@ -216,10 +212,27 @@ function AttachPlayer(player)
     player:AttachToCoreObject(ball)
     ball:SetNetworkedCustomProperty('MarbleColor', GetPlayerColor(owner.name))
 
-    --temp respawn player inside ball
+    
     player.serverUserData.spawnPositionListener = player.spawnedEvent:Connect(
         function(player)
             Respawn()
+        end
+    )
+
+    player.serverUserData.bindingPressedListener = player.bindingPressedEvent:Connect(
+        function(player, binding)
+            if binding == "ability_extra_17" then
+                drifting = false 
+            end
+        end
+
+    )
+
+    player.serverUserData.bindingReleasedListener = player.bindingReleasedEvent:Connect(
+        function(player, binding)
+            if binding == "ability_extra_17" then
+                drifting = true 
+            end
         end
     )
 
@@ -228,6 +241,9 @@ function AttachPlayer(player)
             Die()
         end
     )
+
+
+
 end
 
 Game.playerLeftEvent:Connect(
@@ -238,17 +254,10 @@ Game.playerLeftEvent:Connect(
 
         --temp
         player.serverUserData.spawnPositionListener:Disconnect()
+        player.serverUserData.bindingPressedListener:Disconnect()
+        player.serverUserData.bindingReleasedListener:Disconnect()
     end
 )
-
-function OnStateChange(old, new, hasTime, time)
-    if (old ~= new and new == 0) then
-        -- re-enter lobby
-        Respawn(offset)
-    end
-end
-
-Events.Connect('GameStateChanged', OnStateChange)
 
 -------------------------------------------------------------------------
 function GetPlayerColor(name)

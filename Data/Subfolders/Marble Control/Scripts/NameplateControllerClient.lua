@@ -209,12 +209,15 @@ function Tick(deltaTime)
 		if nameplate then
 			-- We calculate visibility every frame to handle when teams change
 			local visible = IsNameplateVisible(player)
-
-			nameplate.templateRoot.visibility = Visibility.FORCE_ON
+			if visible then 
+				nameplate.templateRoot.visibility = Visibility.FORCE_ON
+			else
+				nameplate.templateRoot.visibility = Visibility.FORCE_OFF
+			end
+			
 
 			if nameplate.ball ~= nil then
 				nameplate.templateRoot:SetWorldPosition(nameplate.ball:GetWorldPosition() + Vector3.New(0, 0, NAMEPLATE_Z_OFFSET))
-				nameplate.templateRoot.visibility = Visibility.INHERIT
 				RotateNameplate(nameplate)
 
 				if SHOW_HEALTHBARS then

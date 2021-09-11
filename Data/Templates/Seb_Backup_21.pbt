@@ -7,7 +7,7 @@ Assets {
       RootId: 2890999233949209687
       Objects {
         Id: 2890999233949209687
-        Name: "Sebastian"
+        Name: "Seb_Backup_21"
         Transform {
           Scale {
             X: 1

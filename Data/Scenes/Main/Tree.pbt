@@ -193,6 +193,16 @@ Objects {
           Name: "Name"
           String: "Seb_Backup_21"
         }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
       }
     }
     TemplateAsset {

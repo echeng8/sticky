@@ -1,6 +1,47 @@
 Name: "Player Settings"
 RootId: 17773784851906546504
 Objects {
+  Id: 11562595670336724889
+  Name: "PlayerDeathAnimServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17773784851906546504
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIMarble"
+      AssetReference {
+        Id: 14137586896240072563
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 407854444337605888
+    }
+  }
+}
+Objects {
   Id: 17102855625183543326
   Name: "ServerContext"
   Transform {

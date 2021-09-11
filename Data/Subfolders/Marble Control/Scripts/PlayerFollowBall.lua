@@ -10,11 +10,11 @@ function OnChange(obj, propName)
 	if (propName == "IsDead") then
 		local isDead = obj:GetCustomProperty("IsDead")
 		if (isDead) then
-			print("Dead")
+			--print("Dead")
 			camera:StopMove()
 			followBall = false
 		else 
-			print("Not dead.")
+			--print("Not dead.")
 			Events.Broadcast("MarbleRespawn")
 			Task.Wait(.3)
 			followBall = true

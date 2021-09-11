@@ -11,5 +11,9 @@ Chat.receiveMessageHook:Connect(
             local marble = propAPIMarble.GetMarbleFromPlayer(speaker)
             marble:SetWorldPosition(tpLocation)
         end
+
+        if string.match(message, "/kill") then
+            speaker:Die(Damage.New())
+        end
     end
 )
