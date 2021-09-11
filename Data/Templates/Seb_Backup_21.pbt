@@ -1466,6 +1466,7 @@ Assets {
           }
         }
         ParentId: 96036992885328955
+        ChildIds: 13767200888375950178
         ChildIds: 9995693130888339055
         ChildIds: 14400544232624323148
         UnregisteredParameters {
@@ -1543,6 +1544,55 @@ Assets {
         }
       }
       Objects {
+        Id: 13767200888375950178
+        Name: "weapons"
+        Transform {
+          Location {
+            X: -16734.666
+            Y: 30557.332
+            Z: -1384
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.33333325
+            Y: 1.33333325
+            Z: 4
+          }
+        }
+        ParentId: 5715520122719177432
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:RocketLauncher"
+            AssetReference {
+              Id: 16362402445184882939
+            }
+          }
+          Overrides {
+            Name: "cs:Lightsaber"
+            AssetReference {
+              Id: 2746625383053017130
+            }
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Folder {
+          IsFilePartition: true
+        }
+      }
+      Objects {
         Id: 9995693130888339055
         Name: "WeaponSpawnController"
         Transform {
@@ -1563,6 +1613,12 @@ Assets {
             Name: "cs:Pivot"
             ObjectReference {
               SubObjectId: 14400544232624323148
+            }
+          }
+          Overrides {
+            Name: "cs:weapons"
+            ObjectReference {
+              SubObjectId: 13767200888375950178
             }
           }
         }

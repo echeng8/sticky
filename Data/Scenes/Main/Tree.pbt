@@ -17,7 +17,7 @@ Objects {
   ChildIds: 12400254426487455387
   ChildIds: 10412379021265105746
   ChildIds: 14037771509087251097
-  ChildIds: 9765546989027334052
+  ChildIds: 4486416291996771688
   ChildIds: 17880592535704496713
   ChildIds: 4820110062441269004
   ChildIds: 8125752998756458609
@@ -169,9 +169,13 @@ Objects {
   }
 }
 Objects {
-  Id: 9765546989027334052
+  Id: 4486416291996771688
   Name: "Seb_Backup_21"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
@@ -185,29 +189,22 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 2890999233949209687
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Seb_Backup_21"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 5400622917525262170
-    }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Sebastian"
+  }
+  InstanceHistory {
+    SelfId: 4486416291996771688
+    SubobjectId: 2890999233949209687
+    InstanceId: 9765546989027334052
+    TemplateId: 5400622917525262170
+    WasRoot: true
   }
 }
 Objects {
