@@ -101,13 +101,12 @@ function Tick(dt)
         --sus, it hink this is broken--
         checkGrounded()
         
-        if not sticked then 
-            HandleMovement(dt)
-        else 
-            ball:SetWorldTransform(stickedTransform)
-            ResetVelocities()
-        end 
+
+        HandleMovement(dt)
         
+        if sticked then
+            ball:SetWorldPosition(stickedTransform:GetPosition())
+        end
         -- manage rollingSFX volume
         if (isGrounded()) then
             -- modulate rolling sfx volume based on angular velocity
@@ -164,7 +163,13 @@ function HandleMovement(dt)
         newAVel = newAVel:GetNormalized()
 
         newVel = newVel * movementSpeed
-        newAVel = newAVel * angularSpeed
+
+        if sticked then
+            newAVel = newAVel * angularSpeed * 3
+        else 
+            newAVel = newAVel * angularSpeed
+        end
+        
 
         -- less push force if airborne
         local currentMovementRampUp = movementRampUp
@@ -175,10 +180,16 @@ function HandleMovement(dt)
         local missingVelocity = newVel - Vector3.New(vel.x, vel.y, 0)
         local finalVel = vel + (missingVelocity * dt * currentMovementRampUp)
 
+        if not sticked then
+            ball:SetVelocity(finalVel)
+        end
+        
+        local x = 1 
+        if sticked then
+            x = 2
+        end
 
-        ball:SetVelocity(finalVel)
-
-        local finalAVel = aVel + (newAVel * dt)
+        local finalAVel = aVel + (newAVel * dt * 2)
         if (finalAVel.size > maxAngularSpeed) then
             finalAVel = finalAVel:GetNormalized() * maxAngularSpeed
         end
@@ -189,7 +200,6 @@ function HandleMovement(dt)
         --decelerate velocity 
         local velocity = ball:GetVelocity()
         if velocity.size > 0 then
-            print(velocity.size)
             if velocity.size > DECELERATION_RATE then
                 velocity = velocity - (velocity:GetNormalized() * DECELERATION_RATE * dt)
                 ball:SetVelocity(Vector3.New(velocity.x, velocity.y, vel.z))
@@ -207,7 +217,6 @@ end
 function AttachPlayer(player)
     owner = player
     script:SetNetworkedCustomProperty('PlayerId', owner.id)
-    player.isVisible = true
     --player.bindingPressedEvent:Connect(OnBindingPressed)
     ownerId = player.id
     spawnPoint = ball:GetWorldPosition()
