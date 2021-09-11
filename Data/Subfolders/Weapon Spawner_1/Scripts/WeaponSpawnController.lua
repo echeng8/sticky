@@ -6,15 +6,6 @@ local BOB_AMPLITUDE = script.parent:GetCustomProperty("BobAmplitude")
 local BOB_PERIOD = script.parent:GetCustomProperty("BobPeriod")
 local Z_OFFSET = script.parent:GetCustomProperty("ZOffset")
 local PIVOT = script:GetCustomProperty("Pivot"):WaitForObject()
-local propWeapons = script:GetCustomProperty("weapons"):WaitForObject()
-local weaponTemp = propWeapons:GetCustomProperties()
-local ranStream = RandomStream.New()
-
-local weapons = {}
-
-for propName, propValue in pairs(weaponTemp) do
-	table.insert(weapons, propValue)
-end
 
 PIVOT:RotateContinuous(ROTATION_RATE)
 
@@ -36,10 +27,6 @@ function SpawnWeapon()
 end
 
 function WeaponEquipped(equipment, player)
-	if propWeapons ~= nil then
-		WEAPON_TEMPLATE = weapons[ranStream:GetInteger(1, #weapons)]
-		print("success")
-	end
 	spawnedWeapon = nil
 	if (equipListener ~= nil) then
 		equipListener:Disconnect()

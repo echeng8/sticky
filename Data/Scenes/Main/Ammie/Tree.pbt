@@ -36176,7 +36176,7 @@ Objects {
     }
   }
   ParentId: 14319087388953341167
-  ChildIds: 6278031719354681549
+  ChildIds: 2923274653639055201
   ChildIds: 4075566396948607179
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36247,11 +36247,13 @@ Objects {
   }
 }
 Objects {
-  Id: 6278031719354681549
+  Id: 2923274653639055201
   Name: "WeaponSpawn"
   Transform {
     Location {
-      Z: 122.776855
+      X: 144
+      Y: 1891
+      Z: 2419
     }
     Rotation {
     }
@@ -36262,57 +36264,6 @@ Objects {
     }
   }
   ParentId: 16231719457131430423
-  ChildIds: 9360725620243237451
-  ChildIds: 13150764471005634060
-  ChildIds: 1608997082336543114
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Weapon"
-      AssetReference {
-        Id: 4065946849590144192
-      }
-    }
-    Overrides {
-      Name: "cs:RespawnTime"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RotationRate"
-      Rotator {
-        Yaw: 100
-      }
-    }
-    Overrides {
-      Name: "cs:BobAmplitude"
-      Float: 8
-    }
-    Overrides {
-      Name: "cs:BobPeriod"
-      Float: 3
-    }
-    Overrides {
-      Name: "cs:ZOffset"
-      Float: 40
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 1736396847558857326
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 2
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36320,175 +36271,44 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11001967573859652020
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-      }
-      BoundsScale: 1
-    }
-  }
-  InstanceHistory {
-    SelfId: 6278031719354681549
-    SubobjectId: 8660171356938487298
-    InstanceId: 2923274653639055201
-    TemplateId: 17611146021795751140
-    WasRoot: true
-  }
-}
-Objects {
-  Id: 1608997082336543114
-  Name: "weapons"
-  Transform {
-    Location {
-      X: 4888.12842
-      Y: 1666.66138
-      Z: 30308.8926
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.33333313
-      Y: 1.33333313
-      Z: 4
-    }
-  }
-  ParentId: 6278031719354681549
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:RocketLauncher"
-      AssetReference {
-        Id: 16362402445184882939
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8660171356938487298
+      value {
+        Overrides {
+          Name: "Name"
+          String: "WeaponSpawn"
+        }
+        Overrides {
+          Name: "cs:Weapon"
+          AssetReference {
+            Id: 4065946849590144192
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.75
+            Y: 0.75
+            Z: 0.25
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: 122.776855
+          }
+        }
       }
     }
-    Overrides {
-      Name: "cs:Lightsaber"
-      AssetReference {
-        Id: 2746625383053017130
-      }
+    TemplateAsset {
+      Id: 17611146021795751140
     }
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "weapons"
-  }
-  InstanceHistory {
-    SelfId: 12201091282685200989
-    SubobjectId: 13767200888375950178
-    InstanceId: 9765546989027334052
-    TemplateId: 5400622917525262170
-  }
-}
-Objects {
-  Id: 13150764471005634060
-  Name: "Pivot"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6278031719354681549
-  UnregisteredParameters {
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 13150764471005634060
-    SubobjectId: 11065328880474640579
-    InstanceId: 2923274653639055201
-    TemplateId: 17611146021795751140
-  }
-}
-Objects {
-  Id: 9360725620243237451
-  Name: "WeaponSpawnController"
-  Transform {
-    Location {
-    }
-    Rotation {
-      Yaw: -3.58584766e-05
-    }
-    Scale {
-      X: 1.33333337
-      Y: 1.33333337
-      Z: 4
-    }
-  }
-  ParentId: 6278031719354681549
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Pivot"
-      ObjectReference {
-        SelfId: 13150764471005634060
-      }
-    }
-    Overrides {
-      Name: "cs:weapons"
-      ObjectReference {
-        SelfId: 1608997082336543114
-      }
-    }
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 61777483488916717
-    }
-  }
-  InstanceHistory {
-    SelfId: 9360725620243237451
-    SubobjectId: 12603584390877840516
-    InstanceId: 2923274653639055201
-    TemplateId: 17611146021795751140
   }
 }
 Objects {
@@ -36507,7 +36327,7 @@ Objects {
     }
   }
   ParentId: 14319087388953341167
-  ChildIds: 2271699267445791694
+  ChildIds: 10433676831716125061
   ChildIds: 17151145000819865931
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36578,11 +36398,13 @@ Objects {
   }
 }
 Objects {
-  Id: 2271699267445791694
+  Id: 10433676831716125061
   Name: "WeaponSpawn"
   Transform {
     Location {
-      Z: 122.776855
+      X: 144
+      Y: 1891
+      Z: 2419
     }
     Rotation {
     }
@@ -36593,57 +36415,6 @@ Objects {
     }
   }
   ParentId: 8517900851398026249
-  ChildIds: 14501947864422635848
-  ChildIds: 18313422211115126031
-  ChildIds: 17898957740715259155
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Weapon"
-      AssetReference {
-        Id: 4065946849590144192
-      }
-    }
-    Overrides {
-      Name: "cs:RespawnTime"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:RotationRate"
-      Rotator {
-        Yaw: 100
-      }
-    }
-    Overrides {
-      Name: "cs:BobAmplitude"
-      Float: 8
-    }
-    Overrides {
-      Name: "cs:BobPeriod"
-      Float: 3
-    }
-    Overrides {
-      Name: "cs:ZOffset"
-      Float: 40
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 1736396847558857326
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 2
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -36651,175 +36422,44 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11001967573859652020
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    InteractWithTriggers: true
-    StaticMesh {
-      Physics {
-      }
-      BoundsScale: 1
-    }
-  }
-  InstanceHistory {
-    SelfId: 2271699267445791694
-    SubobjectId: 8660171356938487298
-    InstanceId: 10433676831716125061
-    TemplateId: 17611146021795751140
-    WasRoot: true
-  }
-}
-Objects {
-  Id: 17898957740715259155
-  Name: "weapons"
-  Transform {
-    Location {
-      X: 4888.12842
-      Y: 1666.66138
-      Z: 27108.8926
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.33333313
-      Y: 1.33333313
-      Z: 4
-    }
-  }
-  ParentId: 2271699267445791694
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:RocketLauncher"
-      AssetReference {
-        Id: 16362402445184882939
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8660171356938487298
+      value {
+        Overrides {
+          Name: "Name"
+          String: "WeaponSpawn"
+        }
+        Overrides {
+          Name: "cs:Weapon"
+          AssetReference {
+            Id: 4065946849590144192
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.75
+            Y: 0.75
+            Z: 0.25
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: 122.776855
+          }
+        }
       }
     }
-    Overrides {
-      Name: "cs:Lightsaber"
-      AssetReference {
-        Id: 2746625383053017130
-      }
+    TemplateAsset {
+      Id: 17611146021795751140
     }
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "weapons_1"
-  }
-  InstanceHistory {
-    SelfId: 12201091282685200989
-    SubobjectId: 13767200888375950178
-    InstanceId: 9765546989027334052
-    TemplateId: 5400622917525262170
-  }
-}
-Objects {
-  Id: 18313422211115126031
-  Name: "Pivot"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2271699267445791694
-  UnregisteredParameters {
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 18313422211115126031
-    SubobjectId: 11065328880474640579
-    InstanceId: 10433676831716125061
-    TemplateId: 17611146021795751140
-  }
-}
-Objects {
-  Id: 14501947864422635848
-  Name: "WeaponSpawnController"
-  Transform {
-    Location {
-    }
-    Rotation {
-      Yaw: -3.58584766e-05
-    }
-    Scale {
-      X: 1.33333337
-      Y: 1.33333337
-      Z: 4
-    }
-  }
-  ParentId: 2271699267445791694
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Pivot"
-      ObjectReference {
-        SelfId: 18313422211115126031
-      }
-    }
-    Overrides {
-      Name: "cs:weapons"
-      ObjectReference {
-        SelfId: 17898957740715259155
-      }
-    }
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 61777483488916717
-    }
-  }
-  InstanceHistory {
-    SelfId: 14501947864422635848
-    SubobjectId: 12603584390877840516
-    InstanceId: 10433676831716125061
-    TemplateId: 17611146021795751140
   }
 }
 Objects {
