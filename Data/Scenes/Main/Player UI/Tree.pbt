@@ -95,6 +95,10 @@ Objects {
           Rotator {
           }
         }
+        Overrides {
+          Name: "cs:ShowAmmo"
+          Bool: false
+        }
       }
     }
     TemplateAsset {

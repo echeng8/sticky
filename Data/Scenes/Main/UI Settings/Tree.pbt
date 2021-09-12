@@ -1,6 +1,38 @@
 Name: "UI Settings"
 RootId: 14037771509087251097
 Objects {
+  Id: 18009235888973875911
+  Name: "Controls UI "
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14037771509087251097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Controls UI"
+  }
+}
+Objects {
   Id: 17936587802325056558
   Name: "Compass"
   Transform {
