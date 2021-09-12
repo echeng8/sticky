@@ -62,6 +62,7 @@ Objects {
   ChildIds: 835521940222818333
   ChildIds: 18043729843661520675
   ChildIds: 17716463025826470812
+  ChildIds: 13682548436617273812
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -76,6 +77,38 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 13682548436617273812
+  Name: "Weapon Spawners"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16016066416196986409
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Weapon Spawners"
   }
 }
 Objects {
@@ -23896,47 +23929,6 @@ Objects {
       Physics {
       }
       BoundsScale: 1
-    }
-  }
-}
-Objects {
-  Id: 2353198242385175890
-  Name: "Rocket Launcher"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7671508122509407629
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 4513459109517667751
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Rocket Launcher"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.99999994
-            Y: 0.99999994
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 16362402445184882939
     }
   }
 }
