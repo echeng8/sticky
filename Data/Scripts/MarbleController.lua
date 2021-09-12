@@ -29,32 +29,8 @@ timeSinceGrounded = 0
 
 local DECELERATION_RATE = 400 -- units per second u will decelerate when you press space to break
 
-local sticked = false 
-local stickedTransform = nil
-
 local drifting = false 
 --PUBLIC FUNCTIONS-- 
-
-function SetSticked(p_sticked) 
-    if p_sticked then
-        sticked = true 
-        ResetVelocities()
-        stickedTransform = ball:GetWorldTransform()
-    else 
-        sticked = false 
-        stickedTransform = nil
-    end
-end
-
-function GetSticked()
-    return sticked 
-end
--- private functions --
-function ResetVelocities()
-    ball:SetVelocity(Vector3.ZERO)
-    ball:SetAngularVelocity(Vector3.ZERO)
-end
-
 
 function checkGrounded()
     local groundedDistanceCheck = distanceToGround -- how far down from the center of the marble to check for grounded
@@ -159,8 +135,16 @@ function HandleMovement(dt)
 
     if not drifting then
         if not setVel then return end
-        newVel = newVel:GetNormalized()
-        newAVel = newAVel:GetNormalized()
+
+        --normalizes input velocity vectors 
+        if newAVel ~= Vector3.ZERO then
+            newAVel = newAVel:GetNormalized()
+        end
+        if newVel ~= Vector3.ZERO then
+            newVel = newVel:GetNormalized()
+        end
+        
+
 
         newVel = newVel * movementSpeed
 
