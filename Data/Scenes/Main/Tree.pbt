@@ -22,7 +22,7 @@ Objects {
   ChildIds: 4820110062441269004
   ChildIds: 8125752998756458609
   ChildIds: 7671508122509407629
-  ChildIds: 6189848507394240290
+  ChildIds: 14682129076076697249
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -38,7 +38,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6189848507394240290
+  Id: 14682129076076697249
   Name: "Aki"
   Transform {
     Location {
@@ -58,7 +58,6 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-<<<<<<< Updated upstream
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -68,34 +67,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Aki"
-=======
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 13228567125736940938
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Temple"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 10232.3418
-            Y: -2719.90527
-            Z: 4333.18945
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14133772865472828727
-    }
->>>>>>> Stashed changes
   }
 }
 Objects {

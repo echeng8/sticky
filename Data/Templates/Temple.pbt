@@ -2141,7 +2141,7 @@ Assets {
           Location {
             X: 1214.33398
             Y: -8024.88379
-            Z: -335.976563
+            Z: -335.976562
           }
           Rotation {
             Yaw: 90
@@ -2218,7 +2218,7 @@ Assets {
           Location {
             X: -1160.69434
             Y: -8024.88379
-            Z: -335.976563
+            Z: -335.976562
           }
           Rotation {
             Yaw: 89.9999847
@@ -2295,7 +2295,7 @@ Assets {
           Location {
             X: -1207.55762
             Y: 8091.83301
-            Z: -335.976563
+            Z: -335.976562
           }
           Rotation {
             Yaw: -89.9999847
@@ -2372,7 +2372,7 @@ Assets {
           Location {
             X: 1214.33008
             Y: 8091.83301
-            Z: -335.976563
+            Z: -335.976562
           }
           Rotation {
             Yaw: -89.9999847
@@ -3438,11 +3438,11 @@ Assets {
         Transform {
           Location {
             X: -853.266602
-            Y: -50.2226563
+            Y: -50.2226562
             Z: 0.25
           }
           Rotation {
-            Yaw: -0.0454101563
+            Yaw: -0.0454101562
           }
           Scale {
             X: 4
@@ -3514,13 +3514,8 @@ Assets {
         Name: "Fantasy Castle Wall 01 - Curved"
         Transform {
           Location {
-<<<<<<< Updated upstream
-            X: -65.3945312
-            Y: 64.2004395
-=======
-            X: -868.664063
+            X: -868.664062
             Y: 64.2001953
->>>>>>> Stashed changes
             Z: 0.25
           }
           Rotation {
@@ -5024,7 +5019,7 @@ Assets {
         Name: "Craftsman Porch Fence Railing 01"
         Transform {
           Location {
-            X: -942.164063
+            X: -942.164062
           }
           Rotation {
             Yaw: -179.999985
@@ -5631,7 +5626,7 @@ Assets {
         Name: "Craftsman Porch Fence Railing 01"
         Transform {
           Location {
-            X: -942.164063
+            X: -942.164062
           }
           Rotation {
             Yaw: -179.999985
@@ -5815,13 +5810,8 @@ Assets {
         Name: "Rock 01"
         Transform {
           Location {
-<<<<<<< Updated upstream
-            X: 1539.79834
-            Y: -83.3945312
-=======
             X: 2016.53809
             Y: 2848.85742
->>>>>>> Stashed changes
             Z: 100
           }
           Rotation {
