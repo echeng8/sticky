@@ -23,6 +23,8 @@ end
 
 Game.playerLeftEvent:Connect(
     function(player)
-        listeners[player]:Disconnect()
+        if listeners[player] then
+            listeners[player]:Disconnect()
+        end
     end
 )

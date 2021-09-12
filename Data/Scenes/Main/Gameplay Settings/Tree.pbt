@@ -125,13 +125,12 @@ Objects {
   }
   Settings {
     RespawnSettings {
-      RespawnDelay: 5
+      RespawnDelay: 3
       RespawnMode_v2 {
         Value: "mc:erespawnmode:roundrobin"
       }
-      StartSpawned: true
       SpawnMode {
-        Value: "mc:espawnmode:roundrobin"
+        Value: "mc:espawnmode:random"
       }
     }
   }

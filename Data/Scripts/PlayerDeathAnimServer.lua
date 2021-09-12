@@ -5,11 +5,12 @@ function OnDeath(player)
     player.isCollidable = true 
     player.isVisible = true
 
-    player:EnableRagdoll("lower_spine", .4)
-    player:EnableRagdoll("right_shoulder", .2)
-    player:EnableRagdoll("left_shoulder", .6)
-    player:EnableRagdoll("right_hip", .6)
-    player:EnableRagdoll("left_hip", .6)
+    --disabling this cause the respawn settings already has the player ragdoll on death
+    -- player:EnableRagdoll("lower_spine", .4)
+    -- player:EnableRagdoll("right_shoulder", .2)
+    -- player:EnableRagdoll("left_shoulder", .6)
+    -- player:EnableRagdoll("right_hip", .6)
+    -- player:EnableRagdoll("left_hip", .6)
 end
 
 function OnSpawn(player)

@@ -80,9 +80,6 @@ function Tick(dt)
 
         HandleMovement(dt)
         
-        if sticked then
-            ball:SetWorldPosition(stickedTransform:GetPosition())
-        end
         -- manage rollingSFX volume
         if (isGrounded()) then
             -- modulate rolling sfx volume based on angular velocity
@@ -147,12 +144,7 @@ function HandleMovement(dt)
 
 
         newVel = newVel * movementSpeed
-
-        if sticked then
-            newAVel = newAVel * angularSpeed * 3
-        else 
-            newAVel = newAVel * angularSpeed
-        end
+        newAVel = newAVel * angularSpeed
         
 
         -- less push force if airborne
@@ -164,16 +156,10 @@ function HandleMovement(dt)
         local missingVelocity = newVel - Vector3.New(vel.x, vel.y, 0)
         local finalVel = vel + (missingVelocity * dt * currentMovementRampUp)
 
-        if not sticked then
-            ball:SetVelocity(finalVel)
-        end
+        ball:SetVelocity(finalVel)
         
-        local x = 1 
-        if sticked then
-            x = 2
-        end
 
-        local finalAVel = aVel + (newAVel * dt * 2)
+        local finalAVel = aVel + (newAVel * dt)
         if (finalAVel.size > maxAngularSpeed) then
             finalAVel = finalAVel:GetNormalized() * maxAngularSpeed
         end
@@ -203,7 +189,6 @@ function AttachPlayer(player)
     script:SetNetworkedCustomProperty('PlayerId', owner.id)
     --player.bindingPressedEvent:Connect(OnBindingPressed)
     ownerId = player.id
-    spawnPoint = ball:GetWorldPosition()
     player:AttachToCoreObject(ball)
     ball:SetNetworkedCustomProperty('MarbleColor', GetPlayerColor(owner.name))
 
@@ -236,9 +221,6 @@ function AttachPlayer(player)
             Die()
         end
     )
-
-
-
 end
 
 Game.playerLeftEvent:Connect(

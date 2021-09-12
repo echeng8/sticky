@@ -1,10 +1,16 @@
---local offset = Vector3.New(-60, 0, 160)
 local owner = Game.GetLocalPlayer()
 local ball = nil
 local ballController = nil
 local camera = nil
 
 local followBall = true
+
+function AlignViewWithLook()
+	local lookRotateZ = owner:GetLookWorldRotation().z
+	owner:SetLookWorldRotation(Rotation.New(0, 0, lookRotateZ))
+	camera:RotateTo(Rotation.New(0, 0, lookRotateZ), 0, false)
+end
+
 
 function OnChange(obj, propName)
 	if (propName == "IsDead") then
@@ -18,8 +24,9 @@ function OnChange(obj, propName)
 			Events.Broadcast("MarbleRespawn")
 			Task.Wait(.3)
 			followBall = true
-			owner:SetLookWorldRotation(Rotation.New(0, 0, -90))
-			camera:RotateTo(Rotation.New(0, 0, -90), 0, false)
+			--print("on change")
+			AlignViewWithLook()
+
 		end
 	end
 end
@@ -34,8 +41,9 @@ function OnConnect(ballID)
 			if (ball ~= nil) then	
 				camera:SetWorldPosition(ball:GetWorldPosition())
 				camera:Follow(ball, 9000, 0)
-				camera:RotateTo(Rotation.New(0, 0, -90), 0, false)
-				owner:SetLookWorldRotation(Rotation.New(0, 0, -90))
+
+				AlignViewWithLook()
+
 				ballController.networkedPropertyChangedEvent:Connect(OnChange)
 				Task.Wait(0.1)
 				return
@@ -77,5 +85,8 @@ function OnStateChange(old, new, hasTime, time)
 		owner:GetDefaultCamera():RotateTo(Rotation.New(0, 0, -90), 0, false)
 	end
 end
+
+
+
 
 Events.Connect("GameStateChanged", OnStateChange)

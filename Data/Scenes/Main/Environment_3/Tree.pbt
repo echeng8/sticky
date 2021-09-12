@@ -1,7 +1,7 @@
 Name: "Environment_3"
-RootId: 14250347236737954767
+RootId: 12537878677903771188
 Objects {
-  Id: 2017439958282693483
+  Id: 13123536690004556538
   Name: "Halloween Sky"
   Transform {
     Location {
@@ -14,11 +14,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14250347236737954767
-  ChildIds: 5289274189134294694
-  ChildIds: 6149217280889320178
-  ChildIds: 18059002090362038323
-  ChildIds: 4051600561067576790
+  ParentId: 12537878677903771188
+  ChildIds: 10068250648004745636
+  ChildIds: 7293623745287937738
+  ChildIds: 14521645188423977422
+  ChildIds: 4500903341661276193
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -34,14 +34,14 @@ Objects {
     IsGroup: true
   }
   InstanceHistory {
-    SelfId: 2017439958282693483
-    SubobjectId: 982758132345756244
-    InstanceId: 9765546989027334052
-    TemplateId: 5400622917525262170
+    SelfId: 13123536690004556538
+    SubobjectId: 2899595442385255552
+    InstanceId: 11758905750772860327
+    TemplateId: 11669839424541266215
   }
 }
 Objects {
-  Id: 4051600561067576790
+  Id: 4500903341661276193
   Name: "Star Dome"
   Transform {
     Location {
@@ -54,7 +54,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2017439958282693483
+  ParentId: 13123536690004556538
   UnregisteredParameters {
     Overrides {
       Name: "bp:Star Brightness"
@@ -117,14 +117,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 4051600561067576790
-    SubobjectId: 3343424210523585769
-    InstanceId: 9765546989027334052
-    TemplateId: 5400622917525262170
+    SelfId: 4500903341661276193
+    SubobjectId: 11559383556491234907
+    InstanceId: 11758905750772860327
+    TemplateId: 11669839424541266215
   }
 }
 Objects {
-  Id: 18059002090362038323
+  Id: 14521645188423977422
   Name: "Skylight"
   Transform {
     Location {
@@ -139,7 +139,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2017439958282693483
+  ParentId: 13123536690004556538
   UnregisteredParameters {
     Overrides {
       Name: "bp:Index"
@@ -181,14 +181,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 18059002090362038323
-    SubobjectId: 17060305115440142604
-    InstanceId: 9765546989027334052
-    TemplateId: 5400622917525262170
+    SelfId: 14521645188423977422
+    SubobjectId: 6312493048340516788
+    InstanceId: 11758905750772860327
+    TemplateId: 11669839424541266215
   }
 }
 Objects {
-  Id: 6149217280889320178
+  Id: 7293623745287937738
   Name: "Sun Light"
   Transform {
     Location {
@@ -206,7 +206,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2017439958282693483
+  ParentId: 13123536690004556538
   UnregisteredParameters {
     Overrides {
       Name: "bp:Intensity"
@@ -280,14 +280,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6149217280889320178
-    SubobjectId: 4830813385813640141
-    InstanceId: 9765546989027334052
-    TemplateId: 5400622917525262170
+    SelfId: 7293623745287937738
+    SubobjectId: 18096991076531165360
+    InstanceId: 11758905750772860327
+    TemplateId: 11669839424541266215
   }
 }
 Objects {
-  Id: 5289274189134294694
+  Id: 10068250648004745636
   Name: "Environment Fog Default VFX"
   Transform {
     Location {
@@ -303,7 +303,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2017439958282693483
+  ParentId: 13123536690004556538
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color"
@@ -346,9 +346,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5289274189134294694
-    SubobjectId: 6862168056378679193
-    InstanceId: 9765546989027334052
-    TemplateId: 5400622917525262170
+    SelfId: 10068250648004745636
+    SubobjectId: 1559610211773931486
+    InstanceId: 11758905750772860327
+    TemplateId: 11669839424541266215
   }
 }
