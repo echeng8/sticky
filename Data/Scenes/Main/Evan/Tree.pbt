@@ -63,6 +63,7 @@ Objects {
   ChildIds: 18043729843661520675
   ChildIds: 17716463025826470812
   ChildIds: 13682548436617273812
+  ChildIds: 15072314973806072074
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -77,6 +78,54 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 15072314973806072074
+  Name: "Rock Pile 002"
+  Transform {
+    Location {
+      X: 1696.21191
+      Y: -6874.74414
+      Z: -48.6054688
+    }
+    Rotation {
+      Yaw: -19.9836731
+    }
+    Scale {
+      X: 10.2315617
+      Y: 10.2315617
+      Z: 10.2315617
+    }
+  }
+  ParentId: 16016066416196986409
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14453296687442680059
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
@@ -13080,6 +13129,7 @@ Objects {
   ChildIds: 9993322964856867896
   ChildIds: 5412542328301562794
   ChildIds: 9146915354641148017
+  ChildIds: 11744631860418616339
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -13094,6 +13144,54 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 11744631860418616339
+  Name: "Tree Redwood Big"
+  Transform {
+    Location {
+      X: -896.604492
+      Y: 6555.00342
+      Z: -50
+    }
+    Rotation {
+      Yaw: -64.8616
+    }
+    Scale {
+      X: 0.466154277
+      Y: 0.466154277
+      Z: 0.466154277
+    }
+  }
+  ParentId: 7916217139180975302
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16442819222526463298
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
 }
 Objects {
@@ -18905,6 +19003,19 @@ Objects {
             X: 1.46294284
             Y: 1.46294284
             Z: 1.46294284
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14730697993442238304
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 15.9223633
+            Y: -522.412842
+            Z: 88.9854736
           }
         }
       }
