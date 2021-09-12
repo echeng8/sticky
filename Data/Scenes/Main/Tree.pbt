@@ -58,6 +58,7 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+<<<<<<< Updated upstream
   CameraCollidable {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -67,6 +68,34 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Aki"
+=======
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13228567125736940938
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Temple"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 10232.3418
+            Y: -2719.90527
+            Z: 4333.18945
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14133772865472828727
+    }
+>>>>>>> Stashed changes
   }
 }
 Objects {
