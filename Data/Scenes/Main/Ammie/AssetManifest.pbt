@@ -8,6 +8,7 @@ Assets {
   }
 }
 Assets {
+<<<<<<< Updated upstream
   Id: 18231021891014034075
   Name: "Clover Patch 01"
   PlatformAssetType: 1
@@ -29,6 +30,11 @@ Assets {
   Id: 17411241785745302645
   Name: "Plane Circle - One Sided"
   PlatformAssetType: 1
+=======
+  Id: 16944369993873417543
+  Name: "Ember Volume VFX"
+  PlatformAssetType: 8
+>>>>>>> Stashed changes
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_plane_circle_001"
@@ -71,6 +77,7 @@ Assets {
   }
 }
 Assets {
+<<<<<<< Updated upstream
   Id: 15212031193873195241
   Name: "Rock Flat 01"
   PlatformAssetType: 1
@@ -100,6 +107,10 @@ Assets {
 Assets {
   Id: 14453296687442680059
   Name: "Rock Pile 002"
+=======
+  Id: 15535373426729003296
+  Name: "Pipe - Half"
+>>>>>>> Stashed changes
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -107,6 +118,7 @@ Assets {
   }
 }
 Assets {
+<<<<<<< Updated upstream
   Id: 14023144080669477239
   Name: "Hill 02"
   PlatformAssetType: 1
@@ -116,6 +128,8 @@ Assets {
   }
 }
 Assets {
+=======
+>>>>>>> Stashed changes
   Id: 13573369050225306263
   Name: "Pipe - X-Intersection Thin"
   PlatformAssetType: 1
@@ -125,6 +139,7 @@ Assets {
   }
 }
 Assets {
+<<<<<<< Updated upstream
   Id: 13493138808656220881
   Name: "Rock 01"
   PlatformAssetType: 1
@@ -143,6 +158,8 @@ Assets {
   }
 }
 Assets {
+=======
+>>>>>>> Stashed changes
   Id: 12745145329380651910
   Name: "Pipe - 4-Sided Thin"
   PlatformAssetType: 1
@@ -170,6 +187,7 @@ Assets {
   }
 }
 Assets {
+<<<<<<< Updated upstream
   Id: 10546897328500124884
   Name: "Ball"
   PlatformAssetType: 1
@@ -199,6 +217,10 @@ Assets {
 Assets {
   Id: 9351191401370260382
   Name: "Rock Hexagonal"
+=======
+  Id: 9991487342718960737
+  Name: "Pipe - Quarter"
+>>>>>>> Stashed changes
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -206,6 +228,7 @@ Assets {
   }
 }
 Assets {
+<<<<<<< Updated upstream
   Id: 8381481068122581939
   Name: "Corner - Smoothed Thick - 01"
   PlatformAssetType: 1
@@ -227,6 +250,11 @@ Assets {
   Id: 8025043782394738663
   Name: "Tree Redwood Bare Big"
   PlatformAssetType: 1
+=======
+  Id: 9376086695169506816
+  Name: "Grid Glow Topographical"
+  PlatformAssetType: 2
+>>>>>>> Stashed changes
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_redwood_003"
@@ -260,6 +288,7 @@ Assets {
   }
 }
 Assets {
+<<<<<<< Updated upstream
   Id: 6315249059793889752
   Name: "Tree Redwood Bare Small"
   PlatformAssetType: 1
@@ -272,6 +301,11 @@ Assets {
   Id: 5426167128753703332
   Name: "Rock 02"
   PlatformAssetType: 1
+=======
+  Id: 7627735813362405456
+  Name: "Dirt 01"
+  PlatformAssetType: 2
+>>>>>>> Stashed changes
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_002_sm_rock_generic_002_LOD0"
@@ -314,6 +348,7 @@ Assets {
   }
 }
 Assets {
+<<<<<<< Updated upstream
   Id: 4809772542407332133
   Name: "Bush 01"
   PlatformAssetType: 1
@@ -350,6 +385,8 @@ Assets {
   }
 }
 Assets {
+=======
+>>>>>>> Stashed changes
   Id: 3903030277461280644
   Name: "Tech Panel 01"
   PlatformAssetType: 2
@@ -359,6 +396,7 @@ Assets {
   }
 }
 Assets {
+<<<<<<< Updated upstream
   Id: 3555228741918705781
   Name: "Hill 05"
   PlatformAssetType: 1
@@ -413,6 +451,8 @@ Assets {
   }
 }
 Assets {
+=======
+>>>>>>> Stashed changes
   Id: 2684326733779746582
   Name: "Diamond - 8-Sided"
   PlatformAssetType: 1
@@ -422,6 +462,7 @@ Assets {
   }
 }
 Assets {
+<<<<<<< Updated upstream
   Id: 2557637325773738263
   Name: "Ambience Nature Waterflow Set 01 SFX"
   PlatformAssetType: 10
@@ -449,6 +490,8 @@ Assets {
   }
 }
 Assets {
+=======
+>>>>>>> Stashed changes
   Id: 566457676683422458
   Name: "Pyramid - 4-Sided Truncated Polished"
   PlatformAssetType: 1

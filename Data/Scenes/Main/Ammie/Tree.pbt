@@ -1,6 +1,7 @@
 Name: "Ammie"
 RootId: 17880592535704496713
 Objects {
+<<<<<<< Updated upstream
   Id: 2966052051691136323
   Name: "Ball"
   Transform {
@@ -278,6 +279,10 @@ Objects {
 Objects {
   Id: 2752191983019385864
   Name: "Tree Redwood Small"
+=======
+  Id: 16922709743745007293
+  Name: "GameMap"
+>>>>>>> Stashed changes
   Transform {
     Location {
       X: 4762.28857
@@ -295,7 +300,12 @@ Objects {
       Z: 1.03679371
     }
   }
+<<<<<<< Updated upstream
   ParentId: 5647781314284079758
+=======
+  ParentId: 17880592535704496713
+  ChildIds: 7237136929775118415
+>>>>>>> Stashed changes
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -616,6 +626,7 @@ Objects {
       Yaw: 157.001709
     }
     Scale {
+<<<<<<< Updated upstream
       X: 0.936378121
       Y: 0.936378121
       Z: 0.936378121
@@ -10549,6 +10560,81 @@ Objects {
     }
   }
   ParentId: 17181943160522714851
+=======
+      X: 2
+      Y: 2
+      Z: 1.00000012
+    }
+  }
+  ParentId: 6511817430754496773
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.809999943
+        G: 3.86238071e-07
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 3.41143155
+    }
+    Overrides {
+      Name: "bp:Wind Speed"
+      Vector {
+        Z: 100
+      }
+    }
+    Overrides {
+      Name: "bp:Curl Speed"
+      Vector {
+        Z: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 50
+    }
+    Overrides {
+      Name: "bp:Volume Type"
+      Enum {
+        Value: "mc:evfxvolumetype:2"
+      }
+    }
+    Overrides {
+      Name: "bp:Volume Color"
+      Color {
+        R: 0.987079442
+        G: 1
+        B: 0.186000049
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 3.1832304
+    }
+    Overrides {
+      Name: "bp:Gravity"
+      Float: 3.14386845
+    }
+    Overrides {
+      Name: "bp:Visible In Preview"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Shape Visibility"
+      Enum {
+        Value: "mc:evolumevisibility:newenumerator1"
+      }
+    }
+  }
+>>>>>>> Stashed changes
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -10560,6 +10646,7 @@ Objects {
   }
   Blueprint {
     BlueprintAsset {
+<<<<<<< Updated upstream
       Id: 2819457248105277616
     }
     TeamSettings {
@@ -10590,6 +10677,30 @@ Objects {
       Pitch: 24.9227371
       Yaw: -7.89507818
       Roll: -13.6588697
+=======
+      Id: 16944369993873417543
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+  Relevance {
+    Value: "mc:eproxyrelevance:medium"
+  }
+}
+Objects {
+  Id: 1102836938924494334
+  Name: "3t2"
+  Transform {
+    Location {
+      X: 1650
+      Y: -7250
+      Z: -2459.14648
+    }
+    Rotation {
+>>>>>>> Stashed changes
     }
     Scale {
       X: 0.927551031
@@ -10597,6 +10708,7 @@ Objects {
       Z: 0.0468003638
     }
   }
+<<<<<<< Updated upstream
   ParentId: 17181943160522714851
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10647,6 +10759,13 @@ Objects {
     }
   }
   ParentId: 17181943160522714851
+=======
+  ParentId: 7237136929775118415
+  ChildIds: 5588365347324632669
+  ChildIds: 5220001508599842616
+  ChildIds: 10938528447877716269
+  ChildIds: 8461733376351005900
+>>>>>>> Stashed changes
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -10803,6 +10922,7 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:forceon"
   }
+<<<<<<< Updated upstream
   CoreMesh {
     MeshAsset {
       Id: 13493138808656220881
@@ -10817,6 +10937,10 @@ Objects {
         LinearDamping: 0.01
       }
       BoundsScale: 1
+=======
+  Folder {
+    Model {
+>>>>>>> Stashed changes
     }
   }
   InstanceHistory {
@@ -10827,6 +10951,7 @@ Objects {
   }
 }
 Objects {
+<<<<<<< Updated upstream
   Id: 6548412268548064422
   Name: "Rock Flat 01"
   Transform {
@@ -10844,6 +10969,34 @@ Objects {
       X: 0.7709409
       Y: 0.7709409
       Z: 0.7709409
+=======
+  Id: 8461733376351005900
+  Name: "Pipe - Quarter"
+  Transform {
+    Location {
+      X: -223.125977
+      Y: 673.100586
+      Z: 0.0009765625
+    }
+    Rotation {
+      Pitch: 44.9999886
+      Yaw: -168.749954
+      Roll: -89.9999847
+    }
+    Scale {
+      X: 7
+      Y: 7
+      Z: 46
+    }
+  }
+  ParentId: 1102836938924494334
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7627735813362405456
+      }
+>>>>>>> Stashed changes
     }
   }
   ParentId: 13144525994950385610
@@ -10858,7 +11011,11 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
+<<<<<<< Updated upstream
       Id: 15212031193873195241
+=======
+      Id: 9991487342718960737
+>>>>>>> Stashed changes
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -10880,6 +11037,7 @@ Objects {
   }
 }
 Objects {
+<<<<<<< Updated upstream
   Id: 2871623888659203708
   Name: "Rock 03"
   Transform {
@@ -10897,6 +11055,33 @@ Objects {
       X: 0.737416
       Y: 0.737416
       Z: 0.737416
+=======
+  Id: 10938528447877716269
+  Name: "Pipe - 90-Degree Long Thin"
+  Transform {
+    Location {
+      X: 49.9990234
+      Y: -699.998047
+      Z: 1400
+    }
+    Rotation {
+      Yaw: 101.250038
+      Roll: -179.999985
+    }
+    Scale {
+      X: 7
+      Y: 7
+      Z: 7
+    }
+  }
+  ParentId: 1102836938924494334
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7627735813362405456
+      }
+>>>>>>> Stashed changes
     }
   }
   ParentId: 13144525994950385610
@@ -10911,7 +11096,11 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
+<<<<<<< Updated upstream
       Id: 5244043243814274529
+=======
+      Id: 16642719855685288025
+>>>>>>> Stashed changes
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -10933,6 +11122,7 @@ Objects {
   }
 }
 Objects {
+<<<<<<< Updated upstream
   Id: 11574532539334092329
   Name: "Rock Pile 002"
   Transform {
@@ -10945,6 +11135,32 @@ Objects {
       X: 1
       Y: 1
       Z: 1
+=======
+  Id: 5220001508599842616
+  Name: "Pipe - 90-Degree Long Thin"
+  Transform {
+    Location {
+      X: 49.9990234
+      Y: -699.998047
+      Z: 1400
+    }
+    Rotation {
+      Yaw: 89.9999924
+    }
+    Scale {
+      X: 7
+      Y: 7
+      Z: 10.3229294
+    }
+  }
+  ParentId: 1102836938924494334
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7627735813362405456
+      }
+>>>>>>> Stashed changes
     }
   }
   ParentId: 13144525994950385610
@@ -10959,7 +11175,11 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
+<<<<<<< Updated upstream
       Id: 14453296687442680059
+=======
+      Id: 16642719855685288025
+>>>>>>> Stashed changes
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -10981,6 +11201,7 @@ Objects {
   }
 }
 Objects {
+<<<<<<< Updated upstream
   Id: 3313191965052951225
   Name: "Water"
   Transform {
@@ -10990,13 +11211,26 @@ Objects {
       Z: 264.737457
     }
     Rotation {
+=======
+  Id: 5588365347324632669
+  Name: "Pipe"
+  Transform {
+    Location {
+      X: 50
+      Y: 700.001953
+      Z: 3456.23706
+    }
+    Rotation {
+      Roll: 89.9999924
+>>>>>>> Stashed changes
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 7
+      Y: 10.4004316
+      Z: 4.99999762
     }
   }
+<<<<<<< Updated upstream
   ParentId: 17619106814040539412
   ChildIds: 15087893392329098712
   ChildIds: 6861598932156391911
@@ -11009,6 +11243,17 @@ Objects {
   ChildIds: 9096379588086513943
   ChildIds: 5323446026587475225
   ChildIds: 14614359438677765548
+=======
+  ParentId: 1102836938924494334
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7627735813362405456
+      }
+    }
+  }
+>>>>>>> Stashed changes
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -11057,7 +11302,11 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
+<<<<<<< Updated upstream
       Id: 18231021891014034075
+=======
+      Id: 17531041758213491814
+>>>>>>> Stashed changes
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -11079,6 +11328,7 @@ Objects {
   }
 }
 Objects {
+<<<<<<< Updated upstream
   Id: 5323446026587475225
   Name: "Clover Patch 01"
   Transform {
@@ -11086,17 +11336,38 @@ Objects {
       X: -864.867432
       Y: 1266.87
       Z: -377.336731
+=======
+  Id: 7420941274081117484
+  Name: "2t3"
+  Transform {
+    Location {
+      X: -7200
+      Y: -4550
+      Z: -3300
+>>>>>>> Stashed changes
     }
     Rotation {
       Yaw: -175.77655
     }
     Scale {
+<<<<<<< Updated upstream
       X: 1.76814604
       Y: 1.76814604
       Z: 1.76814604
     }
   }
   ParentId: 3313191965052951225
+=======
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7237136929775118415
+  ChildIds: 15891048128466891917
+  ChildIds: 13932600363531667724
+  ChildIds: 2138756005306068342
+>>>>>>> Stashed changes
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -11106,6 +11377,7 @@ Objects {
   CameraCollidable {
     Value: "mc:ecollisionsetting:forceon"
   }
+<<<<<<< Updated upstream
   CoreMesh {
     MeshAsset {
       Id: 18231021891014034075
@@ -11120,6 +11392,10 @@ Objects {
         LinearDamping: 0.01
       }
       BoundsScale: 1
+=======
+  Folder {
+    Model {
+>>>>>>> Stashed changes
     }
   }
   InstanceHistory {
@@ -11130,6 +11406,7 @@ Objects {
   }
 }
 Objects {
+<<<<<<< Updated upstream
   Id: 9096379588086513943
   Name: "Clover Patch 01"
   Transform {
@@ -11541,10 +11818,30 @@ Objects {
     }
   }
   ParentId: 3313191965052951225
+=======
+  Id: 2138756005306068342
+  Name: "Pipe - 45-Degree Long "
+  Transform {
+    Location {
+      X: -209.011719
+      Y: 8.90820312
+      Z: 1440.85352
+    }
+    Rotation {
+    }
+    Scale {
+      X: 10
+      Y: 10
+      Z: -10
+    }
+  }
+  ParentId: 7420941274081117484
+>>>>>>> Stashed changes
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
+<<<<<<< Updated upstream
         Id: 18205035506563201104
       }
     }
@@ -14306,6 +14603,10 @@ Objects {
       X: 1
       Y: 1
       Z: 1
+=======
+        Id: 7627735813362405456
+      }
+>>>>>>> Stashed changes
     }
   }
   ParentId: 194926828186891890
@@ -14315,6 +14616,7 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+<<<<<<< Updated upstream
   TemplateInstance {
     ParameterOverrideMap {
       key: 5367351257924780912
@@ -14347,6 +14649,26 @@ Objects {
             Z: 0.840811908
           }
         }
+=======
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11399097035033756890
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+>>>>>>> Stashed changes
       }
     }
     TemplateAsset {
@@ -14355,6 +14677,7 @@ Objects {
   }
 }
 Objects {
+<<<<<<< Updated upstream
   Id: 14975312496717344656
   Name: "tip 6"
   Transform {
@@ -14416,6 +14739,34 @@ Objects {
       X: 1
       Y: 1
       Z: 1
+=======
+  Id: 13932600363531667724
+  Name: "Pipe - Half"
+  Transform {
+    Location {
+      X: 356.674805
+      Y: 8.90820312
+      Z: 9.12451172
+    }
+    Rotation {
+      Pitch: 6.83018879e-06
+      Yaw: -90
+      Roll: -45
+    }
+    Scale {
+      X: 10
+      Y: 10
+      Z: -10
+    }
+  }
+  ParentId: 7420941274081117484
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7627735813362405456
+      }
+>>>>>>> Stashed changes
     }
   }
   ParentId: 194926828186891890
@@ -14425,6 +14776,7 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+<<<<<<< Updated upstream
   TemplateInstance {
     ParameterOverrideMap {
       key: 14587829762841352189
@@ -14457,6 +14809,26 @@ Objects {
             Z: 1
           }
         }
+=======
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15535373426729003296
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+>>>>>>> Stashed changes
       }
     }
     TemplateAsset {
@@ -14465,26 +14837,50 @@ Objects {
   }
 }
 Objects {
+<<<<<<< Updated upstream
   Id: 16442443949655426345
   Name: "Default Floor"
   Transform {
     Location {
       Z: -50
+=======
+  Id: 15891048128466891917
+  Name: "Pipe - 90-Degree Long Thick"
+  Transform {
+    Location {
+      X: -209.011719
+      Y: 8.90820312
+      Z: 1440.85352
+>>>>>>> Stashed changes
     }
     Rotation {
+      Yaw: 47.2799492
     }
     Scale {
+<<<<<<< Updated upstream
       X: 150
       Y: 150
       Z: 1
     }
   }
   ParentId: 16016066416196986409
+=======
+      X: 10
+      Y: 10
+      Z: 10
+    }
+  }
+  ParentId: 7420941274081117484
+>>>>>>> Stashed changes
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
+<<<<<<< Updated upstream
         Id: 3215751367896566321
+=======
+        Id: 7627735813362405456
+>>>>>>> Stashed changes
       }
     }
   }
@@ -14499,7 +14895,11 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
+<<<<<<< Updated upstream
       Id: 17411241785745302645
+=======
+      Id: 7933314945918843549
+>>>>>>> Stashed changes
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -14514,6 +14914,44 @@ Objects {
   }
 }
 Objects {
+<<<<<<< Updated upstream
+=======
+  Id: 16084796455542695252
+  Name: "Loose"
+  Transform {
+    Location {
+      X: -6350
+      Y: 3900
+      Z: -4350
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17880592535704496713
+  ChildIds: 14319087388953341167
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+>>>>>>> Stashed changes
   Id: 14319087388953341167
   Name: "PipeIsland"
   Transform {
