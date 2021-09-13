@@ -50,13 +50,13 @@ Objects {
     Overrides {
       Name: "cs:StealWeaponSFX"
       AssetReference {
-        Id: 911886833634279992
+        Id: 10815419222962770200
       }
     }
     Overrides {
       Name: "cs:WeaponStolenSFX"
       AssetReference {
-        Id: 911886833634279992
+        Id: 11129638044035057921
       }
     }
     Overrides {

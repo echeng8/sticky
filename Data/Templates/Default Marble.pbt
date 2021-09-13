@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 8568336417442047963
+        ParentId: 4486416291996771688
         ChildIds: 14678292503115374133
         ChildIds: 1317278866790388292
         ChildIds: 3629094995299783858
@@ -258,7 +258,7 @@ Assets {
         }
         AudioInstance {
           AudioAsset {
-            Id: 3149118423218129387
+            Id: 877316504977244165
           }
           AutoPlay: true
           Repeat: true
@@ -328,15 +328,15 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2350714935623826938
+              Id: 5053086791095825808
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.351532698
-              G: 0.184475
-              B: 0.165132225
+              R: 0.19
+              G: 0.565496445
+              B: 1
               A: 1
             }
           }
@@ -608,12 +608,12 @@ Assets {
       }
     }
     Assets {
-      Id: 3149118423218129387
-      Name: "Material Rolling Movement Rock Heavy Rumble 01 SFX"
+      Id: 877316504977244165
+      Name: "Material Rolling Movement Glass Jar Loop 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_material_rolling_movement__rock_heavy_rumble_01_Cue_ref"
+        AssetId: "sfx_material_rolling_movement_glass_jar_loop_01_Cue_ref"
       }
     }
     Assets {
@@ -626,12 +626,12 @@ Assets {
       }
     }
     Assets {
-      Id: 2350714935623826938
-      Name: "Food Citrus 01"
+      Id: 5053086791095825808
+      Name: "Marble Basic 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_food_generic_citrus_001_uv"
+        AssetId: "mi_gen_marble_tiles_001_uv"
       }
     }
     PrimaryAssetId {
