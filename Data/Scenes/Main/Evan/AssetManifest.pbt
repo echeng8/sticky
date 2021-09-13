@@ -224,6 +224,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14193775455860436601
+  Name: "Magic Swirl Element Volume"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_magic_swirl_element_volume_vfx"
+  }
+}
+Assets {
   Id: 14023144080669477239
   Name: "Hill 02"
   PlatformAssetType: 1
@@ -725,5 +734,14 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "fxsm_waterfall_straight"
+  }
+}
+Assets {
+  Id: 159990570496859497
+  Name: "Decal Elven Symbols"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_elven_symbols_001"
   }
 }
