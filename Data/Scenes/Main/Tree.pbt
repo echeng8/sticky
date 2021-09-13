@@ -23,7 +23,6 @@ Objects {
   ChildIds: 8125752998756458609
   ChildIds: 7671508122509407629
   ChildIds: 14682129076076697249
-  ChildIds: 1736056875697219986
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -36,52 +35,6 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 1736056875697219986
-  Name: "Lightsaber"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8568336417442047963
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 4231732884484070214
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Lightsaber"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 10100
-            Y: -7825
-            Z: 4850
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 2746625383053017130
-    }
   }
 }
 Objects {
