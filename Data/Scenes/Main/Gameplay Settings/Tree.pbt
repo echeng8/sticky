@@ -130,7 +130,7 @@ Objects {
         Value: "mc:erespawnmode:roundrobin"
       }
       SpawnMode {
-        Value: "mc:espawnmode:random"
+        Value: "mc:espawnmode:roundrobin"
       }
     }
   }

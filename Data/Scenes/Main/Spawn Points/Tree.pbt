@@ -1,24 +1,24 @@
 Name: "Spawn Points"
-RootId: 17716463025826470812
+RootId: 10743582160558010163
 Objects {
-  Id: 16494782861252569601
+  Id: 1523587197703406869
   Name: "Spawn Point"
   Transform {
     Location {
-      X: 4277.68945
-      Y: -664.834961
-      Z: 59.1357422
+      X: 6822.14795
+      Y: 28046.7754
+      Z: 1619.4552
     }
     Rotation {
-      Yaw: 107.005707
+      Yaw: -143.190643
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 1.89090323
+      Y: 1.89090323
+      Z: 1.89090323
     }
   }
-  ParentId: 17716463025826470812
+  ParentId: 10743582160558010163
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -37,27 +37,28 @@ Objects {
     SpawnEffectsTemplate {
       Id: 841534158063459245
     }
+    ShouldDecrowdPlayers: true
   }
 }
 Objects {
-  Id: 296828591319835453
+  Id: 11756909587415124130
   Name: "Spawn Point"
   Transform {
     Location {
-      X: 493.245117
-      Y: 4034.57568
-      Z: 59.1352539
+      X: -4312.75146
+      Y: 15986.7354
+      Z: 2027.26807
     }
     Rotation {
-      Yaw: -29.3518677
+      Yaw: 46.0199165
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 1.89090323
+      Y: 1.89090323
+      Z: 1.89090323
     }
   }
-  ParentId: 17716463025826470812
+  ParentId: 10743582160558010163
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -76,44 +77,6 @@ Objects {
     SpawnEffectsTemplate {
       Id: 841534158063459245
     }
-  }
-}
-Objects {
-  Id: 3121113833197448479
-  Name: "Spawn Point"
-  Transform {
-    Location {
-      X: -1352.41992
-      Y: 3370.50098
-      Z: 86.7900391
-    }
-    Rotation {
-      Yaw: 176.020187
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17716463025826470812
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:alwaysvisible"
-  }
-  PlayerSpawnPoint {
-    TeamInt: 1
-    PlayerScaleMultiplier: 1
-    SpawnEffectsTemplate {
-      Id: 841534158063459245
-    }
+    ShouldDecrowdPlayers: true
   }
 }
