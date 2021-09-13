@@ -61,6 +61,7 @@ Objects {
   ChildIds: 3605162127800734439
   ChildIds: 835521940222818333
   ChildIds: 18043729843661520675
+  ChildIds: 11392779670060402110
   ChildIds: 17716463025826470812
   ChildIds: 13682548436617273812
   ChildIds: 15072314973806072074
@@ -193,6 +194,96 @@ Objects {
   }
 }
 Objects {
+  Id: 11392779670060402110
+  Name: "LightingEmphasis"
+  Transform {
+    Location {
+      X: 330
+      Y: -270
+      Z: 1880
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16016066416196986409
+  ChildIds: 10741212650775584770
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 10741212650775584770
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -0.18359375
+      Y: 3.48730469
+    }
+    Rotation {
+      Yaw: -22.4999542
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11392779670060402110
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Light {
+    Intensity: 2000
+    Color {
+      R: 0.0112582603
+      G: 0.340000033
+      A: 1
+    }
+    VolumetricIntensity: 100
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 6000
+        PointLight {
+          SourceRadius: 500
+          SoftSourceRadius: 500
+          SourceLength: 500
+          FallOffExponent: 8
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
   Id: 18043729843661520675
   Name: "FunctionalProps"
   Transform {
@@ -240,12 +331,12 @@ Objects {
   Name: "LightRock"
   Transform {
     Location {
-      X: 2794.59082
-      Y: -2765.73633
+      X: 2786.6875
+      Y: -1793.87207
       Z: 273.851562
     }
     Rotation {
-      Yaw: 160.302322
+      Yaw: 137.802231
     }
     Scale {
       X: 3.37194324
@@ -12585,6 +12676,19 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 2896886543606166681
+      value {
+        Overrides {
+          Name: "Intensity"
+          Float: 60.6939545
+        }
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 1617.15
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 15049011682251498262
       value {
         Overrides {
@@ -12594,8 +12698,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1946.49707
-            Y: -419.127686
+            X: 1168.58984
+            Y: 4681.83691
             Z: -50
           }
         }
@@ -12710,8 +12814,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 3094.23535
-            Y: -18.802002
+            X: 5201.15723
+            Y: 1015.52588
             Z: -50
           }
         }
@@ -12772,15 +12876,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 2965.61426
-            Y: -1171.11719
+            X: 1989.86523
+            Y: -345.780273
             Z: -50
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 35.4686203
+            Yaw: 46.7185
           }
         }
         Overrides {
