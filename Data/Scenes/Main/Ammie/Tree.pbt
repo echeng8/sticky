@@ -4420,11 +4420,12 @@ Objects {
   Name: "Tree Birch Bare 01"
   Transform {
     Location {
-      X: -30.4438477
-      Y: -6.91943359
+      X: -30.4438229
+      Y: -6.9194088
       Z: 90.6357422
     }
     Rotation {
+      Yaw: 22.4999943
     }
     Scale {
       X: 1.0785259
