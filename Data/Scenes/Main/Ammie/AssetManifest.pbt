@@ -107,15 +107,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16497037341549592686
-  Name: "Prism - Asymmetrical Beveled - Large 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_corelogo_shape_002_half_bottom_01_ref"
-  }
-}
-Assets {
   Id: 16481458062139848063
   Name: "Rock Flat 02"
   PlatformAssetType: 1
@@ -350,15 +341,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13573369050225306263
-  Name: "Pipe - X-Intersection Thin"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pipe_X_intersection_002"
-  }
-}
-Assets {
   Id: 13493138808656220881
   Name: "Rock 01"
   PlatformAssetType: 1
@@ -410,24 +392,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_birch_002"
-  }
-}
-Assets {
-  Id: 12745145329380651910
-  Name: "Pipe - 4-Sided Thin"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pipe_4_sided_thin_001"
-  }
-}
-Assets {
-  Id: 12695073426770878775
-  Name: "Pipe - Quarter Thin - Large"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_quarter-pipe_lg_thin_001_ref"
   }
 }
 Assets {
@@ -557,15 +521,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9376086695169506816
-  Name: "Grid Glow Topographical"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_grid_topographical_001_wa"
-  }
-}
-Assets {
   Id: 9370313660800157713
   Name: "Tree Redwood Small"
   PlatformAssetType: 1
@@ -581,24 +536,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_008"
-  }
-}
-Assets {
-  Id: 8381481068122581939
-  Name: "Corner - Smoothed Thick - 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_corner_smooth_thick_001_ref"
-  }
-}
-Assets {
-  Id: 8078265405463023692
-  Name: "Animated Glowing Hex"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxma_hex_animated"
   }
 }
 Assets {
@@ -737,15 +674,6 @@ Assets {
   }
 }
 Assets {
-  Id: 5381947486668337616
-  Name: "Metal Greebles 02"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_scf_greebles_002_uv_ref"
-  }
-}
-Assets {
   Id: 5244043243814274529
   Name: "Rock 03"
   PlatformAssetType: 1
@@ -773,30 +701,12 @@ Assets {
   }
 }
 Assets {
-  Id: 5109129970559468393
-  Name: "Cube"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_002"
-  }
-}
-Assets {
   Id: 5059558495047150203
   Name: "Ivy 05"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ivy_generic_005"
-  }
-}
-Assets {
-  Id: 4944960497088071701
-  Name: "Pipe - 4-Sided Thick"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pipe_4_sided_thick_001"
   }
 }
 Assets {
@@ -869,15 +779,6 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_fantasy_carved_001"
-  }
-}
-Assets {
-  Id: 3903030277461280644
-  Name: "Tech Panel 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_sf_gen_tech-panel_001"
   }
 }
 Assets {
@@ -1007,15 +908,6 @@ Assets {
   }
 }
 Assets {
-  Id: 2684326733779746582
-  Name: "Diamond - 8-Sided"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_diamond_8_sided_001"
-  }
-}
-Assets {
   Id: 2557637325773738263
   Name: "Ambience Nature Waterflow Set 01 SFX"
   PlatformAssetType: 10
@@ -1115,38 +1007,11 @@ Assets {
   }
 }
 Assets {
-  Id: 566457676683422458
-  Name: "Pyramid - 4-Sided Truncated Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pyramid_truncated_hq_001"
-  }
-}
-Assets {
-  Id: 262309230778957119
-  Name: "Pipe - Large"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pipe_lg_001_ref"
-  }
-}
-Assets {
   Id: 159990570496859497
   Name: "Decal Elven Symbols"
   PlatformAssetType: 14
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_elven_symbols_001"
-  }
-}
-Assets {
-  Id: 148177977333154676
-  Name: "Rubber Tiles 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_scf_rubber_panels_002_uv"
   }
 }
