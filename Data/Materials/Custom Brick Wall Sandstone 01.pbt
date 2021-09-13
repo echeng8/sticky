@@ -8,7 +8,7 @@ Assets {
     ParameterOverrides {
       Overrides {
         Name: "material_scale"
-        Float: 57.9678574
+        Float: 10.499773
       }
       Overrides {
         Name: "color"
