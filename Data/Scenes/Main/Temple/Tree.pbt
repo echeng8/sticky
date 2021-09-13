@@ -1,6 +1,38 @@
 Name: "Temple"
 RootId: 10921663555979170873
 Objects {
+  Id: 16599553276646614131
+  Name: "Spawn Points"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10921663555979170873
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Spawn Points_2"
+  }
+}
+Objects {
   Id: 4315582566035088714
   Name: "Altar"
   Transform {
@@ -662,59 +694,6 @@ Objects {
   InstanceHistory {
     SelfId: 16644823518482371762
     SubobjectId: 14337928873683428609
-    InstanceId: 180761580454331541
-    TemplateId: 14133772865472828727
-  }
-}
-Objects {
-  Id: 17092753652917027292
-  Name: "Ball"
-  Transform {
-    Location {
-      X: 2126.87598
-      Y: -6338.30273
-      Z: 577.910156
-    }
-    Rotation {
-    }
-    Scale {
-      X: 3.5
-      Y: 3.5
-      Z: 3.5
-    }
-  }
-  ParentId: 10921663555979170873
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 10546897328500124884
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  InstanceHistory {
-    SelfId: 17092753652917027292
-    SubobjectId: 14785718313512300655
     InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
