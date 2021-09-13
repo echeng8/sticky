@@ -10,12 +10,12 @@ Assets {
         Name: "Kill Zone"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 10
+            Y: 10
+            Z: 10
           }
         }
-        ParentId: 10562065330696862854
+        ParentId: 6784946479268211223
         ChildIds: 13591331349196528036
         ChildIds: 16145483188601114806
         UnregisteredParameters {
@@ -42,8 +42,8 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
+            X: 15
+            Y: 15
             Z: 1
           }
         }
@@ -90,6 +90,12 @@ Assets {
             Name: "cs:KillTrigger"
             ObjectReference {
               SubObjectId: 13591331349196528036
+            }
+          }
+          Overrides {
+            Name: "cs:APIMarble"
+            AssetReference {
+              Id: 14137586896240072563
             }
           }
         }

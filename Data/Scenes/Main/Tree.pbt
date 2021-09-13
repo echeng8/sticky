@@ -163,7 +163,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Avi"
+    FilePartitionName: "Avi_1"
   }
 }
 Objects {

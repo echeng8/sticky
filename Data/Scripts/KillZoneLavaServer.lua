@@ -20,7 +20,7 @@ local KILL_TRIGGER = script:GetCustomProperty("KillTrigger"):WaitForObject()
 local LAVA = script:GetCustomProperty("LAVA"):WaitForObject()
 --local ABGS = require(script:GetCustomProperty("API"))
 local LAVAHITEFFECT = script:GetCustomProperty("LAVAHITEFFECT")
-
+local propAPIMarble = require(script:GetCustomProperty("APIMarble"))
 local activePlayers = {}
 
 -- nil OnBeginOverlap(Trigger, Object)
@@ -49,14 +49,16 @@ function Tick()
     Task.Wait(0.2)
 end
 
-function OnBeginOverlap(theTrigger, player)
-    if player and player:IsA("Player") then
+function OnBeginOverlap(theTrigger, marble)
+    local player = propAPIMarble.GetPlayerFromMarble(marble)
+    if player then
         table.insert(activePlayers, player)
     end
 end
 
-function OnEndOverlap(theTrigger, player)
-    if (not player or not player:IsA("Player")) then return end
+function OnEndOverlap(theTrigger, marble)
+    local player = propAPIMarble.GetPlayerFromMarble(marble)
+    if player then return end
 
     for i,p in ipairs(activePlayers) do
         if (p == player) then
