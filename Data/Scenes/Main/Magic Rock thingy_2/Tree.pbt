@@ -1,7 +1,7 @@
 Name: "Magic Rock thingy_2"
-RootId: 15476739038497597903
+RootId: 17184477858533546512
 Objects {
-  Id: 6305406740924093009
+  Id: 8012648873825051022
   Name: "Dodecahedron"
   Transform {
     Location {
@@ -19,7 +19,7 @@ Objects {
       Z: 9.90211582
     }
   }
-  ParentId: 15476739038497597903
+  ParentId: 17184477858533546512
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -65,14 +65,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6305406740924093009
+    SelfId: 8012648873825051022
     SubobjectId: 5707856400701755453
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 8285084254360191918
+  Id: 5352919089284558961
   Name: "Dodecahedron"
   Transform {
     Location {
@@ -90,7 +90,7 @@ Objects {
       Z: 10.5313473
     }
   }
-  ParentId: 15476739038497597903
+  ParentId: 17184477858533546512
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -136,9 +136,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8285084254360191918
+    SelfId: 5352919089284558961
     SubobjectId: 7659962271316345282
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }

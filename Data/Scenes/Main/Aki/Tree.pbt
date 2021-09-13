@@ -1,7 +1,7 @@
 Name: "Aki"
 RootId: 14682129076076697249
 Objects {
-  Id: 12619755298191779814
+  Id: 10921663555979170873
   Name: "Temple"
   Transform {
     Location {
@@ -35,9 +35,9 @@ Objects {
     FilePartitionName: "Temple"
   }
   InstanceHistory {
-    SelfId: 12619755298191779814
+    SelfId: 10921663555979170873
     SubobjectId: 13228567125736940938
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
     WasRoot: true
   }

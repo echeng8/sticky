@@ -1,24 +1,24 @@
 Name: "Stone Archs"
-RootId: 9159081466541949117
+RootId: 5163504131553112930
 Objects {
-  Id: 6682514271365280150
+  Id: 7209951722717856329
   Name: "Fantasy Castle Pillar Wall 01 Arch"
   Transform {
     Location {
-      X: 1214.33008
-      Y: 8091.83301
+      X: 1990.34277
+      Y: 12650.7051
       Z: -335.976562
     }
     Rotation {
-      Yaw: -89.9999847
+      Yaw: -90
     }
     Scale {
-      X: 4.74063158
-      Y: 8.58626556
-      Z: 4.41954088
+      X: 8
+      Y: 11
+      Z: 7
     }
   }
-  ParentId: 9159081466541949117
+  ParentId: 5163504131553112930
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallOuter:color"
@@ -77,31 +77,31 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6682514271365280150
+    SelfId: 7209951722717856329
     SubobjectId: 4902766815439123450
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 17774943619128480307
+  Id: 14852487551999746540
   Name: "Fantasy Castle Pillar Wall 01 Arch"
   Transform {
     Location {
-      X: -1207.55762
-      Y: 8091.83301
+      X: -1967.76953
+      Y: 12650.7051
       Z: -335.976562
     }
     Rotation {
-      Yaw: -89.9999847
+      Yaw: -90
     }
     Scale {
-      X: 4.74063158
-      Y: 8.58626556
-      Z: 4.41954088
+      X: 8
+      Y: 11
+      Z: 7
     }
   }
-  ParentId: 9159081466541949117
+  ParentId: 5163504131553112930
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallOuter:color"
@@ -160,31 +160,31 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 17774943619128480307
+    SelfId: 14852487551999746540
     SubobjectId: 17157138059206660191
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 12525287836954903793
+  Id: 10763930052263622446
   Name: "Fantasy Castle Pillar Wall 01 Arch"
   Transform {
     Location {
-      X: -1160.69434
-      Y: -8024.88379
+      X: -1840.12012
+      Y: -12577.5127
       Z: -335.976562
     }
     Rotation {
       Yaw: 89.9999847
     }
     Scale {
-      X: 4.74063158
-      Y: 8.58626556
-      Z: 4.41954088
+      X: 8
+      Y: 11
+      Z: 7
     }
   }
-  ParentId: 9159081466541949117
+  ParentId: 5163504131553112930
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallOuter:color"
@@ -243,31 +243,31 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12525287836954903793
+    SelfId: 10763930052263622446
     SubobjectId: 13071114968216176285
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 9702613171318773688
+  Id: 13696978028987393127
   Name: "Fantasy Castle Pillar Wall 01 Arch"
   Transform {
     Location {
-      X: 1214.33398
-      Y: -8024.88379
+      X: 2082.72949
+      Y: -12577.5127
       Z: -335.976562
     }
     Rotation {
       Yaw: 90
     }
     Scale {
-      X: 4.74063158
-      Y: 8.58626556
-      Z: 4.41954088
+      X: 8
+      Y: 11
+      Z: 7
     }
   }
-  ParentId: 9159081466541949117
+  ParentId: 5163504131553112930
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallOuter:color"
@@ -326,9 +326,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9702613171318773688
+    SelfId: 13696978028987393127
     SubobjectId: 11390083289631790548
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }

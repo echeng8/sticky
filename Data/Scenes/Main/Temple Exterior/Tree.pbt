@@ -1,23 +1,40 @@
 Name: "Temple Exterior"
-RootId: 17040553578013014874
+RootId: 15334719925979629701
 Objects {
-  Id: 13836983144148984263
-  Name: "Top Temple"
+  Id: 2943372996859183547
+  Name: "Ground"
   Transform {
     Location {
-      X: -328.25293
-      Y: -808.914062
-      Z: 6400
+      X: -3102.3418
+      Y: -6130.09473
+      Z: 359.013184
     }
     Rotation {
     }
     Scale {
-      X: 1
-      Y: 1
+      X: 18
+      Y: 105.999969
       Z: 1
     }
   }
-  ParentId: 17040553578013014874
+  ParentId: 15334719925979629701
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16002332097606802660
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -30,28 +47,241 @@ Objects {
   EditorIndicatorVisibility {
     Value: "mc:eindicatorvisibility:visiblewhenselected"
   }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Top Temple"
+  CoreMesh {
+    MeshAsset {
+      Id: 5109129970559468393
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
   }
   InstanceHistory {
-    SelfId: 13836983144148984263
-    SubobjectId: 15614536235139703723
+    SelfId: 10742494006785585483
+    SubobjectId: 10205770559494648615
     InstanceId: 6189848507394240290
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 1780613589665878917
+  Id: 5471403292458250749
+  Name: "Ground"
+  Transform {
+    Location {
+      X: -3102.3418
+      Y: 6169.90527
+      Z: 359.013184
+    }
+    Rotation {
+    }
+    Scale {
+      X: 18
+      Y: 105.999969
+      Z: 1
+    }
+  }
+  ParentId: 15334719925979629701
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16002332097606802660
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5109129970559468393
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 10742494006785585483
+    SubobjectId: 10205770559494648615
+    InstanceId: 6189848507394240290
+    TemplateId: 14133772865472828727
+  }
+}
+Objects {
+  Id: 10742494006785585483
+  Name: "Ground"
+  Transform {
+    Location {
+      X: -8367.3418
+      Y: 143.442383
+      Z: 359.013184
+    }
+    Rotation {
+    }
+    Scale {
+      X: 87.3169556
+      Y: 338.981232
+      Z: 1
+    }
+  }
+  ParentId: 15334719925979629701
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16002332097606802660
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5109129970559468393
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 10742494006785585483
+    SubobjectId: 10205770559494648615
+    InstanceId: 6189848507394240290
+    TemplateId: 14133772865472828727
+  }
+}
+Objects {
+  Id: 8390931074045291068
+  Name: "Flooring"
+  Transform {
+    Location {
+      X: 7893.6582
+      Y: 3.25878906
+      Z: 359.013
+    }
+    Rotation {
+    }
+    Scale {
+      X: 202.000122
+      Y: 317
+      Z: 1
+    }
+  }
+  ParentId: 15334719925979629701
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16002332097606802660
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5109129970559468393
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+  InstanceHistory {
+    SelfId: 8390931074045291068
+    SubobjectId: 6086148496526908303
+    InstanceId: 180761580454331541
+    TemplateId: 14133772865472828727
+  }
+}
+Objects {
+  Id: 2307506671122931802
   Name: "Whitebox Stairs 01 Straight"
   Transform {
     Location {
-      X: 6002.16504
-      Y: 1067.75244
+      X: 15516.0293
+      Y: 1067.75293
       Z: 154.733398
     }
     Rotation {
-      Yaw: -89.9999847
+      Yaw: -90
     }
     Scale {
       X: 5
@@ -59,7 +289,7 @@ Objects {
       Z: 10
     }
   }
-  ParentId: 17040553578013014874
+  ParentId: 15334719925979629701
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail2:id"
@@ -121,28 +351,28 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1780613589665878917
+    SelfId: 2307506671122931802
     SubobjectId: 331513419944425
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 9135930892616242710
+  Id: 5078568382350779849
   Name: "Pipe - 4-Sided"
   Transform {
     Location {
-      Z: 5825.28125
+      Z: 9156.42285
     }
     Rotation {
     }
     Scale {
-      X: 43.6211052
-      Y: 121.51667
-      Z: 5
+      X: 105.37542
+      Y: 187.117859
+      Z: 8
     }
   }
-  ParentId: 17040553578013014874
+  ParentId: 15334719925979629701
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -189,28 +419,28 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9135930892616242710
+    SelfId: 5078568382350779849
     SubobjectId: 7385471952159134842
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 1881839078025292365
+  Id: 2499015230483437970
   Name: "Pipe - 4-Sided"
   Transform {
     Location {
-      Z: 5328.38281
+      Z: 8354.42285
     }
     Rotation {
     }
     Scale {
-      X: 48.3695526
-      Y: 129.252167
-      Z: 5
+      X: 115.725388
+      Y: 199.029327
+      Z: 8
     }
   }
-  ParentId: 17040553578013014874
+  ParentId: 15334719925979629701
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -257,28 +487,28 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 1881839078025292365
+    SelfId: 2499015230483437970
     SubobjectId: 192121556347103265
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 8451318259842102018
+  Id: 5619074624215957725
   Name: "Pipe - 4-Sided"
   Transform {
     Location {
-      Z: 4835.5957
+      Z: 7552.42285
     }
     Rotation {
     }
     Scale {
-      X: 53.4920082
-      Y: 137.214539
-      Z: 5
+      X: 127.428368
+      Y: 211.290268
+      Z: 8
     }
   }
-  ParentId: 17040553578013014874
+  ParentId: 15334719925979629701
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -325,28 +555,28 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8451318259842102018
+    SelfId: 5619074624215957725
     SubobjectId: 7925827423425261934
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 11090734457380429013
+  Id: 11626569710140436234
   Name: "Pipe - 4-Sided"
   Transform {
     Location {
-      Z: 4340.76367
+      Z: 6750.42285
     }
     Rotation {
     }
     Scale {
-      X: 59.4280357
-      Y: 144.973251
-      Z: 5
+      X: 141.367142
+      Y: 223.237595
+      Z: 8
     }
   }
-  ParentId: 17040553578013014874
+  ParentId: 15334719925979629701
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -393,28 +623,28 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 11090734457380429013
+    SelfId: 11626569710140436234
     SubobjectId: 9321636594085437113
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 15645522910992699402
+  Id: 16254612037308539861
   Name: "Pipe - 4-Sided"
   Transform {
     Location {
-      Z: 3845.77637
+      Z: 5948.42285
     }
     Rotation {
     }
     Scale {
-      X: 66.1753159
-      Y: 153.162064
-      Z: 5
+      X: 156.691925
+      Y: 235.847092
+      Z: 8
     }
   }
-  ParentId: 17040553578013014874
+  ParentId: 15334719925979629701
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -461,28 +691,28 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15645522910992699402
+    SelfId: 16254612037308539861
     SubobjectId: 13949687725919720038
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 15189112114850512519
+  Id: 16895671032337911128
   Name: "Pipe - 4-Sided"
   Transform {
     Location {
-      Z: 3347.74023
+      Z: 5146.42285
     }
     Rotation {
     }
     Scale {
-      X: 72.6130295
-      Y: 160.740585
-      Z: 5
+      X: 171.935471
+      Y: 247.516907
+      Z: 8
     }
   }
-  ParentId: 17040553578013014874
+  ParentId: 15334719925979629701
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -529,28 +759,28 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15189112114850512519
+    SelfId: 16895671032337911128
     SubobjectId: 14591029321223765227
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 6612834989753142596
+  Id: 7167032217836093083
   Name: "Pipe - 4-Sided"
   Transform {
     Location {
-      Z: 2854.15723
+      Z: 4344.42285
     }
     Rotation {
     }
     Scale {
-      X: 79.8368683
-      Y: 169.12645
-      Z: 5
+      X: 189.040298
+      Y: 260.429932
+      Z: 8
     }
   }
-  ParentId: 17040553578013014874
+  ParentId: 15334719925979629701
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -597,28 +827,28 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6612834989753142596
+    SelfId: 7167032217836093083
     SubobjectId: 4860137444171075368
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 14488091931669984740
+  Id: 17412008449373406779
   Name: "Pipe - 4-Sided"
   Transform {
     Location {
-      Z: 2359.61523
+      Z: 3542.42285
     }
     Rotation {
     }
     Scale {
-      X: 86.273735
-      Y: 176.705078
-      Z: 5
+      X: 204.281586
+      Y: 272.099884
+      Z: 8
     }
   }
-  ParentId: 17040553578013014874
+  ParentId: 15334719925979629701
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -665,28 +895,28 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 14488091931669984740
+    SelfId: 17412008449373406779
     SubobjectId: 15107085237445900168
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 16562950744924785247
+  Id: 15954142717708892544
   Name: "Pipe - 4-Sided"
   Transform {
     Location {
-      Z: 1868.86621
+      Z: 2740.42285
     }
     Rotation {
     }
     Scale {
-      X: 92.6408463
-      Y: 184.841614
-      Z: 5
+      X: 219.357864
+      Y: 284.628876
+      Z: 8
     }
   }
-  ParentId: 17040553578013014874
+  ParentId: 15334719925979629701
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -733,28 +963,28 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 16562950744924785247
+    SelfId: 15954142717708892544
     SubobjectId: 18261046253157500979
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 16784722964461682573
+  Id: 15014081055557717074
   Name: "Pipe - 4-Sided"
   Transform {
     Location {
-      Z: 1373.48242
+      Z: 1938.42285
     }
     Rotation {
     }
     Scale {
-      X: 99.4920883
-      Y: 193.604614
-      Z: 5
+      X: 235.580551
+      Y: 298.122711
+      Z: 8
     }
   }
-  ParentId: 17040553578013014874
+  ParentId: 15334719925979629701
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -801,28 +1031,28 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 16784722964461682573
+    SelfId: 15014081055557717074
     SubobjectId: 17318732799799377377
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 15408881398453810307
+  Id: 17106004313552078684
   Name: "Pipe - 4-Sided"
   Transform {
     Location {
-      Z: 866.915039
+      Z: 1136.42285
     }
     Rotation {
     }
     Scale {
-      X: 106.047401
-      Y: 201.071274
-      Z: 5
+      X: 251.102478
+      Y: 309.6203
+      Z: 8
     }
   }
-  ParentId: 17040553578013014874
+  ParentId: 15334719925979629701
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -869,14 +1099,14 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 15408881398453810307
+    SelfId: 17106004313552078684
     SubobjectId: 14798961277548918511
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 12220246575872426477
+  Id: 10458732949941236274
   Name: "Pipe - 4-Sided"
   Transform {
     Location {
@@ -885,12 +1115,12 @@ Objects {
     Rotation {
     }
     Scale {
-      X: 112.185226
-      Y: 208.337479
-      Z: 5
+      X: 265.635681
+      Y: 320.809082
+      Z: 8
     }
   }
-  ParentId: 17040553578013014874
+  ParentId: 15334719925979629701
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -937,28 +1167,28 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 12220246575872426477
+    SelfId: 10458732949941236274
     SubobjectId: 12763243819238523777
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 8412641912499247623
-  Name: "Pipe - 4-Sided"
+  Id: 5479858784919644632
+  Name: "Interior 2nd Floor - 4-Sided"
   Transform {
     Location {
-      Z: 3349.92188
+      Z: 4987.58789
     }
     Rotation {
     }
     Scale {
-      X: 67.1532211
-      Y: 165.894058
-      Z: 1.43462837
+      X: 166.768311
+      Y: 255.452469
+      Z: 2.6205852
     }
   }
-  ParentId: 17040553578013014874
+  ParentId: 15334719925979629701
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1005,28 +1235,29 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 8412641912499247623
+    SelfId: 5479858784919644632
     SubobjectId: 7784641405337622635
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 6959080659600846099
+  Id: 6350204436918853324
   Name: "GlowPipe - 4-Sided"
   Transform {
     Location {
-      Z: 6128.18359
+      Y: -181.415039
+      Z: 9838.86523
     }
     Rotation {
     }
     Scale {
-      X: 40
-      Y: 121.249992
-      Z: 2.57261658
+      X: 94.7132416
+      Y: 186.707169
+      Z: 1
     }
   }
-  ParentId: 17040553578013014874
+  ParentId: 15334719925979629701
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1073,28 +1304,28 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6959080659600846099
+    SelfId: 6350204436918853324
     SubobjectId: 8657239956712484735
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 5954322117328065850
+  Id: 7643149374074365669
   Name: "GlowPipe - 4-Sided"
   Transform {
     Location {
-      Z: 3349.92188
+      Z: 5145.06641
     }
     Rotation {
     }
     Scale {
-      X: 76.8076782
-      Y: 166.691925
+      X: 181.86763
+      Y: 256.681091
       Z: 2.57261658
     }
   }
-  ParentId: 17040553578013014874
+  ParentId: 15334719925979629701
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1141,28 +1372,28 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5954322117328065850
+    SelfId: 7643149374074365669
     SubobjectId: 5338224925179221846
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 5595139181604575747
+  Id: 8436938406563277276
   Name: "Top Floor"
   Transform {
     Location {
-      Z: 6000
+      Z: 9393.6543
     }
     Rotation {
     }
     Scale {
-      X: 32
-      Y: 112
-      Z: 4
+      X: 75.770607
+      Y: 172.463547
+      Z: 5.03773451
     }
   }
-  ParentId: 17040553578013014874
+  ParentId: 15334719925979629701
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -1209,9 +1440,50 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 5595139181604575747
+    SelfId: 8436938406563277276
     SubobjectId: 6130175703092549743
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
+    TemplateId: 14133772865472828727
+  }
+}
+Objects {
+  Id: 17921297830441751064
+  Name: "Top Temple"
+  Transform {
+    Location {
+      X: -328.25293
+      Y: -808.914062
+      Z: 10939.999
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15334719925979629701
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Top Temple"
+  }
+  InstanceHistory {
+    SelfId: 17921297830441751064
+    SubobjectId: 15614536235139703723
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }

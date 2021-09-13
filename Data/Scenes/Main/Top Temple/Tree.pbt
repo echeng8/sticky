@@ -1,24 +1,24 @@
 Name: "Top Temple"
-RootId: 13836983144148984263
+RootId: 17921297830441751064
 Objects {
-  Id: 18395863184458605429
+  Id: 14409504152666476714
   Name: "Whitebox Roof 01 Peak"
   Transform {
     Location {
-      X: -1258.29883
-      Y: -3213.97266
-      Z: 1737.28125
+      X: -2682.49268
+      Y: -5203.17871
+      Z: 714.942383
     }
     Rotation {
       Yaw: 89.9999847
     }
     Scale {
-      X: 10
-      Y: 4
-      Z: 2
+      X: 15.117
+      Y: 7.333
+      Z: 3
     }
   }
-  ParentId: 13836983144148984263
+  ParentId: 17921297830441751064
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_Ceiling:id"
@@ -62,19 +62,20 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 18395863184458605429
+    SelfId: 14409504152666476714
     SubobjectId: 16716257063628546329
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 9874495488362084568
+  Id: 12806736382439459591
   Name: "Main Street Pillar 02"
   Transform {
     Location {
-      X: 1490.61182
-      Y: -2865.84961
+      X: 2946.50391
+      Y: -4880.10059
+      Z: -1041.60938
     }
     Rotation {
     }
@@ -84,7 +85,7 @@ Objects {
       Z: 5
     }
   }
-  ParentId: 13836983144148984263
+  ParentId: 17921297830441751064
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -125,19 +126,20 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 9874495488362084568
+    SelfId: 12806736382439459591
     SubobjectId: 10501952834258483892
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 6721045609273373528
+  Id: 7347087228634710151
   Name: "Main Street Pillar 02"
   Transform {
     Location {
-      X: -865.571289
-      Y: -2865.84961
+      X: -2426.25293
+      Y: -4880.10059
+      Z: -1041.60938
     }
     Rotation {
     }
@@ -147,7 +149,7 @@ Objects {
       Z: 5
     }
   }
-  ParentId: 13836983144148984263
+  ParentId: 17921297830441751064
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -188,19 +190,20 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 6721045609273373528
+    SelfId: 7347087228634710151
     SubobjectId: 5040333364257026356
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 710781869815219408
+  Id: 3562030574639724303
   Name: "Main Street Pillar 02"
   Transform {
     Location {
-      X: -865.571289
-      Y: 4472.83691
+      X: -2426.25293
+      Y: 6554.05957
+      Z: -1041.60938
     }
     Rotation {
     }
@@ -210,7 +213,7 @@ Objects {
       Z: 5
     }
   }
-  ParentId: 13836983144148984263
+  ParentId: 17921297830441751064
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -251,19 +254,20 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 710781869815219408
+    SelfId: 3562030574639724303
     SubobjectId: 1254845658770769596
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 2683079433000719546
+  Id: 2130164347187423077
   Name: "Main Street Pillar 02"
   Transform {
     Location {
-      X: 1498.8291
-      Y: 4472.83691
+      X: 2954.7207
+      Y: 6554.05957
+      Z: -1041.60938
     }
     Rotation {
     }
@@ -273,7 +277,7 @@ Objects {
       Z: 5
     }
   }
-  ParentId: 13836983144148984263
+  ParentId: 17921297830441751064
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -314,9 +318,9 @@ Objects {
     }
   }
   InstanceHistory {
-    SelfId: 2683079433000719546
+    SelfId: 2130164347187423077
     SubobjectId: 4434666454701102806
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }

@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16002332097606802660
+  Name: "Brick Wall Sandstone 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_sandstone_wall_face_001"
+  }
+}
+Assets {
   Id: 12745145329380651910
   Name: "Pipe - 4-Sided Thin"
   PlatformAssetType: 1
@@ -32,6 +41,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pipe_4_sided_001"
+  }
+}
+Assets {
+  Id: 5109129970559468393
+  Name: "Cube"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_002"
   }
 }
 Assets {

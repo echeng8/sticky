@@ -1,7 +1,7 @@
 Name: "Temple Interior"
-RootId: 69284299848130588
+RootId: 4054873553803236291
 Objects {
-  Id: 6249780735202126186
+  Id: 7928663835234900661
   Name: "Rocks and stuff"
   Transform {
     Location {
@@ -17,7 +17,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 69284299848130588
+  ParentId: 4054873553803236291
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -35,14 +35,14 @@ Objects {
     FilePartitionName: "Rocks and stuff"
   }
   InstanceHistory {
-    SelfId: 6249780735202126186
+    SelfId: 7928663835234900661
     SubobjectId: 5624012237022407430
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 4060017292440840077
+  Id: 66427545394205778
   Name: "Railings"
   Transform {
     Location {
@@ -58,7 +58,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 69284299848130588
+  ParentId: 4054873553803236291
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -76,14 +76,14 @@ Objects {
     FilePartitionName: "Railings"
   }
   InstanceHistory {
-    SelfId: 4060017292440840077
+    SelfId: 66427545394205778
     SubobjectId: 2373180490632390113
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 8618700260608595578
+  Id: 5703859017923732901
   Name: "Stages"
   Transform {
     Location {
@@ -98,7 +98,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 69284299848130588
+  ParentId: 4054873553803236291
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -116,14 +116,14 @@ Objects {
     FilePartitionName: "Stages"
   }
   InstanceHistory {
-    SelfId: 8618700260608595578
+    SelfId: 5703859017923732901
     SubobjectId: 8011034141351121942
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 7746943202554986341
+  Id: 5994643477710654650
   Name: "Archs"
   Transform {
     Location {
@@ -139,7 +139,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 69284299848130588
+  ParentId: 4054873553803236291
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -157,55 +157,14 @@ Objects {
     FilePartitionName: "Archs"
   }
   InstanceHistory {
-    SelfId: 7746943202554986341
+    SelfId: 5994643477710654650
     SubobjectId: 8301687647584943369
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 4315582566035088714
-  Name: "Altar"
-  Transform {
-    Location {
-      X: -2803.38574
-      Y: 540.130859
-      Z: 106.260742
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 69284299848130588
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Altar"
-  }
-  InstanceHistory {
-    SelfId: 4315582566035088714
-    SubobjectId: 2545422576080201510
-    InstanceId: 6189848507394240290
-    TemplateId: 14133772865472828727
-  }
-}
-Objects {
-  Id: 8341931063464013410
+  Id: 5437979647582494141
   Name: "Inside Pillars"
   Transform {
     Location {
@@ -221,7 +180,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 69284299848130588
+  ParentId: 4054873553803236291
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -239,14 +198,14 @@ Objects {
     FilePartitionName: "Inside Pillars"
   }
   InstanceHistory {
-    SelfId: 8341931063464013410
+    SelfId: 5437979647582494141
     SubobjectId: 7742621487612783630
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 9159081466541949117
+  Id: 5163504131553112930
   Name: "Stone Archs"
   Transform {
     Location {
@@ -262,7 +221,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 69284299848130588
+  ParentId: 4054873553803236291
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -280,14 +239,14 @@ Objects {
     FilePartitionName: "Stone Archs"
   }
   InstanceHistory {
-    SelfId: 9159081466541949117
+    SelfId: 5163504131553112930
     SubobjectId: 7470547313585160913
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
 Objects {
-  Id: 13794927596443009058
+  Id: 9782528916338832381
   Name: "Rocky Path"
   Transform {
     Location {
@@ -303,7 +262,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 69284299848130588
+  ParentId: 4054873553803236291
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -321,9 +280,9 @@ Objects {
     FilePartitionName: "Rocky Path"
   }
   InstanceHistory {
-    SelfId: 13794927596443009058
+    SelfId: 9782528916338832381
     SubobjectId: 12089423561154806350
-    InstanceId: 6189848507394240290
+    InstanceId: 180761580454331541
     TemplateId: 14133772865472828727
   }
 }
