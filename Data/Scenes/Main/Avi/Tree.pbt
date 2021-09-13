@@ -1,17 +1,13 @@
 Name: "Avi"
 RootId: 4820110062441269004
 Objects {
-  Id: 16545798978986136200
-  Name: "AviDonut"
+  Id: 4014648790950020352
+  Name: "AviDonutComplete"
   Transform {
-    Location {
-    }
-    Rotation {
-    }
     Scale {
-      X: 0.528847814
-      Y: 0.528847814
-      Z: 0.528847814
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 4820110062441269004
@@ -21,21 +17,26 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "AviDonut"
-  }
-  InstanceHistory {
-    SelfId: 16545798978986136200
-    SubobjectId: 17412242208360982960
-    InstanceId: 16075101031989168778
-    TemplateId: 13482184342853606809
-    WasRoot: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9095253509238532649
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AviDonutComplete"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9741913006542669128
+    }
   }
 }
