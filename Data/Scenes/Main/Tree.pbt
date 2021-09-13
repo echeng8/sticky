@@ -23,6 +23,7 @@ Objects {
   ChildIds: 8125752998756458609
   ChildIds: 7671508122509407629
   ChildIds: 14682129076076697249
+  ChildIds: 592579120302840749
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -35,6 +36,47 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 592579120302840749
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 21317.2891
+      Y: -5405.30762
+      Z: 8180.26367
+    }
+    Rotation {
+      Yaw: 170.192108
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8568336417442047963
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
   }
 }
 Objects {

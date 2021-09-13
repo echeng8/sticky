@@ -7,7 +7,7 @@ Assets {
       RootId: 7514423565697682096
       Objects {
         Id: 7514423565697682096
-        Name: "WeaponSpawn"
+        Name: "RandomWeaponSpawn"
         Transform {
           Scale {
             X: 0.75
@@ -118,7 +118,7 @@ Assets {
           Overrides {
             Name: "cs:RandomSpawnManager"
             ObjectReference {
-              SelfId: 7926120279097407555
+              SelfId: 2448502711720738599
             }
           }
         }
