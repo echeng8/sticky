@@ -5,16 +5,16 @@ Objects {
   Name: "Ground"
   Transform {
     Location {
-      X: -3282.3418
+      X: -3252.3418
       Y: -400.094727
-      Z: -403.189453
+      Z: -398.189453
     }
     Rotation {
     }
     Scale {
       X: 18
       Y: 105.999969
-      Z: 16
+      Z: 17
     }
   }
   ParentId: 12619755298191779814
@@ -75,16 +75,16 @@ Objects {
   Name: "Ground"
   Transform {
     Location {
-      X: -3282.3418
+      X: -3252.3418
       Y: -12740.0947
-      Z: -403.189453
+      Z: -398.189453
     }
     Rotation {
     }
     Scale {
       X: 18
       Y: 105.999969
-      Z: 16
+      Z: 17
     }
   }
   ParentId: 12619755298191779814
@@ -136,76 +136,6 @@ Objects {
   InstanceHistory {
     SelfId: 10742494006785585483
     SubobjectId: 10205770559494648615
-    InstanceId: 6189848507394240290
-    TemplateId: 14133772865472828727
-  }
-}
-Objects {
-  Id: 10982853517237635467
-  Name: "Ground"
-  Transform {
-    Location {
-      X: 4657.6582
-      Y: -6406.55762
-      Z: -393.000977
-    }
-    Rotation {
-    }
-    Scale {
-      X: 140.112289
-      Y: 338.981232
-      Z: 15.8610764
-    }
-  }
-  ParentId: 12619755298191779814
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 7627735813362405456
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.892769396
-        B: 0.343999982
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 5109129970559468393
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-      BoundsScale: 1
-    }
-  }
-  InstanceHistory {
-    SelfId: 10982853517237635467
-    SubobjectId: 9285789352502201319
     InstanceId: 6189848507394240290
     TemplateId: 14133772865472828727
   }
@@ -611,7 +541,7 @@ Objects {
     Scale {
       X: 87.3169556
       Y: 338.981232
-      Z: 15.8610764
+      Z: 17
     }
   }
   ParentId: 12619755298191779814
