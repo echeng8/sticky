@@ -15,7 +15,7 @@ Assets {
             Z: 0.25
           }
         }
-        ParentId: 8125752998756458609
+        ParentId: 13682548436617273812
         ChildIds: 8844026129903667913
         ChildIds: 1590903377860666649
         UnregisteredParameters {
@@ -118,7 +118,7 @@ Assets {
           Overrides {
             Name: "cs:RandomSpawnManager"
             ObjectReference {
-              SelfId: 2448502711720738599
+              SelfId: 13923284598877450449
             }
           }
         }

@@ -127,7 +127,7 @@ Objects {
     RespawnSettings {
       RespawnDelay: 3
       RespawnMode_v2 {
-        Value: "mc:erespawnmode:roundrobin"
+        Value: "mc:erespawnmode:atclosestspawnpoint"
       }
       SpawnMode {
         Value: "mc:espawnmode:roundrobin"
