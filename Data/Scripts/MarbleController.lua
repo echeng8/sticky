@@ -33,20 +33,23 @@ local drifting = false
 --PUBLIC FUNCTIONS-- 
 
 function checkGrounded()
-    local groundedDistanceCheck = distanceToGround -- how far down from the center of the marble to check for grounded
+    local groundedDistanceCheck = -150 --distanceToGround -- how far down from the center of the marble to check for grounded
     local offsets = {Vector3.New(51, 0, 0), Vector3.New(0, -51, 0), Vector3.New(-51, 0, 0), Vector3.New(0, 51, 0), Vector3.New(36, 36, 0), Vector3.New(36, -36, 0), Vector3.New(-36, 36, 0), Vector3.New(-36, -36, 0)}
     local start = Vector3.New()
     local ending = Vector3.New()
     for _, v in pairs(offsets) do
         start = ball:GetWorldPosition() + v
         ending = ball:GetWorldPosition() + v + Vector3.New(0, 0, groundedDistanceCheck)
-        --CoreDebug.DrawLine(start, ending)
-        didHit = World.Raycast(start, ending)
+        CoreDebug.DrawLine(start, ending)
+        didHit = World.Raycast(start, ending,  {ignoreObjects = ball})
         if (didHit ~= nil) then
+            print(didHit.other.name)
             timeSinceGrounded = 0
             break
         end
     end
+
+    print(timeSinceGrounded)
 end
 
 function isGrounded()
@@ -75,7 +78,9 @@ function Tick(dt)
     if (owner ~= nil and not owner.isDead) then
 
         --sus, it hink this is broken--
+        timeSinceGrounded  =timeSinceGrounded + dt
         checkGrounded()
+
         
 
         HandleMovement(dt)
