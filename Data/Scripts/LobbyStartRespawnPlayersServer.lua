@@ -35,8 +35,7 @@ function OnGameStateChanged(oldState, newState, hasDuration, endTime)
 		local numPlayers = #Game.GetPlayers()
 		local perPlayerDelay = PERIOD / numPlayers
 		for _, player in pairs(Game.GetPlayers()) do
-			player:Respawn()
-
+			player:Die()
 			Task.Wait(perPlayerDelay)
 		end
 	end

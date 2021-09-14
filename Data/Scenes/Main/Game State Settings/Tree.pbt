@@ -48,6 +48,14 @@ Objects {
             Z: 1
           }
         }
+        Overrides {
+          Name: "cs:KillLimit"
+          Int: 10
+        }
+        Overrides {
+          Name: "Lifespan"
+          Float: 0
+        }
       }
     }
     TemplateAsset {
