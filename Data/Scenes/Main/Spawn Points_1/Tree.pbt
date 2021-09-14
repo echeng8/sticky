@@ -37,6 +37,7 @@ Objects {
     SpawnEffectsTemplate {
       Id: 841534158063459245
     }
+    ShouldDecrowdPlayers: true
   }
 }
 Objects {
@@ -76,6 +77,7 @@ Objects {
     SpawnEffectsTemplate {
       Id: 841534158063459245
     }
+    ShouldDecrowdPlayers: true
   }
 }
 Objects {
@@ -115,5 +117,6 @@ Objects {
     SpawnEffectsTemplate {
       Id: 841534158063459245
     }
+    ShouldDecrowdPlayers: true
   }
 }
