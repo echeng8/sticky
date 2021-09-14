@@ -1,16 +1,9 @@
 Name: "Aki"
 RootId: 14682129076076697249
 Objects {
-  Id: 10921663555979170873
+  Id: 180761580454331541
   Name: "Temple"
   Transform {
-    Location {
-      X: 10232.3418
-      Y: -2719.90527
-      Z: 4333.18945
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -24,21 +17,52 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Temple"
-  }
-  InstanceHistory {
-    SelfId: 10921663555979170873
-    SubobjectId: 13228567125736940938
-    InstanceId: 180761580454331541
-    TemplateId: 14133772865472828727
-    WasRoot: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 331513419944425
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 5
+            Y: 11
+            Z: 15
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 13955.0566
+            Y: 1067.75293
+            Z: 366.047363
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13228567125736940938
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Temple"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 10232.3418
+            Y: -2719.90527
+            Z: 4333.18945
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14133772865472828727
+    }
   }
 }

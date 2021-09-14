@@ -49,7 +49,7 @@ Assets {
         Name: "Diamond - 6-Sided"
         Transform {
           Location {
-            X: 0.149414062
+            X: 0.149414063
             Y: -0.0087890625
           }
           Rotation {
@@ -99,7 +99,7 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: 0.149414062
+            X: 0.149414063
             Y: -0.0087890625
             Z: 50
           }
@@ -150,7 +150,7 @@ Assets {
         Name: "Cone - Truncated Concave"
         Transform {
           Location {
-            X: 0.149414062
+            X: 0.149414063
             Y: -0.0087890625
             Z: 176.177734
           }
@@ -202,7 +202,7 @@ Assets {
         Name: "Cylinder"
         Transform {
           Location {
-            X: 0.149414062
+            X: 0.149414063
             Y: -0.0087890625
             Z: 175.234375
           }
@@ -253,7 +253,7 @@ Assets {
         Name: "Pyramid - 6-Sided Truncated Polished"
         Transform {
           Location {
-            X: 0.149414062
+            X: 0.149414063
             Y: -0.0087890625
             Z: 400
           }
@@ -358,7 +358,7 @@ Assets {
         Name: "Cube"
         Transform {
           Location {
-            X: -99.5195312
+            X: -99.5195313
             Y: -0.0087890625
             Z: 301.564453
           }
@@ -413,7 +413,7 @@ Assets {
         Transform {
           Location {
             X: -50.7285156
-            Y: 84.6914062
+            Y: 84.6914063
             Z: 301.564453
           }
           Rotation {
@@ -628,7 +628,7 @@ Assets {
         Name: "Cone - Truncated Wide"
         Transform {
           Location {
-            X: 0.149414062
+            X: 0.149414063
             Y: -0.0087890625
             Z: 550
           }
@@ -679,7 +679,7 @@ Assets {
         Name: "Ring"
         Transform {
           Location {
-            X: 0.149414062
+            X: 0.149414063
             Y: -0.0087890625
             Z: 600
           }
@@ -732,7 +732,7 @@ Assets {
         Transform {
           Location {
             X: -1.34960938
-            Y: 0.891601562
+            Y: 0.891601563
             Z: 697.361328
           }
           Rotation {

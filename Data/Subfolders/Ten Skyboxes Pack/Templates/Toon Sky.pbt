@@ -41140,7 +41140,7 @@ Assets {
         Name: "Big White Clouds"
         Transform {
           Location {
-            X: 88845.9062
+            X: 88845.9063
             Y: 63127.6328
             Z: 39725
           }
