@@ -87,13 +87,15 @@ function GetPlayerBall(player)
 	local mcs = World.FindObjectsByName("MarbleSmoothClient")--"MarbleController")
 	for _,m in pairs(mcs) do
 		--local id = m:GetCustomProperty("PlayerId")
-		local id = m.context.CONTROLLER:GetCustomProperty("PlayerId")
-		if (id == player.id) then
-			playerBall = m
-			break
+		if m.context.CONTROLLER then
+			local id = m.context.CONTROLLER:GetCustomProperty("PlayerId")
+			if (id == player.id) then
+				playerBall = m
+				break
+			end
 		end
 	end	
-	
+
 	return playerBall
 end
 
