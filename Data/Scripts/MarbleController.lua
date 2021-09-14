@@ -56,20 +56,27 @@ end
 ---do not call this function to kill the player, just kill the player directly instead-- 
 function Die()
     script:SetNetworkedCustomProperty('IsDead', true)
+    -- if Object.IsValid(script) then 
+
+        
+    -- end
     World.SpawnAsset(DEATH_SFX[1], {position = ball:GetWorldPosition()})
     World.SpawnAsset(DEATH_SFX[2], {position = ball:GetWorldPosition()})
+
+    DestroySelf()
+    
 end
 
-function Respawn()
-    if (Object.IsValid(ball) and Object.IsValid(owner)) then
-        script:SetNetworkedCustomProperty('IsDead', false)
+-- function Respawn()
+--     if (Object.IsValid(ball) and Object.IsValid(owner)) then
+--         script:SetNetworkedCustomProperty('IsDead', false)
 
-        ball:SetWorldPosition(owner:GetWorldPosition())
-        ball:SetWorldRotation(Rotation.New())
-        ball:SetVelocity(Vector3.New())
-        ball:SetAngularVelocity(Vector3.New())
-    end
-end
+--         ball:SetWorldPosition(owner:GetWorldPosition())
+--         ball:SetWorldRotation(Rotation.New())
+--         ball:SetVelocity(Vector3.New())
+--         ball:SetAngularVelocity(Vector3.New())
+--     end
+-- end
 
 function Tick(dt)
     if (owner ~= nil and not owner.isDead) then
@@ -181,8 +188,6 @@ function HandleMovement(dt)
 
         end
     end
-
-
 end
 
 -- Upon spawning and linking up to our player
@@ -218,25 +223,29 @@ function AttachPlayer(player)
         end
     )
 
-    player.diedEvent:Connect(
+    player.serverUserData.dieListener = player.diedEvent:Connect(
         function(player)
             Die()
         end
     )
 end
 
-Game.playerLeftEvent:Connect(
+local leftListener = Game.playerLeftEvent:Connect(
     function(player)
         if player.id == ownerId then
-            ball:Destroy()
+            DestroySelf()
         end
-
-        --temp
-        player.serverUserData.spawnPositionListener:Disconnect()
-        player.serverUserData.bindingPressedListener:Disconnect()
-        player.serverUserData.bindingReleasedListener:Disconnect()
     end
 )
+
+function DestroySelf()
+    owner.serverUserData.spawnPositionListener:Disconnect()
+    owner.serverUserData.bindingPressedListener:Disconnect()
+    owner.serverUserData.bindingReleasedListener:Disconnect()
+    owner.serverUserData.dieListener:Disconnect()
+    leftListener:Disconnect()
+    ball:Destroy()
+end
 
 -------------------------------------------------------------------------
 function GetPlayerColor(name)

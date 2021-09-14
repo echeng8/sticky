@@ -80,6 +80,23 @@ local LOCAL_PLAYER = Game.GetLocalPlayer()
 -- Variables
 local nameplates = {}
 
+function GetPlayerBall(player)
+	local playerBall = nil
+	local counter = 0 
+
+	local mcs = World.FindObjectsByName("MarbleSmoothClient")--"MarbleController")
+	for _,m in pairs(mcs) do
+		--local id = m:GetCustomProperty("PlayerId")
+		local id = m.context.CONTROLLER:GetCustomProperty("PlayerId")
+		if (id == player.id) then
+			playerBall = m
+			break
+		end
+	end	
+	
+	return playerBall
+end
+
 -- Player GetViewedPlayer()
 -- Returns which player the local player is spectating (or themselves if not spectating)
 function GetViewedPlayer()
@@ -111,20 +128,9 @@ function OnPlayerJoined(player)
 	nameplates[player].healthText = nameplateRoot:GetCustomProperty("HealthText"):WaitForObject()
 	nameplates[player].nameText = nameplateRoot:GetCustomProperty("NameText"):WaitForObject()
 	
-	local playerBall = nil
-	while playerBall == nil do
-		Task.Wait(0.25)
-		local mcs = World.FindObjectsByName("MarbleSmoothClient")--"MarbleController")
-        for _,m in pairs(mcs) do
-            --local id = m:GetCustomProperty("PlayerId")
-            local id = m.context.CONTROLLER:GetCustomProperty("PlayerId")
-            if (id == player.id) then
-                playerBall = m
-                break
-            end
-        end	
-   	end
-	nameplates[player].ball = playerBall
+	nameplates[player].ball = GetPlayerBall(player)
+
+
 
 	-- For animating changes. Each change clobbers the previous state.
 	nameplates[player].lastHealthFraction = 1.0
@@ -216,7 +222,12 @@ function Tick(deltaTime)
 			end
 			
 
-			if nameplate.ball ~= nil then
+			if not Object.IsValid(nameplate.ball) then
+				nameplate.ball = GetPlayerBall(player)
+			end
+
+
+			if Object.IsValid(nameplate.ball) then
 				nameplate.templateRoot:SetWorldPosition(nameplate.ball:GetWorldPosition() + Vector3.New(0, 0, NAMEPLATE_Z_OFFSET))
 				RotateNameplate(nameplate)
 

@@ -10,7 +10,7 @@ Events.Connect("OnBallSpawned",
     function(ball, player)
         local trigger = ball:FindDescendantByName("Ball Stick Trigger")
 
-        trigger.beginOverlapEvent:Connect(
+        trigger.serverUserData.stickListener = trigger.beginOverlapEvent:Connect(
             function(trigger, other)
                 if player.isDead then return end
                 
@@ -36,6 +36,8 @@ Events.Connect("OnBallSpawned",
                 end
             end
         )
+
+        trigger.destroyEvent:Connect(function(obj) obj.serverUserData.stickListener:Disconnect() end)
     end
     
 )
