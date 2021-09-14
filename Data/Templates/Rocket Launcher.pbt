@@ -246,7 +246,7 @@ Assets {
             ProjectileLifeSpan: 3
             ProjectileGravity: 0.45
             ProjectileLength: 40
-            ProjectileRadius: 15
+            ProjectileRadius: 25
             ProjectileDrag: -0.5
             SpreadMax: 0.6
             SpreadDecreaseSpeed: 6
