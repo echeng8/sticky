@@ -43,13 +43,10 @@ function checkGrounded()
         CoreDebug.DrawLine(start, ending)
         didHit = World.Raycast(start, ending,  {ignoreObjects = ball})
         if (didHit ~= nil) then
-            print(didHit.other.name)
             timeSinceGrounded = 0
             break
         end
     end
-
-    print(timeSinceGrounded)
 end
 
 function isGrounded()
