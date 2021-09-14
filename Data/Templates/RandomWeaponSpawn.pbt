@@ -118,7 +118,7 @@ Assets {
           Overrides {
             Name: "cs:RandomSpawnManager"
             ObjectReference {
-              SelfId: 2448502711720738599
+              SelfId: 6476884189933606475
             }
           }
         }
