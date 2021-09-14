@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4486416291996771688
+        ParentId: 8568336417442047963
         ChildIds: 14678292503115374133
         ChildIds: 1317278866790388292
         ChildIds: 3629094995299783858
@@ -326,18 +326,18 @@ Assets {
             Bool: false
           }
           Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5053086791095825808
-            }
-          }
-          Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
               R: 0.19
-              G: 0.565496445
+              G: 0.565496087
               B: 1
-              A: 1
+              A: 0.311000019
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5053086791095825808
             }
           }
         }
@@ -357,7 +357,6 @@ Assets {
           Teams {
             TeamInt: 1
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
             }
@@ -374,9 +373,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 2.60107517
+            Y: 2.60107517
+            Z: 2.60107517
           }
         }
         ParentId: 15461395443497417166
@@ -418,9 +417,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 2.60107517
+            Y: 2.60107517
+            Z: 2.60107517
           }
         }
         ParentId: 15461395443497417166
@@ -456,9 +455,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 0.384903312
-            Y: 0.384903312
-            Z: 0.384903312
+            X: 1.00116241
+            Y: 1.00116241
+            Z: 1.00116241
           }
         }
         ParentId: 15461395443497417166

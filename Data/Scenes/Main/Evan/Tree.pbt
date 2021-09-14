@@ -90030,12 +90030,12 @@ Objects {
 }
 Objects {
   Id: 18042079643038647476
-  Name: "temple bean"
+  Name: "lava bean"
   Transform {
     Location {
-      X: 11101.8711
-      Y: -7099.19
-      Z: 25823.0254
+      X: 11686.2588
+      Y: -7842.15479
+      Z: -16673
     }
     Rotation {
     }
