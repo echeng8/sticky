@@ -4,7 +4,7 @@ local APIMarble = require(script:GetCustomProperty("APIMarble"))
 local listeners = {}
 Game.playerJoinedEvent:Connect(
 	function (player)
-
+		if player.name == "Ammie" then return end
 		listeners[player] = player.spawnedEvent:Connect(SpawnMarble)
 
 		player:Spawn()
@@ -34,6 +34,7 @@ end
 
 Game.playerLeftEvent:Connect(
 	function(player)
+		if player.name == "Ammie" then return end
 		listeners[player]:Disconnect()
 		APIMarble.DeregisterPlayer(player) 
 	end
