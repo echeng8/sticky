@@ -15,14 +15,14 @@ Assets {
             Z: 0.25
           }
         }
-        ParentId: 13682548436617273812
+        ParentId: 12067609471163571103
         ChildIds: 8844026129903667913
         ChildIds: 1590903377860666649
         UnregisteredParameters {
           Overrides {
             Name: "cs:Weapon"
             AssetReference {
-              Id: 2746625383053017130
+              Id: 16362402445184882939
             }
           }
           Overrides {
@@ -118,7 +118,7 @@ Assets {
           Overrides {
             Name: "cs:RandomSpawnManager"
             ObjectReference {
-              SelfId: 13923284598877450449
+              SelfId: 13926189122475905840
             }
           }
         }

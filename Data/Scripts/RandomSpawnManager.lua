@@ -1,5 +1,4 @@
 local ranStream = RandomStream.New()
---local propGunLaserProtoRen = script:GetCustomProperty("GunLaserProtoRen")
 
 local customProps = script:GetCustomProperties()
 

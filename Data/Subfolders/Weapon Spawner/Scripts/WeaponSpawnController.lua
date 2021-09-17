@@ -1,4 +1,3 @@
-
 local WEAPON_TEMPLATE = script.parent:GetCustomProperty("Weapon")
 local RESPAWN_TIME = script.parent:GetCustomProperty("RespawnTime")
 local ROTATION_RATE = script.parent:GetCustomProperty("RotationRate")
@@ -6,6 +5,9 @@ local BOB_AMPLITUDE = script.parent:GetCustomProperty("BobAmplitude")
 local BOB_PERIOD = script.parent:GetCustomProperty("BobPeriod")
 local Z_OFFSET = script.parent:GetCustomProperty("ZOffset")
 local PIVOT = script:GetCustomProperty("Pivot"):WaitForObject()
+local propRandomSpawnManager = script:GetCustomProperty("RandomSpawnManager"):WaitForObject()
+
+
 
 PIVOT:RotateContinuous(ROTATION_RATE)
 
@@ -33,6 +35,8 @@ function WeaponEquipped(equipment, player)
 		equipListener = nil
 	end
 	respawnTimer = RESPAWN_TIME
+	WEAPON_TEMPLATE = propRandomSpawnManager.context.GetRandomWeaponTemplate()
+	print("WEAPON_TEMPLATE was randomly changed to: " .. tostring(WEAPON_TEMPLATE))
 end
 
 function Tick(dt)
