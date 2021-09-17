@@ -173,7 +173,7 @@ function HandleMovement(dt)
             finalAVel = finalAVel:GetNormalized() * maxAngularSpeed
         end
         ball:SetAngularVelocity(finalAVel)
-    else --drifting
+    else --braking
         ball:SetAngularVelocity(Vector3.ZERO)
 
         --decelerate velocity 
