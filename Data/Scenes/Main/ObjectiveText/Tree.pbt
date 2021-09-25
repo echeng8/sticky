@@ -1,4 +1,4 @@
-Name: "Tutorial"
+Name: "ObjectiveText"
 RootId: 2255715050039188736
 Objects {
   Id: 1927421677305464436

@@ -1,38 +1,6 @@
 Name: "Evan"
 RootId: 7671508122509407629
 Objects {
-  Id: 2255715050039188736
-  Name: "Tutorial"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7671508122509407629
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Tutorial"
-  }
-}
-Objects {
   Id: 7709057217327877077
   Name: "DebugTeleporterServer"
   Transform {
