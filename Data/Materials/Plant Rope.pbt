@@ -2,7 +2,7 @@ Assets {
   Id: 11495353874473890747
   Name: "Plant Rope"
   PlatformAssetType: 13
-  SerializationVersion: 98
+  SerializationVersion: 100
   VirtualFolderPath: "Plant zone"
   CustomMaterialAsset {
     BaseMaterialId: 3090596827184957478

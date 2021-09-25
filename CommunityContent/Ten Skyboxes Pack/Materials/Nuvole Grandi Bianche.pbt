@@ -2,7 +2,7 @@ Assets {
   Id: 14217989712832778972
   Name: "Nuvole Grandi Bianche"
   PlatformAssetType: 13
-  SerializationVersion: 98
+  SerializationVersion: 100
   CustomMaterialAsset {
     BaseMaterialId: 13227971209405449998
     ParameterOverrides {

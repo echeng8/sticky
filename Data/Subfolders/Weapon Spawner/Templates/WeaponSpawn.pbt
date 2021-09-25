@@ -51,5 +51,5 @@ Assets {
     Version: "1.1.0"
     Description: "Want classic arena shooter styled weapon spawns? Look no further! Simply assign a weapon template asset, and a respawn time, and you\'ll be all set. Your chosen weapon will rotate and bob in place, just like the classics."
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
 }

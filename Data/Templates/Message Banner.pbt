@@ -432,5 +432,5 @@ Assets {
       AssetId: "Message_Banner"
     }
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
 }

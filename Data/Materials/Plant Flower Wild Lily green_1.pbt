@@ -2,7 +2,7 @@ Assets {
   Id: 12178387493099506750
   Name: "Plant Flower Wild Lily green_1"
   PlatformAssetType: 13
-  SerializationVersion: 98
+  SerializationVersion: 100
   VirtualFolderPath: "Plant zone"
   CustomMaterialAsset {
     BaseMaterialId: 16674050515069467364

@@ -784,5 +784,5 @@ Assets {
       AssetId: "Basic_Door"
     }
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
 }

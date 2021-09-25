@@ -1418,7 +1418,7 @@ Assets {
   Marketplace {
     Description: "asdfsdf"
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
   DirectlyPublished: true
   VirtualFolderPath: "Weapons"
 }

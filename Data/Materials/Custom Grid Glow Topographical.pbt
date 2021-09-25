@@ -2,7 +2,7 @@ Assets {
   Id: 18101792287716336750
   Name: "Custom Grid Glow Topographical"
   PlatformAssetType: 13
-  SerializationVersion: 98
+  SerializationVersion: 100
   CustomMaterialAsset {
     BaseMaterialId: 9376086695169506816
     ParameterOverrides {

@@ -1601,6 +1601,6 @@ Assets {
   Marketplace {
     Description: "Basic chain hung lantern.\r\nUse and modify as you see fit."
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
   DirectlyPublished: true
 }

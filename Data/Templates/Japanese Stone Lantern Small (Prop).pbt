@@ -202,5 +202,5 @@ Assets {
       AssetId: "Stone_Lantern_Small__Prop_"
     }
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
 }

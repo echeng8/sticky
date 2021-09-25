@@ -2,7 +2,7 @@ Assets {
   Id: 7386313859164331115
   Name: "Custom Bark Pine 01"
   PlatformAssetType: 13
-  SerializationVersion: 98
+  SerializationVersion: 100
   VirtualFolderPath: "Plant zone"
   CustomMaterialAsset {
     BaseMaterialId: 7801872286401568736

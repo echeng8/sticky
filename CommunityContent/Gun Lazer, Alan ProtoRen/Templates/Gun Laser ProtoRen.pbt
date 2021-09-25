@@ -1536,6 +1536,6 @@ Assets {
   Marketplace {
     Description: "Gun Lazer\r\nAlan\r\nProtoRen"
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
   DirectlyPublished: true
 }

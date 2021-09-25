@@ -3534,6 +3534,6 @@ Assets {
   Marketplace {
     Description: "Flamethrower for Buck"
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
   DirectlyPublished: true
 }

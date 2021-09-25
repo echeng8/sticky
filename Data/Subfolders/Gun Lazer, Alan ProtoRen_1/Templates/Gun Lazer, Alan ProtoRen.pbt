@@ -43,5 +43,5 @@ Assets {
     Version: "1.0.0"
     Description: "Gun Lazer\r\nAlan\r\nProtoRen"
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
 }

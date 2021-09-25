@@ -67,5 +67,5 @@ Assets {
     Version: "1.4.0"
     Description: "10 Skyboxes for you to use in your games. Enjoy :)\r\n\r\n- Anime Sky\r\n- Early Morning Sky\r\n- Heavenly Sky\r\n- Stormy Sky\r\n- Toon Sky\r\n- Day Night Sky\r\n- Halloween Sky\r\n- Space Sky\r\n- Sunset Sky\r\n- Winter Night Sky"
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
 }

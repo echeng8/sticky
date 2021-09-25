@@ -49,5 +49,5 @@ Assets {
     Version: "1.0.0"
     Description: "Flamethrower for Buck"
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
 }

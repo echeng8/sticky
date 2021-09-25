@@ -90,5 +90,5 @@ Assets {
       AssetId: "Lobby_Start_Respawn_Players"
     }
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
 }

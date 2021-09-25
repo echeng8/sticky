@@ -778,6 +778,6 @@ Assets {
   Marketplace {
     Description: "Version 0.1"
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
   DirectlyPublished: true
 }

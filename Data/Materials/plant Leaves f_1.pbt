@@ -2,7 +2,7 @@ Assets {
   Id: 10221799612984367913
   Name: "plant Leaves f_1"
   PlatformAssetType: 13
-  SerializationVersion: 98
+  SerializationVersion: 100
   VirtualFolderPath: "Plant zone"
   CustomMaterialAsset {
     BaseMaterialId: 18155364070174434014

@@ -40,5 +40,5 @@ Assets {
     Version: "1.0.0"
     Description: "asdfsdf"
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
 }

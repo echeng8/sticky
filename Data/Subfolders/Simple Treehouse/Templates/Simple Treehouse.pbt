@@ -43,5 +43,5 @@ Assets {
     Version: "1.0.0"
     Description: "Just a simple treehouse"
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
 }

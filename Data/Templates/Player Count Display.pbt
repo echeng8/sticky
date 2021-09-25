@@ -508,5 +508,5 @@ Assets {
       AssetId: "Player_Count_Display"
     }
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
 }

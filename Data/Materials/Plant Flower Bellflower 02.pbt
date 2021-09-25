@@ -2,7 +2,7 @@ Assets {
   Id: 13246326577000269256
   Name: "Plant Flower Bellflower 02"
   PlatformAssetType: 13
-  SerializationVersion: 98
+  SerializationVersion: 100
   VirtualFolderPath: "Plant zone"
   CustomMaterialAsset {
     BaseMaterialId: 14869493033461044294

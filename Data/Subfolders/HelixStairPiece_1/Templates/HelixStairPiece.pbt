@@ -43,5 +43,5 @@ Assets {
     Version: "1.1.0"
     Description: "This is a grouping of multiple \" Fantasy Castle Stairs Spiral 01 / 04 \" that makes a DNA like double helix staircase. \r\nJust copy paste it and move it up or down to further extend it."
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
 }

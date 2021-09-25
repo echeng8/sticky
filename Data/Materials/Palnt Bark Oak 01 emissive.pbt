@@ -2,7 +2,7 @@ Assets {
   Id: 10760218338533718810
   Name: "Palnt Bark Oak 01 emissive"
   PlatformAssetType: 13
-  SerializationVersion: 98
+  SerializationVersion: 100
   VirtualFolderPath: "Plant zone"
   CustomMaterialAsset {
     BaseMaterialId: 15454866522506203096

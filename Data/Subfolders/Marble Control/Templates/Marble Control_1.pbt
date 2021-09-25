@@ -645,6 +645,6 @@ Assets {
   Marketplace {
     Description: "Drag this component into the scene to replace all players with marbles! Players will be made tiny, invisible, and will follow along offset from the Physics Sphere, while the Physics Sphere itself is controlled by WASD and has configurable movement parameters. This package also includes a modified \"Nameplates\" package that will work automatically with the marbles.\r\n\r\nNOTE: This is an advanced component, and while it will work out of the box, it may take considerable scripting knowledge to implement it into more advanced game ideas."
   }
-  SerializationVersion: 98
+  SerializationVersion: 100
   DirectlyPublished: true
 }
