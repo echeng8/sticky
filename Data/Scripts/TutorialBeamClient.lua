@@ -17,7 +17,7 @@ function GetNearestWeaponSpawn()
         local distToSpawn = (LOCAL_PLAYER:GetWorldPosition() - v:GetWorldPosition()).sizeSquared 
         if distToSpawn < nearestDist then
             nearestSpawn = v 
-            nearestDist = (LOCAL_PLAYER:GetWorldPosition() - nearestSpawn:GetWorldPosition()).sizeSquared 
+            nearestDist = (LOCAL_PLAYER:GetWorldPosition() - nearestSpawn:GetWorldPosition()).sizeSquared
         end
     end
     return nearestSpawn

@@ -11,7 +11,7 @@ ScreenshotPaths: "C:\\Users\\Evan\\Downloads\\marble\\sc1.png"
 ScreenshotPaths: "C:\\Users\\Evan\\Downloads\\marble\\sc3.png"
 ScreenshotPaths: "C:\\Users\\Evan\\Downloads\\marble\\sc4.png"
 ScreenshotPaths: "C:\\Users\\Evan\\Downloads\\marble\\sc6.png"
-ReleaseNotes: "some stuff "
+ReleaseNotes: "now you get told what to do "
 OwnerId: "9cea008ca5324553a178cb98fceb58af"
 SerializationVersion: 1
 PublishedState: Public

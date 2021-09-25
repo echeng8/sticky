@@ -92,6 +92,18 @@ Objects {
           Rotator {
           }
         }
+        Overrides {
+          Name: "cs:ShowStateName"
+          Bool: false
+        }
+        Overrides {
+          Name: "cs:ShowDuringLobby"
+          Bool: false
+        }
+        Overrides {
+          Name: "cs:ShowDuringRoundEnd"
+          Bool: false
+        }
       }
     }
     ParameterOverrideMap {
