@@ -280,6 +280,12 @@ Assets {
         }
         ParentId: 4513459109517667751
         UnregisteredParameters {
+          Overrides {
+            Name: "cs:APIMarble"
+            AssetReference {
+              Id: 14137586896240072563
+            }
+          }
         }
         WantsNetworking: true
         Collidable_v2 {

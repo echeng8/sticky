@@ -1,6 +1,53 @@
 Name: "Evan"
 RootId: 7671508122509407629
 Objects {
+  Id: 5927069301598525937
+  Name: "BotManager"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7671508122509407629
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Bot"
+      AssetReference {
+        Id: 15348172363570962237
+      }
+    }
+    Overrides {
+      Name: "cs:APIMarble"
+      AssetReference {
+        Id: 14137586896240072563
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14255370582576289745
+    }
+  }
+}
+Objects {
   Id: 7709057217327877077
   Name: "DebugTeleporterServer"
   Transform {

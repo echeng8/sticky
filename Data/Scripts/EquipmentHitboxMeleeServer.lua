@@ -44,8 +44,11 @@ function Tick(deltaTime)
                 abilityInfo.hitBox.collision = Collision.FORCE_ON
                 for _, other in ipairs(abilityInfo.hitBox:GetOverlappingObjects()) do
                     local player = APIMarble.GetPlayerFromMarble(other)
+                
                     if player then 
                         MeleeAttack(player, abilityInfo)
+                    elseif other.name == "Bot" and APIMarble.IsBot(other) then 
+                        MeleeAttack(other,abilityInfo)
                     end
                 end
             end
@@ -68,7 +71,7 @@ function MeleeAttack(player, abilityInfo)
     if player == ability.owner then return end
 
     -- Ignore friendly attack
-    if Teams.AreTeamsFriendly(player.team, ability.owner.team) then return end
+    --if Teams.AreTeamsFriendly(player.team, ability.owner.team) then return end
 
     -- Avoid hitting the same player multiple times in a single swing
     if (abilityInfo.ignoreList[player] ~= 1) then

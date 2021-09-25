@@ -31,6 +31,8 @@ local IMPACT = WEAPON:GetCustomProperty("ProjectileImpact")
 local BOUNCE_SOUND = WEAPON:GetCustomProperty("ProjectileBounceSound")
 local DEBUG_EXPLOSION = WEAPON:GetCustomProperty("DebugExplosion")
 
+local APIMarble = require(script:GetCustomProperty("APIMarble"))
+
 -- nil Blast(Vector3)
 -- Creates a explosion at the projectile impact position
 -- Damages players within the blast
@@ -49,12 +51,11 @@ function Blast(center)
     -- If owner left the server by the time the blast happens, stop the script
     if not Object.IsValid(WEAPON.owner) then return end
 
+
+    --damage players in sphere -- 
     local players = Game.FindPlayersInSphere(center, EXPLOSION_RADIUS)
     for _, player in pairs(players) do
         local canDamage = false
-
-
-
 
         -- Checks to blast the enemy team
         if Teams.AreTeamsEnemies(player.team, WEAPON.owner.team) then
@@ -90,6 +91,26 @@ function Blast(center)
             -- Create a direction at which the player is pushed away from the blast
             --player:AddImpulse((displacement):GetNormalized() * player.mass * EXPLOSION_KNOCKBACK_SPEED) --todo maybe remove this?
         end
+    end
+
+    -- damage bots in sphere -- 
+    local bots = APIMarble.FindBotsInSphere(center, EXPLOSION_RADIUS)
+    for _, bot in pairs(bots) do
+        local displacement = bot:GetWorldPosition() - center
+
+        -- The farther the player from the blast the less damage that player takes
+        local minDamage = EXPLOSION_DAMAGE_RANGE.x
+        local maxDamage = EXPLOSION_DAMAGE_RANGE.y
+        displacement.z = 0
+        local t = (displacement).size / EXPLOSION_RADIUS
+        local damageAmount = CoreMath.Lerp(maxDamage, minDamage, t)
+
+        -- Create damage information
+        local damage = Damage.New(damageAmount)
+        damage.sourcePlayer = WEAPON.owner
+
+        -- Apply damage to player
+        bot:ApplyDamage(damage)
     end
 end
 

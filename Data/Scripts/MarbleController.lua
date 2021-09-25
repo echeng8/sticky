@@ -67,17 +67,6 @@ function Die()
     
 end
 
--- function Respawn()
---     if (Object.IsValid(ball) and Object.IsValid(owner)) then
---         script:SetNetworkedCustomProperty('IsDead', false)
-
---         ball:SetWorldPosition(owner:GetWorldPosition())
---         ball:SetWorldRotation(Rotation.New())
---         ball:SetVelocity(Vector3.New())
---         ball:SetAngularVelocity(Vector3.New())
---     end
--- end
-
 function Tick(dt)
     if (owner ~= nil and not owner.isDead) then
 
