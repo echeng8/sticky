@@ -7,7 +7,7 @@
   <p align="center">
     A physics-based multiplayer shooter made with Core for the 2021 Invitational Game Jam. 
     <br />
-    Gameplay Video: [https://www.youtube.com/watch?v=ota8V1An15g](https://www.youtube.com/watch?v=v4gmApxZ_fI)
+    Gameplay Video: https://www.youtube.com/watch?v=v4gmApxZ_fI
   </p>
 </div>
 
@@ -23,14 +23,16 @@
 - AI enemies 
 
 ## Credits
-dev credits:
-Evan Cheng - Lead Programmer, Lead Designer
-Angel - Programmer
-Ammie - Lead Level Designer
-Aki - Level Design, Art
-Avi - Level Design
-Sebastian - Design, Art
+<h3>developers</h3>
 
+- Evan Cheng - Lead Programmer, Lead Designer
+- Angel - Programmer
+- Ammie - Lead Level Designer
+- Aki - Level Design, Art
+- Avi - Level Design
+- Sebastian - Design, Art
+
+<h4>community content credit </h4>
 community content credit:
 Broken Bridge - Sino
 Ten Skyboxes Pack - Sino
